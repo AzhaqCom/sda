@@ -1,0 +1,42 @@
+[
+    {
+        "nom": "Cavalier Expert",
+        "effet": "Quand il est sur sa monture, le Cavalier Expert peut relancer son dé lors des tests de Franchissement, Nage et Chute de Cavalier. Il a aussi le droit de ramasser un Objet Léger sans mettre pied à terre. De plus, il bénéficie du +1 en Défense d'un Bouclier même s'il porte déjà un Arc. Il perd ce bonus s'il n'est plus monté."
+    },
+    {
+        "nom": "Précision Chirurgicale",
+        "effet": "Elfhelm peut relancer les jets pour Toucher, pour Blesser et Sur La Trajectoire quand il utilise un Javelot. De plus, Elfhelm ne souffre jamais de la pénalité de -1 pour tirer après s'être déplacé quand il utilise un Javelot."
+    },
+    {
+        "nom": "Seigneur des Chevaux",
+        "effet": "Cette figurine peut dépenser ses points de Destin pour annuler les Blessures subies par sa monture, comme si elle avait elle-même subi ces coups."
+    },
+    {
+        "nom": "Pour la Défense du Roi",
+        "effet": "Tant qu'il est à moins de 3'' de Denethor ou d'Aragorn, Roi Elessar, Hurin gagne la règle spéciale Sans Peur et peut relancer un simple D6 lors de son Jet de Duel."
+    },
+    {
+        "nom": "Ligne de Commandement",
+        "effet": "Si le Général de votre armée est un Héros du Gondor, votre adversaire ne peut remporter aucun Point de Victoire pour l'avoir tué tant que Hurin est en vie et sur le champ de bataille."
+    },
+    {
+        "nom": "Créature des Bois",
+        "effet": "Une figurine d'Infanterie dotée de cette Règle Spéciale peut se déplacer à travers les bois et les forêts considérés terrains difficiles, comme s'il s'agissait d'étendues dégagées. Notez que cela ne veut pas dire que les Créatures des Bois réussissent automatiquement les tests d'Escalade, Saut et Franchissement d'Obstacles qu'elles sont amenées à effectuer dans ces zones, ni qu'elles peuvent passer outre les troncs d'arbres, elles devront slalomer comme tout le monde."
+    },
+    {
+        "nom": "Maître des embuscades",
+        "effet": "Dans les scénarios où vous devez jeter un dé pour déterminer l'arrivée de vos troupes, vous pouvez modifier le résultat du jet de Renforts de la troupe de Madril de +1 ou -1. Si Madril est déjà sur la table, toutes les troupes de la liste d'armée peuvent bénéficier de ce bonus dans leur jet de Renforts. Dans les scénarios où vous devez jeter un dé pour savoir sur quel bord de table votre troupe se déploie, vous pouvez modifier le résultat du dé de +1 ou -1."
+    },
+    {
+        "nom": "Garde du Corps",
+        "effet": "Tout Guerrier ou Héros Garde du Corps protège automatiquement le Héros de plus haut rang issu de la même liste d'armée que lui (mais pas un Héros allié grâce à la matrice). S'il y a plusieurs Héros de rang similaire éligibles, alors le joueur concerné peut choisir l'un d'entre eux comme étant le meneur à protéger par tout le monde. Tant que ce Héros est en vie, le possesseur de cette règle réussit automatiquement tous ses tests de Bravoure."
+    },
+    {
+        "nom": "Mur de Boucliers",
+        "effet": "Si cette figurine est armée d'un Bouclier, et est en contact socle à socle avec deux figurines ou plus n'étant pas à terre et disposant elles aussi de la Règle Spéciale Mur de Boucliers (et de Boucliers), alors cette figurine gagne un bonus de +1 en Défense, tant qu'elle reste au contact des deux autres. Ce bonus est réservé à l'Infanterie."
+    },
+    {
+        "nom": "Debout, Cavaliers de Théoden !",
+        "effet": "Si cette figurine est à moins de 12'' de Théoden et qu'elle a le mot-clef Cavalerie, alors elle reçoit un bonus de +1 à sa valeur de Combat pendant un tour où elle Charge."
+    }
+]
