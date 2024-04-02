@@ -15,7 +15,9 @@ function Header() {
                 <li>
                     <NavLink className="link-menu" to='/actions'>Action heroïques</NavLink>
                 </li>
-
+                <li>
+                    <NavLink className="link-menu" to='/jeu'>Jeu</NavLink>
+                </li>
 
             </ul>
         </header>
