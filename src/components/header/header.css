@@ -26,3 +26,21 @@
 .blue{
     color:  #3a7bd5;
 }
+table{
+    border-collapse: collapse;min-width: 300px;
+}
+table th{
+    background-color: aliceblue;
+    color: #3a7bd5;
+    border:1px solid #3a7bd5;
+    min-width:30px;
+
+}
+ table td{
+    border:1px solid aliceblue;
+    min-width:30px;
+    text-align: center;
+}
+.red{
+    color: #d53a3a;
+}

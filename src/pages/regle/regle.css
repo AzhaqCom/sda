@@ -10,7 +10,7 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 0 15px;
-
+    white-space: pre-wrap;
 }
 @media screen and (max-width: 500px) {
     .container-grid{
