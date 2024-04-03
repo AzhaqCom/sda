@@ -115,9 +115,9 @@ function JeuCard({ selectedCharacter }) {
                     // Logique pour les règles spéciales
                     setPersonnage(prevPersonnage => {
                         // Utilisez prevPersonnage à l'intérieur de cette fonction de rappel
-                        const updatedRegles = [...prevPersonnage.regles];
+                      
                         let updatedCaracteristiques = { ...prevPersonnage.caracteristiques };
-                        let updatedPoints = parseInt(prevPersonnage.points) + valeur;
+                        let updatedPoints = parseInt(prevPersonnage.points) - valeur;
 
                         if (option.nom === 'Bannière de Minas Tirith') {
                             const updatedC = prevPersonnage.caracteristiques['C'];
