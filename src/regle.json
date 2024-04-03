@@ -12,6 +12,42 @@
         "effet": "Cette figurine peut dépenser ses points de Destin pour annuler les Blessures subies par sa monture, comme si elle avait elle-même subi ces coups."
     },
     {
+        "nom": "Aragorn, Roi Elessar et Boromir, Capitaine de la Tour Blanche",
+        "effet": "Si votre force contient Aragorn, Roi Elessar et Boromir, Capitaine de la Tour Blanche, elle perd automatiquement son Bonus d'Armée. De plus, votre force devient automatiquement un Allié Impossible pour toutes les autres listes au regard de sa propre incohérence."
+    },
+    {
+        "nom": "Je vous ordonne de tenir, Hommes de l'Ouest",
+        "effet": "Toutes les figurines amies à 6\" d'Aragorn comptent comme étant à portée d'une Bannière."
+    },
+    {
+        "nom": "Héros Mythique",
+        "effet": "Une telle figurine peut dépenser 1 point de Puissance gratuit par tour, sans avoir à puiser dans sa réserve."
+    },
+    {
+        "nom": "Andùril la Flamme de l'Ouest",
+        "effet": "Andùril est une lame de facture elfique qui compte comme une épée bâtarde. De plus, quand il porte ses Coups, Aragorn blesse toujours son adversaire au pire sur 4+, quelque soit la valeur de Défense de celui-ci. \n\nSi Aragorn utilise Anduril à deux mains, il blesse alors son adversaire sur 3+."
+    },
+    {
+        "nom": "Tir Léthal",
+        "effet": "Chaque tour, quand il tire avec son Arc, Anborn peut dépenser un point de Puissance sans réduire sa réserve (même s'il n'en a plus aucun) pour modifier le résultat soit d'un jet pour Toucher, soit d'un jet de Trajectoire, soit d'un jet pour Blesser."
+    },
+    {
+        "nom": "Rechargement Rapide",
+        "effet": "Lorsque vous tirez avec un Engin de Siège avec cette amélioration, le jour qui tire jette 2D6 a lieu d'un et choisit le plus haut résultat pour déterminer le nombre de tirs."
+    },
+    {
+        "nom": "Cor du Gondor",
+        "effet": "Boromir peut souffler dans son Cor au début d'un combat dès lors qu'il est en infériorité numérique à au moins 2 contre 1. Le combattant ennemi ayant la plus haute valeur de Bravoure doit alors passer un test de bravoure. S'il le réussit, le combat se déroule normalement. Sinon, Boromir gagne automatiquement le combat et peut porter normalement ses attaques."
+    },
+    {
+        "nom": "Lance de cavalerie",
+        "effet": "Une figurine de cavalerie qui a une Lance de Cavalerie reçoit un bonus de +1 pour Blesser lorsqu'elle a chargé pendant le tour. Veuillez noter que dans le cas où deux jets sont requis pour blesser, le bonus s'applique au deux jets. Une figurine de Cavalerie avec une Lance de Cavalerie obtient ce bonus même si elle a chargé une figurine de Cavalerie, sauf si elle a chargé àtravers un terrain difficile."
+    },
+    {
+        "nom": "Bannière de Minas Tirith",
+        "effet": "La Bannière de Minas Tirith compte comme une Bannière avec une portée de 6''. De plus, Boromir et tous les Guerriers du Gondor alliés à 6'' autour de lui reçoivent un bonus de +1 à leur compétence de Combat. Ce bonus est cumulatif avec d'autres. Boromir ne souffre pas du malus de -1 aux jets de Duel lorsqu'il porte la Bannière de Minas Tirith. Il ne peut pas porter la Bannière s'il porte une Lance de Cavalerie."
+    },
+    {
         "nom": "Pour la Défense du Roi",
         "effet": "Tant qu'il est à moins de 3'' de Denethor ou d'Aragorn, Roi Elessar, Hurin gagne la règle spéciale Sans Peur et peut relancer un simple D6 lors de son Jet de Duel."
     },

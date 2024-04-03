@@ -1,80 +1,276 @@
 [
     {
-        "personnage": "Hurin le Grand, Gardien des Clefs avec Cheval",
+        "faction": "Gondor",
+        "personnage": "Anborn, Ranger de l'Ithilien",
+        "points": "35",
         "caracteristiques": {
-          "M": 10,
-          "C": 5,
-          "F": 4,
-          "D": 6,
-          "A": 2,
-          "B": 6
+            "M": 6,
+            "C": "4/3+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 4
         },
         "capacites": {
-          "Puissance": 3,
-          "Volonté": 1,
-          "Destin": 1,
-          "Points de vie": 2,
-          "PV Monture": 1,
-          "Kill": 0
-        }
-        
-      },
-      {
-        "personnage": "Boromir, Capitaine de la Tour Blanche avec Bannière de Minas Tirith, Bouclier, Cheval",
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 1,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Tir Léthal"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Aragorn, le Roi Elessar",
+        "points": "225",
         "caracteristiques": {
-            "M": 10,
-            "C": 6,
-            "F": "4/4+",
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
             "D": 7,
             "A": 3,
-            "B": 7
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Marche Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Héros Mythique",
+            "Seigneur des Chevaux",
+            "Aragorn, Roi Elessar et Boromir, Capitaine de la Tour Blanche",
+            "Je vous ordonne de tenir, Hommes de l'Ouest",
+            "Andùril la Flamme de l'Ouest"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaconné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Baliste à répétition du Gondor",
+        "points": "50",
+        "caracteristiques": {
+            "M": "",
+            "C": "",
+            "F": 7,
+            "D": 10,
+            "A": "",
+            "B": ""
+        },
+        "capacites": {
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [],
+        "regles": [
+            "Courte portée",
+            "Tir Rapide"
+        ],
+        "options": [
+            {
+                "nom": "Rechargement Rapide",
+                "valeur": 20,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Vétéran – Guerrier de Minas Tirith",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/4+",
+                    "F": 3,
+                    "D": 5,
+                    "A": 1,
+                    "B": 4
+                },
+                "capacites": {
+                    "Puissance": 1,
+                    "Volonté": 1,
+                    "Destin": 1,
+                    "Points de vie": 1,
+                    "Kill": 0
+                }
+            },
+            {
+                "personnage": "Servant – Guerrier de Minas Tirith",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/4+",
+                    "F": 3,
+                    "D": 5,
+                    "A": 1,
+                    "B": 4
+                },
+                "capacites": {
+                    "Points de vie": 1,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Beregond, Garde de la Citadelle",
+        "points": "30",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/3+",
+            "F": 4,
+            "D": 6,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 1,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "regles": [
+            "Garde du Corps"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Boromir, Capitaine de la Tour Blanche",
+        "points": "160",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": "4",
+            "D": 6,
+            "A": 3,
+            "B": 6
         },
         "capacites": {
             "Puissance": 6,
             "Volonté": 3,
             "Destin": 3,
             "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Cor du Gondor"
+        ],
+        "options": [
+            {
+                "nom": "Bannière de Minas Tirith",
+                "valeur": 40,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance de cavalerie",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Elfhelm, Capitaine du Rohan avec Cheval",
+        "caracteristiques": {
+            "M": 10,
+            "C": "4/3+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
             "PV Monture": 1,
             "Kill": 0
         }
     },
     {
-      "personnage": "Elfhelm, Capitaine du Rohan avec Cheval",
-      "caracteristiques": {
-          "M": 10,
-          "C": "4/3+",
-          "F": 4,
-          "D": 6,
-          "A": 2,
-          "B": 4
-      },
-      "capacites": {
-          "Puissance": 3,
-          "Volonté": 1,
-          "Destin": 1,
-          "Points de vie": 2,
-          "PV Monture": 1,
-          "Kill": 0
-      }
-  },
-  {
-    "personnage": "Madril, Capitaine de l’Ithilien",
-    "caracteristiques": {
-        "M": 6,
-        "C": "4/3+",
-        "F": 4,
-        "D": 5,
-        "A": 2,
-        "B": 5
-    },
-    "capacites": {
-        "Puissance": 3,
-        "Volonté": 1,
-        "Destin": 1,
-        "Points de vie": 2,
-        "Kill": 0
+        "faction": "Gondor",
+        "personnage": "Madril, Capitaine de l'Ithilien",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        }
     }
-}
-  
-    
 ]

@@ -1,0 +1,40 @@
+
+.popup {
+    position: fixed;
+    background: #282c34c0;
+    
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: #282c34;
+    ;
+    padding: 30px 10px;
+    border-radius: 5px;
+    border: 1px solid #3a7bd5;
+}
+
+.popup-content .rule-title {
+    margin: 5px 0;
+    color: #5589d2;
+}
+.rule-name{
+    cursor: pointer;
+    color: #3a7bd5;
+    width: fit-content;
+}
+.rule-effect{
+    white-space: pre-wrap;
+    font-size: 15px;
+}

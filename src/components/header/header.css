@@ -16,7 +16,7 @@
     color:  #3a7bd5;
  }
 .container{
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,8 @@
     color:  #3a7bd5;
 }
 table{
-    border-collapse: collapse;min-width: 300px;
+    border-collapse: collapse;
+    min-width: 300px;
 }
 table th{
     background-color: aliceblue;
