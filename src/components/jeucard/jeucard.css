@@ -36,3 +36,31 @@ button.btn-add{
 button{
     padding: 8px;
 }
+.container-servant{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+.pouvoir-container{
+    display: grid;
+    grid-template-columns: 4fr 4fr .5fr;
+    justify-items: center;
+}
+.pouvoir-container .pouvoir-name{
+    color: #3a7bd5;
+    cursor: pointer;
+
+}
+@media screen and (min-width: 768px){
+    .pouvoir-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}

@@ -3,15 +3,14 @@ import PersoData from '../../perso.json';
 import './jeucard.css';
 import Modal from '../modal/modal';
 import Option from '../option/option';
-
+import Modalpower from '../modalpower/modalpower';
 function JeuCard({ selectedCharacter }) {
     const [personnage, setPersonnage] = useState(null);
-    const [defaultPersonnage, setDefaultPersonnage] = useState(null);
 
     useEffect(() => {
         const foundCharacter = PersoData.find(character => character.personnage === selectedCharacter);
         setPersonnage(foundCharacter);
-        setDefaultPersonnage(foundCharacter);
+
     }, [selectedCharacter]);
 
     const handleChangeCapacite = (capacite, operation) => {
@@ -44,7 +43,11 @@ function JeuCard({ selectedCharacter }) {
                             ...prevPersonnage.caracteristiques,
                             [action.caracteristique]: action.valeur
                         },
-                        points: parseInt(prevPersonnage.points) + valeur
+                        points: parseInt(prevPersonnage.points) + valeur,
+                        capacites: {
+                            ...prevPersonnage.capacites,
+                            PvMonture: 1
+                        }
                     }));
                 } else if (action.caracteristique === 'D') {
                     // Logique pour augmenter la défense de 1
@@ -71,7 +74,7 @@ function JeuCard({ selectedCharacter }) {
                             const newCStr = newCValue + '/4+';
                             updatedCaracteristiques = {
                                 ...prevPersonnage.caracteristiques,
-                                ['C']: newCStr
+                                C: newCStr
                             };
                         }
 
@@ -83,6 +86,45 @@ function JeuCard({ selectedCharacter }) {
                         };
                     });
                 }
+                else if (action.effet === 'servant') {
+                    setPersonnage(prevPersonnage => {
+                        let updatedPoints = parseInt(prevPersonnage.points) + valeur;
+                        const updatedServants = prevPersonnage.servants.map((servant, index) => {
+                            if (index === 0) {
+                                // Mettre à jour les caractéristiques du premier servant
+                                return {
+                                    ...servant,
+                                    caracteristiques: {
+                                        ...servant.caracteristiques,
+                                        M: 6,
+                                        C: "4/4+",
+                                        F: 4,
+                                        D: 6,
+                                        A: 2,
+                                        B: 4
+
+                                    },
+                                    capacites: {
+                                        ...servant.capacites,
+                                        Puissance: 2,
+                                        "Points de vie": 2
+                                    },
+                                    personnage: 'Capitaine de Minas Tirith'
+                                };
+                            } else {
+                                // Ne rien changer pour les autres servants
+                                return servant;
+                            }
+                        });
+
+                        return {
+                            ...prevPersonnage,
+                            servants: updatedServants,
+                            points: updatedPoints
+                        };
+                    });
+                }
+
             }
         } else {
             // Logique pour annuler les effets de l'option décochée
@@ -93,14 +135,20 @@ function JeuCard({ selectedCharacter }) {
 
                 if (action.caracteristique === 'M') {
                     // Logique pour annuler les effets sur la monture
-                    setPersonnage(prevPersonnage => ({
-                        ...prevPersonnage,
-                        caracteristiques: {
-                            ...prevPersonnage.caracteristiques,
-                            [action.caracteristique]: 6 // Remettre la vitesse de la monture à 0 ou à sa valeur par défaut
-                        },
-                        points: parseInt(prevPersonnage.points) - valeur
-                    }));
+                    setPersonnage(prevPersonnage => {
+                        // Supprimer la capacité PvMonture
+                        const { PvMonture, ...updatedCapacites } = prevPersonnage.capacites;
+
+                        return {
+                            ...prevPersonnage,
+                            caracteristiques: {
+                                ...prevPersonnage.caracteristiques,
+                                [action.caracteristique]: 6 
+                            },
+                            points: parseInt(prevPersonnage.points) - valeur,
+                            capacites: updatedCapacites
+                        };
+                    });
                 } else if (action.caracteristique === 'D') {
                     // Logique pour réduire la défense de 1
                     setPersonnage(prevPersonnage => ({
@@ -115,7 +163,7 @@ function JeuCard({ selectedCharacter }) {
                     // Logique pour les règles spéciales
                     setPersonnage(prevPersonnage => {
                         // Utilisez prevPersonnage à l'intérieur de cette fonction de rappel
-                      
+
                         let updatedCaracteristiques = { ...prevPersonnage.caracteristiques };
                         let updatedPoints = parseInt(prevPersonnage.points) - valeur;
 
@@ -126,7 +174,7 @@ function JeuCard({ selectedCharacter }) {
                             const newCStr = newCValue + '/4+';
                             updatedCaracteristiques = {
                                 ...prevPersonnage.caracteristiques,
-                                ['C']: newCStr
+                                C: newCStr
                             };
                         }
 
@@ -134,6 +182,43 @@ function JeuCard({ selectedCharacter }) {
                             ...prevPersonnage,
                             regles: prevPersonnage.regles.filter(rule => rule !== option.nom),
                             caracteristiques: updatedCaracteristiques,
+                            points: updatedPoints
+                        };
+                    });
+                }
+                else if (action.effet === 'servant') {
+                    setPersonnage(prevPersonnage => {
+                        let updatedPoints = parseInt(prevPersonnage.points) - valeur;
+                        const updatedServants = prevPersonnage.servants.map((servant, index) => {
+                            if (index === 0) {
+                                // Mettre à jour les caractéristiques du premier servant
+                                return {
+                                    ...servant,
+                                    caracteristiques: {
+                                        ...servant.caracteristiques,
+                                        M: 6,
+                                        C: "3/4+",
+                                        F: 3,
+                                        D: 5,
+                                        A: 1,
+                                        B: 3
+                                    },
+                                    capacites: {
+                                        ...servant.capacites,
+                                        Puissance: 1,
+                                        "Points de vie": 1
+                                    },
+                                    personnage: 'Vétéran - Guerrier de Minas Tirith'
+                                };
+                            } else {
+                                // Ne rien changer pour les autres servants
+                                return servant;
+                            }
+                        });
+
+                        return {
+                            ...prevPersonnage,
+                            servants: updatedServants,
                             points: updatedPoints
                         };
                     });
@@ -179,63 +264,6 @@ function JeuCard({ selectedCharacter }) {
                     ))}
                 </tbody>
             </table>
-            {personnage.servants && personnage.servants.length > 0 && (
-                <>
-                    <h3>Servants</h3>
-                    {personnage.servants.map((servant, index) => (
-                        <div key={index} className='servant'>
-                            <h5>{servant.personnage}</h5>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        {Object.entries(servant.caracteristiques).map(([key, value]) => (
-                                            <td key={`${key}-${value}`}>{key}</td>
-                                        ))}
-                                    </tr>
-                                    <tr>
-                                        {Object.entries(servant.caracteristiques).map(([key, value]) => (
-                                            <td key={`${key}-${value}`}>{value}</td>
-                                        ))}
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table>
-                                <tbody>
-                                    {Object.entries(servant.capacites).map(([capacite, value]) => (
-                                        <tr key={capacite}>
-                                            <td>{capacite}</td>
-                                            <td>
-                                                <button onClick={() => handleChangeCapacite(capacite, 'decrease')}>-</button>
-                                                {value}
-                                                <button onClick={() => handleChangeCapacite(capacite, 'increase')}>+</button>
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    ))}
-                </>
-            )}
-
-            {personnage.regles && personnage.regles.length > 0 && (
-                <>
-                    <h3>Règles spéciales</h3>
-                    <div className='regle-perso'>
-                        {personnage.regles.map((rule, index) => (<Modal key={rule} ruleName={rule} />))}
-                    </div>
-                </>
-            )}
-
-            {personnage.actions && personnage.actions.length > 0 && (
-                <>
-                    <h3>Actions Héroïques</h3>
-                    <div className='action-perso'>
-                        {personnage.actions.map((action, index) => (<Modal key={action} ruleName={action} />))}
-                    </div>
-                </>
-            )}
-
             {personnage.options && personnage.options.length > 0 && (
                 <>
                     <h3>Options</h3>
@@ -244,7 +272,79 @@ function JeuCard({ selectedCharacter }) {
                     ))}
                 </>
             )}
+            {personnage.servants && personnage.servants.length > 0 && (
+                <>
+                    <h3>Servants</h3>
+                    <div className='container-servant'>
+                        {personnage.servants.map((servant, index) => (
+                            <div key={index} className='servant'>
+                                <h5>{servant.personnage}</h5>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            {Object.entries(servant.caracteristiques).map(([key, value]) => (
+                                                <td key={`${key}-${value}`}>{key}</td>
+                                            ))}
+                                        </tr>
+                                        <tr>
+                                            {Object.entries(servant.caracteristiques).map(([key, value]) => (
+                                                <td key={`${key}-${value}`}>{value}</td>
+                                            ))}
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table>
+                                    <tbody>
+                                        {Object.entries(servant.capacites).map(([capacite, value]) => (
+                                            <tr key={capacite}>
+                                                <td>{capacite}</td>
+                                                <td>
+                                                    <button onClick={() => handleChangeCapacite(capacite, 'decrease')}>-</button>
+                                                    {value}
+                                                    <button onClick={() => handleChangeCapacite(capacite, 'increase')}>+</button>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        ))}
+                    </div>
 
+                </>
+            )}
+            <div className='grid2'>
+
+                {personnage.regles && personnage.regles.length > 0 && (
+                    <div className='regle-spe-perso'>
+                        <h3>Règles spéciales</h3>
+                        <div className='regle-perso'>
+                            {personnage.regles.map((rule, index) => (<Modal key={rule} ruleName={rule} />))}
+                        </div>
+                    </div>
+                )}
+
+                {personnage.actions && personnage.actions.length > 0 && (
+                    <div className='action-hero-perso'>
+                        <h3>Actions Héroïques</h3>
+                        <div className='action-perso'>
+                            {personnage.actions.map((action, index) => (<Modal key={action} ruleName={action} />))}
+                        </div>
+                    </div>
+                )}
+            </div>
+
+            {personnage.pouvoirsMagiques && personnage.pouvoirsMagiques.length > 0 && (
+                <div className='pouvoir-hero-perso'>
+                    <h3>Pouvoirs Magiques</h3>
+
+                    <div className='action-perso'>
+                        {personnage.pouvoirsMagiques.map((pouvoir, index) => (<Modalpower key={pouvoir} powerName={pouvoir} />))}
+
+                    </div>
+
+                </div>
+            )}
 
         </div>
     );

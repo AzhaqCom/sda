@@ -28,6 +28,51 @@
         "effet": "Andùril est une lame de facture elfique qui compte comme une épée bâtarde. De plus, quand il porte ses Coups, Aragorn blesse toujours son adversaire au pire sur 4+, quelque soit la valeur de Défense de celui-ci. \n\nSi Aragorn utilise Anduril à deux mains, il blesse alors son adversaire sur 3+."
     },
     {
+        "nom": "Habilité d'un Seigneur des Lames",
+        "effet": "Si un Chevalier de la Tour Blanche obtient un 6 naturel à un jet de Duel, la pénalité d'arme à deux mains nes'applique pas"
+    },
+    {
+        "nom": "Y a-t-il ici un capitaine assez courageux pour exécuter les volontés de son seigneur ?",
+        "effet": "Si Denethor fait partie de la même armée que Faramir, alors Faramir réussira automatiquement tous ses tests de Bravoure tant que Denethor sera en vie et sur le champ de bataille. Cependant, tant que Denethor est sur le champ de bataille, Faramir doit toujours charger un ennemi s'il le peut."
+    },
+    {
+        "nom": "Epée Blanche du Gondor",
+        "effet": "Une Épée Blanche du Gondor est une épée à deux mains. De plus, les attaques faites avec cette arme suivent la règle spéciale Coup Puissant"
+    },
+    {
+        "nom": "Bâton de pouvoir",
+        "effet": "Un Bâton de pouvoir est une arme bâtarde qui permet d’utiliser le coup spécial Matraquage comme tous les autres Bâtons. De plus, le porteur peut dépenser un point de Volonté gratuit chaque tour, sans réduire son stock de points de Volonté."
+
+    },
+    {
+        "nom": "Glamdring",
+        "effet": "Glamdring est une de facture elfique (épée bâtarde), elle peut être utilisée comme une épée simple ou comme une épée à deux mains. De plus, Glamdring augmente la Force de Gandalf de 1 quand il l’utilise."
+    },
+    {
+        "nom": "Narya",
+        "effet": "Gandalf peut relancer ses jets de Destin ratés."
+    },
+    {
+        "nom": "Brave parmis les Braves",
+        "effet": "Quand il charge un ennemi qui cause la Terreur, Cirion reçoit un bonus de +2 à sa valeur de Bravoure. Il reçoit le même Bonus lorsqu'une figurine tente de le frapper avec la Règle Spéciale Les Lames des Morts."
+    },
+    {
+        "nom": "Coup Puissant",
+        "effet": "Pour chaque coup porté touchant au but (non sauvé par des points de Destin) en combat rapproché, cette figurine inflige 2 Blessures au lieu d'une seule."
+    },
+    {
+        "nom": "Esprit brisé",
+        "effet": "Au début de chaque tour, avant de déterminer l'Initiative, le joueur contrôlant Denethor doit lui faire passer un test de Bravoure. S'il réussit, rien ne se passe. Sinon, Denethor passe pour la durée du tour sous le contrôle du joueur adverse. Néanmoins, les figurines amies ne peuvent pas cibler Denethor avec des tirs ou des pouvoirs magiques susceptibles de le blesser, ni lui porter de coups lorsqu'elles remportent un combat contre lui. Si Boromir fait partie de la même armée, Denethor réussit automatiquement tous ses tests de Bravoure tant que Boromir est en vie. S'il meurt, Denethor rate automatiquement le premer test de Bravoure suivant la mort de Boromir."
+    },
+    {
+        "nom": "Les rênes du Gondor sont à moi, et à personne d'autre !",
+        "effet": "Si votre armée comprend Denethor, il doit être votre général, à moins que votre armée n'inclue Aragorn, le Roi Elessar."
+    },
+    {
+        "nom": "Arc",
+        "effet": "Portée 24\" Force 2"
+    },
+    {
         "nom": "Tir Léthal",
         "effet": "Chaque tour, quand il tire avec son Arc, Anborn peut dépenser un point de Puissance sans réduire sa réserve (même s'il n'en a plus aucun) pour modifier le résultat soit d'un jet pour Toucher, soit d'un jet de Trajectoire, soit d'un jet pour Blesser."
     },
