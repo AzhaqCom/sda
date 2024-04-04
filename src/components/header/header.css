@@ -45,3 +45,14 @@ table th{
 .red{
     color: #d53a3a;
 }
+.btnsuppr{
+    margin: 0 14px;
+    padding: 5px 10px;
+    border: 0;
+    background: #942c25;
+    color: white;
+    font-size: 18px;
+}
+.pouvoir-hero-perso{
+    margin-bottom: 20px;
+}

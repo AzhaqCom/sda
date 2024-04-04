@@ -7,7 +7,7 @@ function Header() {
 
             <ul >
                 <li>
-                    <NavLink className="link-menu" to='/'>Accueil vide</NavLink>
+                    <NavLink className="link-menu" to='/'>Accueil</NavLink>
                 </li>
                 <li>
                     <NavLink className="link-menu" to='/regle'>Règles Spéciales</NavLink>

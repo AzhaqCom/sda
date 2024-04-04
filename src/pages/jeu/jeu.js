@@ -58,7 +58,7 @@ function Jeu() {
             {selectedCharacters.map((character, index) => (
                 <div key={index} className='card'>
                     <JeuCard selectedCharacter={character} />
-                    <button onClick={() => handleRemoveCharacter(character)}>Supprimer</button>
+                    <button className='btnsuppr' onClick={() => handleRemoveCharacter(character)}>Supprimer</button>
                 </div>
             ))}
         </div>

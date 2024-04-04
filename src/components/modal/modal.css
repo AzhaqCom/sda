@@ -1,8 +1,7 @@
-
 .popup {
     position: fixed;
     background: #282c34c0;
-    
+
     width: 100%;
     left: 0;
     height: 100vh;
@@ -29,12 +28,58 @@
     margin: 5px 0;
     color: #5589d2;
 }
-.rule-name{
+
+.rule-name {
     cursor: pointer;
     color: #3a7bd5;
     width: fit-content;
+    display: flex;
+    padding: 5px;
 }
-.rule-effect{
+
+.rule-name .etat,
+.rule-name .phase {
+    margin-left: 20px;
+    color: white;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    min-width: 50px;
+    text-align: center;
+}
+
+.phase.mouvement {
+    background: #82855f;
+}
+
+.phase.tir {
+    background: #5f6a85;
+}
+
+.phase.combat {
+    background: #623d3d;
+}
+
+.etat.amélioration {
+    background: #34773d;
+}
+
+.etat.equipement {
+    background: #808834;
+}
+
+.etat.actif {
+    background: #944125;
+}
+
+.etat.engin {
+    background: #585146;
+}
+
+.etat.passif {
+    background: #ad8446;
+}
+
+.rule-effect {
     white-space: pre-wrap;
     font-size: 15px;
 }

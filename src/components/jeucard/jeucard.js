@@ -51,14 +51,26 @@ function JeuCard({ selectedCharacter }) {
                     }));
                 } else if (action.caracteristique === 'D') {
                     // Logique pour augmenter la défense de 1
-                    setPersonnage(prevPersonnage => ({
-                        ...prevPersonnage,
-                        caracteristiques: {
-                            ...prevPersonnage.caracteristiques,
-                            [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] + action.valeur
-                        },
-                        points: parseInt(prevPersonnage.points) + valeur
-                    }));
+                    if (option.nom === 'Armure Lourde' && personnage.equipements !== undefined && !personnage.equipements.length > 0) {
+                        setPersonnage(prevPersonnage => ({
+                            ...prevPersonnage,
+                            caracteristiques: {
+                                ...prevPersonnage.caracteristiques,
+                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] + 2
+                            },
+                            points: parseInt(prevPersonnage.points) + valeur
+                        }));
+                    } else {
+                        setPersonnage(prevPersonnage => ({
+                            ...prevPersonnage,
+                            caracteristiques: {
+                                ...prevPersonnage.caracteristiques,
+                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] + action.valeur
+                            },
+                            points: parseInt(prevPersonnage.points) + valeur
+                        }));
+                    }
+
                 } else if (action.effet === 'regles') {
                     // Logique pour les règles spéciales
                     setPersonnage(prevPersonnage => {
@@ -123,8 +135,34 @@ function JeuCard({ selectedCharacter }) {
                             points: updatedPoints
                         };
                     });
+                } else if (option.action === 'addmiroir') {
+                    setPersonnage(prevPersonnage => {
+                        const updatedRegles = [...prevPersonnage.regles, 'Miroir de Galadriel'];
+                        const newServant = {
+                            personnage: 'Miroir de Galadriel',
+                            caracteristiques: {
+                                M: '',
+                                C: "",
+                                F: '',
+                                D: 8,
+                                A: '',
+                                B: ''
+                            },
+                            capacites: {
+           
+                                "Points de vie": 3
+                            }
+                        };
+                
+                        return {
+                            ...prevPersonnage,
+                            servants: [newServant],
+                            regles: updatedRegles,
+                            points: parseInt(prevPersonnage.points) + valeur
+                        };
+                    });
                 }
-
+                
             }
         } else {
             // Logique pour annuler les effets de l'option décochée
@@ -143,7 +181,7 @@ function JeuCard({ selectedCharacter }) {
                             ...prevPersonnage,
                             caracteristiques: {
                                 ...prevPersonnage.caracteristiques,
-                                [action.caracteristique]: 6 
+                                [action.caracteristique]: 6
                             },
                             points: parseInt(prevPersonnage.points) - valeur,
                             capacites: updatedCapacites
@@ -151,14 +189,26 @@ function JeuCard({ selectedCharacter }) {
                     });
                 } else if (action.caracteristique === 'D') {
                     // Logique pour réduire la défense de 1
-                    setPersonnage(prevPersonnage => ({
-                        ...prevPersonnage,
-                        caracteristiques: {
-                            ...prevPersonnage.caracteristiques,
-                            [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] - action.valeur
-                        },
-                        points: parseInt(prevPersonnage.points) - valeur
-                    }));
+                    if (option.nom === 'Armure Lourde' && personnage.equipements !== undefined && !personnage.equipements.length > 0) {
+                        setPersonnage(prevPersonnage => ({
+                            ...prevPersonnage,
+                            caracteristiques: {
+                                ...prevPersonnage.caracteristiques,
+                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] - 2
+                            },
+                            points: parseInt(prevPersonnage.points) + valeur
+                        }));
+                    } else {
+                        setPersonnage(prevPersonnage => ({
+                            ...prevPersonnage,
+                            caracteristiques: {
+                                ...prevPersonnage.caracteristiques,
+                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] - action.valeur
+                            },
+                            points: parseInt(prevPersonnage.points) - valeur
+                        }));
+                    }
+
                 } else if (action.effet === 'regles') {
                     // Logique pour les règles spéciales
                     setPersonnage(prevPersonnage => {
@@ -222,7 +272,17 @@ function JeuCard({ selectedCharacter }) {
                             points: updatedPoints
                         };
                     });
+                }else if (option.action === 'addmiroir') {
+                    setPersonnage(prevPersonnage => {
+                        return {
+                            ...prevPersonnage,
+                            servants: [],
+                            regles: prevPersonnage.regles.filter(rule => rule !== 'Miroir de Galadriel'),
+                            points: parseInt(prevPersonnage.points) - valeur
+                        };
+                    });
                 }
+                
             }
         }
     };
@@ -256,9 +316,9 @@ function JeuCard({ selectedCharacter }) {
                         <tr key={capacite}>
                             <td>{capacite}</td>
                             <td>
-                                <button onClick={() => handleChangeCapacite(capacite, 'decrease')}>-</button>
-                                {value}
-                                <button onClick={() => handleChangeCapacite(capacite, 'increase')}>+</button>
+                                <button className='btnmod' onClick={() => handleChangeCapacite(capacite, 'decrease')}>-</button>
+                                <b>{value}</b>
+                                <button className='btnmod' onClick={() => handleChangeCapacite(capacite, 'increase')}>+</button>
                             </td>
                         </tr>
                     ))}
@@ -339,7 +399,7 @@ function JeuCard({ selectedCharacter }) {
                     <h3>Pouvoirs Magiques</h3>
 
                     <div className='action-perso'>
-                        {personnage.pouvoirsMagiques.map((pouvoir, index) => (<Modalpower key={pouvoir} powerName={pouvoir} />))}
+                        {personnage.pouvoirsMagiques.map((pouvoir, index) => (<Modalpower key={pouvoir.nom} powerName={pouvoir.nom} powerLancement={pouvoir.valeur} />))}
 
                     </div>
 

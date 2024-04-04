@@ -57,7 +57,7 @@
         "regles": [
             "Héros Mythique",
             "Seigneur des Chevaux",
-            "Aragorn, Roi Elessar et Boromir, Capitaine de la Tour Blanche",
+            "Aragorn, Roi Elessar",
             "Je vous ordonne de tenir, Hommes de l'Ouest",
             "Andùril la Flamme de l'Ouest"
         ],
@@ -118,7 +118,7 @@
                     "F": 3,
                     "D": 5,
                     "A": 1,
-                    "B": 4
+                    "B": 3
                 },
                 "capacites": {
                     "Puissance": 1,
@@ -136,7 +136,7 @@
                     "F": 3,
                     "D": 5,
                     "A": 1,
-                    "B": 4
+                    "B": 3
                 },
                 "capacites": {
                     "Points de vie": 1,
@@ -428,7 +428,6 @@
             "Points de vie": 2,
             "Kill": 0
         },
-        
         "actions": [
             "Résistance Héroïque",
             "Frappe Héroïque",
@@ -460,7 +459,7 @@
                 }
             },
             {
-                "nom": "Armure lourde",
+                "nom": "Armure Lourde",
                 "valeur": 5,
                 "action": {
                     "caracteristique": "D",
@@ -507,23 +506,17 @@
             "Points de vie": 3,
             "Kill": 0
         },
-       
         "actions": [
             "Résistance Héroïque",
             "Frappe Héroïque",
             "Canalisation Héroïque"
-        
         ],
         "options": [
             {
                 "nom": "Gripoil",
                 "valeur": 20,
-                "action": {
-                    "caracteristique": "M",
-                    "valeur": 12
-                }
+                "action": "addgripoil"
             }
-          
         ],
         "regles": [
             "Bâton de Pouvoir",
@@ -531,16 +524,43 @@
             "Narya"
         ],
         "pouvoirsMagiques": [
-            "Lumière Aveuglante",
-            "Immobilisation",
-            "Aura de Terreur",
-            "Injonction",
-            "Esprit Fortifié",
-            "Volonté de Fer",
-            "Bannissement",
-            "Impact Magique",
-            "Votre Bâton est Rompu !"
-          ]
+            {
+                "nom": "Lumière Aveuglante",
+                "valeur": "2+"
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "2+"
+            },
+            {
+                "nom": "Aura de Terreur",
+                "valeur": "2+"
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Esprit Fortifié",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Volonté de Fer",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Bannissement",
+                "valeur": "4+"
+            },
+            {
+                "nom": "Impact Magique",
+                "valeur": "4+"
+            },
+            {
+                "nom": "Votre Bâton est Rompu !",
+                "valeur": "4+"
+            }
+        ]
     },
     {
         "faction": "Gondor",
@@ -561,14 +581,12 @@
             "Points de vie": 2,
             "Kill": 0
         },
-        
         "actions": [
             "Résistance Héroïque",
             "Frappe Héroïque",
             "Force Héroïque"
         ],
         "options": [
-
             {
                 "nom": "Cheval",
                 "valeur": 10,
@@ -577,11 +595,751 @@
                     "valeur": 10
                 }
             }
-  
         ],
         "regles": [
             "Pour la Défense du Roi",
             "Ligne de Commandement"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Ingold, Gardien de Rammas Echor",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Mur de Boucliers",
+            "Combattant Résolu"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Irolas, Capitaine de le Garde",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Garde du Corps",
+            "Défendez la Cité Blanche !"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Mablung, Ranger de l'Ithilien",
+        "points": "35",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/3+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 1,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Créature des Bois",
+            "Chants d'Oiseaux"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Madril, Capitaine de l'Ithilien",
+        "points": "55",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Précision Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Créature des Bois",
+            "Maître des Embuscades"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Peregrin Touque, Garde de la Citadelle",
+        "points": "25",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 4,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 2,
+            "Points de vie": 1,
+            "Kill": 0
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Maître des Embuscades"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Roi des Hommes",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance de Cavalerie",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Pour la Défense du Roi",
+            "Ligne de Commandement"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "personnage": "Trebuchet du Gondor",
+        "points": "80",
+        "caracteristiques": {
+            "M": "",
+            "C": "",
+            "F": 10,
+            "D": 10,
+            "A": "",
+            "B": ""
+        },
+        "capacites": {
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [],
+        "regles": [
+            "Tir Indirect",
+            "Air d'Effet",
+            "Briseur de Mur"
+        ],
+        "options": [
+            {
+                "nom": "Munitions Enflammées",
+                "valeur": 15,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Capitaine Ingénieur de Minas Tirith",
+                "valeur": 50,
+                "action": {
+                    "effet": "servant"
+                }
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Vétéran - Guerrier de Minas Tirith",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/4+",
+                    "F": 3,
+                    "D": 5,
+                    "A": 1,
+                    "B": 3
+                },
+                "capacites": {
+                    "Puissance": 1,
+                    "Volonté": 1,
+                    "Destin": 1,
+                    "Points de vie": 1,
+                    "Kill": 0
+                }
+            },
+            {
+                "personnage": "Servant - Guerrier de Minas Tirith",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/4+",
+                    "F": 3,
+                    "D": 5,
+                    "A": 1,
+                    "B": 3
+                },
+                "capacites": {
+                    "Points de vie": 1,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Capitaine Galadhrim",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Lame de facture Elfique (épée bâtarde)",
+            "Cavalier Expert",
+            "Pied Léger",
+            "Créature des Bois"
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Capitaine Elfe Sylvestre",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Arc Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Dagues de Jet",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Lance d'Elfe Sylvestre",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Lame de facture Elfique",
+            "Cape Elfique",
+            "Créature des Bois"
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Celeborn",
+        "points": "130",
+        "equipements": [],
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 4,
+            "A": 3,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Armure Lourde",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lame de facture Elfique (épée bâtarde)",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Terreur",
+            "Seigneur de l'Ouest",
+            "Seigneur de la Lorien",
+            "Gardes Galadhrim *"
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Aura de Vaillance",
+                "valeur": "2+"
+            },
+            {
+                "nom": "Lames Enchantées",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+"
+            }
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Galadriel",
+        "points": "130",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 6,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Résistance Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Miroire de Galadriel",
+                "valeur": 25,
+                "action": "addmiroir"
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Terreur",
+            "La Dame de la Lothlorien"
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Lumière Aveuglante",
+                "valeur": "2+"
+            },
+            {
+                "nom": "Bénédiction des Valar",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+"
+            }
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Haldir",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Armure Lourde",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 2
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Archer Expert",
+            "Alliés jusqu'à la Fin",
+            "Coup de Grâce",
+            "Lame de facture Elfique (épée bâtarde)"
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Maitre des Orages Galadhrim",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Pouvoirs de la Nature",
+            "Lame de facture Elfique"
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Appel aux Vents",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Lames Enchantées",
+                "valeur": "4+"
+            }
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Orophin",
+        "points": "85",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 6,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Force Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Tourbillon de lames",
+            "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "personnage": "Rumil",
+        "points": "85",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "options": [
+
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Parade Eclair",
+            "Lame de facture Elfique"
+        ]
+    }, {
+        "faction": "Lothlorien",
+        "personnage": "Sentinelle Elfe Sylvestre",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Lai Enchanté",
+            "Cape Elfique",
+            "Arc Elfique",
+            "Lame de facture Elfique"
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "L'Hymne d'Elbereth",
+                "valeur": ""
+            },
+            {
+                "nom": "Eldamar Madrigal",
+                "valeur": ""
+            },
+            {
+                "nom": "Le Lai de Gondolin",
+                "valeur": ""
+            }
         ]
     }
 ]

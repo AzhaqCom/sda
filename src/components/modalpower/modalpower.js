@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import pouvoirData from '../../pouvoir.json';
 
-function Modalpower({ powerName }) {
+function Modalpower({ powerName, powerLancement }) {
     const [showPopup, setShowPopup] = useState(false);
-    const [pouvoirEffect, setPouvoirEffect] = useState('');
     const [selectedPouvoir, setSelectedPouvoir] = useState(null);
 
     const togglePopup = () => {
@@ -16,28 +15,29 @@ function Modalpower({ powerName }) {
 
         if (pouvoir) {
             setSelectedPouvoir(pouvoir);
-            setPouvoirEffect(pouvoir.effet);
         } else {
-            setPouvoirEffect("Aucun effet trouvé pour cette règle spéciale.");
+            setSelectedPouvoir(null);
         }
     }, [powerName]);
+
     return (
         selectedPouvoir && (
-            <div className='pouvoir-container' >
+            <div className='pouvoir-container'>
                 <div className="pouvoir-name" onClick={togglePopup}>{powerName}</div>
                 <div className="pouvoir-porte">{selectedPouvoir.portee}</div>
-                <div className="pouvoir-lancement">{selectedPouvoir.valeurLancement}</div>
+                {powerLancement && (<div className="pouvoir-lancement">{powerLancement}</div>)} 
 
-            
                 {showPopup && (
                     <div className="popup" onClick={togglePopup}>
                         <div className="popup-content">
                             <h3 className='pouvoir-title'>{powerName}</h3>
-                            <p className='pouvoir-effect'>{pouvoirEffect}</p>
                             {selectedPouvoir && (
                                 <div>
-                                    <p>Effet: {selectedPouvoir.effet}</p>
-                                    <p>Effet Canalise: {selectedPouvoir.effetCanalise}</p>
+                                    <p className='rule-effect'><b>Effet: </b>{selectedPouvoir.effet}</p>
+                                    {selectedPouvoir.effetCanalise && (
+                                        <p><b>Effet Canalise</b>: {selectedPouvoir.effetCanalise}</p>
+
+                                    )}
                                 </div>
                             )}
                         </div>
@@ -46,9 +46,6 @@ function Modalpower({ powerName }) {
             </div>
         )
     );
-
-
-
 }
 
 export default Modalpower;
