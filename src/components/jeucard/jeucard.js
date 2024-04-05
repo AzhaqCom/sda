@@ -196,7 +196,7 @@ function JeuCard({ selectedCharacter }) {
                                 ...prevPersonnage.caracteristiques,
                                 [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] - 2
                             },
-                            points: parseInt(prevPersonnage.points) + valeur
+                            points: parseInt(prevPersonnage.points) - valeur
                         }));
                     } else {
                         setPersonnage(prevPersonnage => ({

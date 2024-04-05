@@ -34,7 +34,16 @@ function Jeu() {
             return prevSelectedCharacters.filter(name => name !== characterName);
         });
     };
-
+    const updateCharacter = (updatedCharacter) => {
+        setSelectedCharacters(prevSelectedCharacters => {
+            return prevSelectedCharacters.map(character => {
+                if (character === updatedCharacter.personnage) {
+                    return updatedCharacter;
+                }
+                return character;
+            });
+        });
+    };
     // Regrouper les personnages par faction
     const groupedCharacters = PersoData.reduce((acc, character) => {
         acc[character.faction] = acc[character.faction] || [];
@@ -57,7 +66,7 @@ function Jeu() {
             <button className='btn-add' onClick={handleAddCharacter}>Ajouter</button>
             {selectedCharacters.map((character, index) => (
                 <div key={index} className='card'>
-                    <JeuCard selectedCharacter={character} />
+                    <JeuCard selectedCharacter={character} updateCharacter={updateCharacter}/>
                     <button className='btnsuppr' onClick={() => handleRemoveCharacter(character)}>Supprimer</button>
                 </div>
             ))}
