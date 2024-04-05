@@ -1460,8 +1460,8 @@
             }
         ],
         "regles": [
-        "Créature des Bois",
-        "Tir Mortel"
+            "Créature des Bois",
+            "Tir Mortel"
         ]
     },
     {
@@ -1497,9 +1497,254 @@
             }
         ],
         "regles": [
-        "Créature des Bois",
-        "Maîtresse des Lames",
-        "Rage Vengeresse"
+            "Créature des Bois",
+            "Maîtresse des Lames",
+            "Rage Vengeresse"
+        ]
+    },
+    {
+        "faction": "Mirkwood",
+        "personnage": "Capitaine des Gardes du Palais",
+        "points": "75",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Garde du Corps",
+            "Créature des Bois",
+            "Gardes du Roi"
+        ]
+    },
+    {
+        "faction": "Mirkwood",
+        "personnage": "Capitaine Ranger de la Forêt Noire",
+        "points": "75",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Créature des Bois",
+            "Guerriers aux Couteaux"
+        ]
+    },
+    {
+        "faction": "Mirkwood",
+        "personnage": "Capitaine de la Forêt Noire",
+        "points": "75",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Créature des Bois",
+            "Vouge Elfique"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Balin, Champion d'Erebor",
+        "points": "75",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 3,
+            "D": 8,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 2,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Longue Barbe",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Bifur, Champion d'Erebor",
+        "points": "65",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/3+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Jet de Pierres (Portée 8\", Force 1)",
+            "Fer de Hache Incrusté",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Bofur, Champion d'Erebor",
+        "points": "65",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Résistant",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Bombur, Champion d'Erebor",
+        "points": "65",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Robuste",
+            "Maladroit",
+            "Regain de Moral",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Capitaine des Monts de Fer",
+        "points": "80",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Bouquetin de Guerre",
+                "valeur": 10,
+                "action": "addbouquetin"
+            }
+        ],
+        "regles": [
+            "Maître Stratège (5+)",
+            "Mur de Boucliers"
         ]
     }
 ]

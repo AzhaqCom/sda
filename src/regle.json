@@ -343,5 +343,61 @@
         "nom": "Rage Vengeresse",
         "effet": "Si Kíli, Champion d'Erebor est dans votre armée et est tué, la Force de Tauriel augmente immédiatement à 5 et sa Défense chute à 4, et ce jusqu'à la fin de la partie.",
         "etat": "passif"
+    },
+    {
+        "nom": "Gardes du Roi",
+        "effet": "Quand elle est à moins de 3\" de Thranduil, cette figurine reçoit un bonus de +1 à sa valeur de Combat",
+        "etat": "passif"
+    },
+    {
+        "nom": "Guerriers aux Couteaux",
+        "effet": "Les Rangers de la Forêt Noire bénéficient d'un bonus d'une Attaque supplémentaire pour chaque figurine ennemie contre laquelle ils sont engagés après la première (Dans une limite de 3 Attaques maximum). Ce bonus est déterminé au début de chaque Combat et dure jusqu'à ce que tous les coups du combat aient été portés.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Vouge Elfique",
+        "effet": "Les vouges peuvent être utilisées comme lances de facture elfique ou comme épées de facture elfique bâtardes. Un porteur de vouge peut aussi choisir, en alternative, d'utiliser la règle Se Protéger Derrière Son Bouclier.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Longue Barbe",
+        "effet": "Balin peut dépenser un point de Volonté pour relancer le jet d'Initiative",
+        "etat": "actif"
+    },
+    {
+        "nom": "Protecteur Attitré (Thorin)",
+        "effet": "Un Protecteur Attitré est assigné à la garde d'une figurine bien spécifique, mentionnée entre crochets après la Règle Spéciale. Tant que la figurine désignée est en vie, il réussit tous les tests de Bravoure qu'il est amené à effectuer.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Fer de Hache Incrusté",
+        "effet": "Si Bifur gagne un combat, il peut choisir de donner un coup de tête en ne portant qu'une seule Attaque au lieu de frapper normalement. Mais s'il parvient à blesser son adversaire, le fer de hache se retire de sa tête et il peut dès lors déclarer un Elan Héroïque à chaque tour sans dépenser de point de Puissance.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Jet de Pierres (Portée 8\", Force 1)",
+        "effet": "Jet de Pierres (Portée 8\", Force 1)",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Résistant",
+        "effet": "Quand Bofur est ciblé par un Pouvoir Magique ou une Règle spéciale, il en ignore les effets sur 2+ (jet modifiable par la Puissance). S'il veut Résister à un Pouvoir Magique avec sa Volonté, il doit le faire avant le jet de cette règle-ci.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Robuste",
+        "effet": "Quand Bombur porte ses coups, il peut choisir d'user du coup spécial Balayage comme s'il avait une masse.",
+        "etat": "actif"
+    },    {
+        "nom": "Maladroit",
+        "effet": "Bombur ne peut pas déclarer d'Elan Héroïque. De plus, il doit relancer les 6 à ses jets de Saut et d'Escalade.",
+        "etat": "passif"
+    },    {
+        "nom": "Regain de Moral",
+        "effet": "Une fois par tour, n'importe quand durant la Phase de Mouvement de Bombur, un Héros en contact avec lui peut regagner un point de Volonté dépensé sur 4+.",
+        "etat": "actif"
     }
+
+
+   
 ]

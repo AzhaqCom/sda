@@ -330,6 +330,41 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
+                }else if (option.action === 'addbouquetin') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 8
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    const updatedCapacites = {
+                        ...selectedCharacter.capacites,
+                        PvMonture: 1
+                    };
+                    let updatedRegles =[...selectedCharacter.regles,'Montagnard','Charge Dévastatrice']
+                    const newServant = {
+                        personnage: 'Bouquetin de Guerre',
+                        caracteristiques: {
+                            M: '8',
+                            C: '2/6+',
+                            F: 4,
+                            D: 5,
+                            A: '',
+                            B: 3
+                        }
+                    };
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [newServant],
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        regles:updatedRegles,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 }
             }
         } else {
@@ -550,6 +585,33 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         points: updatedPoints,
                         regles:updatedRegles,
 
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                }else if (option.action === 'addbouquetin') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 5
+                    };
+                    const {PvMonture, ...updatedCapacites}=selectedCharacter.capacites
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+                
+                    let updatedRegles =[
+                        "Maître Stratège (5+)",
+                        "Mur de Boucliers"
+                    ]
+                
+                  
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                  
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        regles:updatedRegles,
+                        capacites: updatedCapacites
                     };
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
