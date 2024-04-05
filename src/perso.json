@@ -1006,7 +1006,6 @@
         "faction": "Lothlorien",
         "personnage": "Celeborn",
         "points": "130",
-      
         "caracteristiques": {
             "M": 6,
             "C": "6/3+",
@@ -1281,7 +1280,6 @@
             "Défense Héroïque"
         ],
         "options": [
-
             {
                 "nom": "Cape Elfique",
                 "valeur": 5,
@@ -1296,7 +1294,8 @@
             "Parade Eclair",
             "Lame de facture Elfique"
         ]
-    }, {
+    },
+    {
         "faction": "Lothlorien",
         "personnage": "Sentinelle Elfe Sylvestre",
         "points": "60",
@@ -1340,6 +1339,167 @@
                 "nom": "Le Lai de Gondolin",
                 "valeur": ""
             }
+        ]
+    },
+    {
+        "faction": "Mirkwood",
+        "personnage": "Thranduil, Roi du Royaume Sylvestre",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/2+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Épée de facture elfique supplémentaire",
+                "valeur": 30,
+                "action": "epethranduil"
+            },
+            {
+                "nom": "Diadème des Rois",
+                "valeur": 20,
+                "action": "adddiademe"
+            },
+            {
+                "nom": "Elan",
+                "valeur": 20,
+                "action": "addelan"
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 2
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Créature des Bois",
+            "Pied Léger",
+            "Cape Elfique",
+            "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Mirkwood",
+        "personnage": "Legolas vertefeuille, Prince de la Forêt Noire",
+        "points": "95",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 3,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Orcrist",
+                "valeur": 10,
+                "action": "orcrist"
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+        "Créature des Bois",
+        "Tir Mortel"
+        ]
+    },
+    {
+        "faction": "Mirkwood",
+        "personnage": "Tauriel",
+        "points": "85",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 3,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Arc Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+        "Créature des Bois",
+        "Maîtresse des Lames",
+        "Rage Vengeresse"
         ]
     }
 ]

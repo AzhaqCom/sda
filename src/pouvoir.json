@@ -105,7 +105,16 @@
   {
     "nom": "Le Lai de Gondolin",
     "portee": "°",
-    "effet": "Ces vers emplis de chagrin évoquent la puissante cité Elfe de Gondolin – un nom qui terrorise instantanément n'importe quelle créature maléfique. Une Sentinelle qui chante ce poème cause la Terreur jusqu'à la fin du tour."
+    "effet": "Ces vers emplis de chagrin évoquent la puissante cité Elfe de Gondolin - un nom qui terrorise instantanément n'importe quelle créature maléfique. Une Sentinelle qui chante ce poème cause la Terreur jusqu'à la fin du tour."
   
+  },{
+    "nom":"Aura de Confusion",
+    "portee":"°",
+    "effet":"Durée : Épuisement\nCe pouvoir cible le lanceur. Tant que ce pouvoir est en jeu, le lanceur et toutes les figurines alliées à moins de 6\" de lui causent la Terreur."
+  },
+  {
+    "nom":"Colère de la Nature",
+    "portee":"°",
+    "effet":"Ce pouvoir affecte toutes les figurines ennemies à portée. Toutes les figurines ennemies à moins de 3\" du lanceur sont jetées à terre. Les figurines de Cavalerie sont automatiquement traitées comme si elles avaient fait un Vol plané du tableau de chute de Cavalier - le cavalier et la monture sont jetés à terre."
   }
 ]

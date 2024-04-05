@@ -298,5 +298,50 @@
         "nom": "Lai Enchanté",
         "effet": "Une Sentinelle peut chanter un chant par tour, tant qu'elle n'est pas engagée au combat. Cela fonctionne exactement comme un pouvoir magique, à la différence près qu'il est lancé et réussi automatiquement sans dépense de point de Volonté, et qu'il n'y a aucune possibilité d'y résister.",
         "etat": "actif"
+    },
+    {
+        "nom": "Fine Lame",
+        "effet": "Tant qu'il a le mot-clef Infanterie, Thranduil, Roi du Royaume Sylvestre bénéficie d'un bonus de +1 Attaque. De surcroit, Thranduil, Roi du Royaume Sylvestre bénéficie d'un bonus d'une Attaque supplémentaire pour chaque figurine ennemie contre laquelle il est engagé après la première. Ce bonus est déterminé au début de chaque Combat et dure jusqu'à ce que tous les coups du combat aient été portés.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Diadème des Rois",
+        "effet": "Cette couronne permet à Thranduil, Roi du Royaume Sylvestre de lancer les Pouvoirs Magiques Aura de Confusion et Colère de la Nature une fois par partie. Le sort est réussi automatiquement, comme si Thranduil avait obtenu 6 au dé et aucun point de Volonté n'a à être dépensé.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Elan de Thranduil",
+        "effet": "Si Thranduil a chargé au combat monté sur son Élan, ses Coups sont portés avec une Force de 5.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Tir Mortel",
+        "effet": "Legolas peut utiliser son Arc trois fois dans la Phase de Tir au lieu d'une seule. Chacun de ces tirs peut cibler un adversaire différent. Sinon, Legolas peut choisir de ne tirer qu'une seule fois, mais dans ce cas il touchera toujours sur 2+, sans aucune autre considération (Sur la Trajectoire, cible Engagée au Combat ni aucun autre modificateur comme un Pouvoir Magique). Si Legolas utilise ce tir unique pour cibler une figurine de Cavalerie, il peut choisir de tirer sur le cavalier ou la monture.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Orcrist",
+        "effet": "Orcrist est une Épée bâtarde de facture elfique et qui a la règle spéciale Fléau (Orques, Gobelins et Uruk-Hai).\nDe plus, le porteur de Orcrist gagne la règle spéciale Terreur (Orques, Gobelins et Uruk-Hai).",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Fléau (x)",
+        "effet": "Les armes disposant de cette règle infligent 1D3 Blessures au lieu d'une seule, par coup touchant au but (non sauvé par du Destin), contre une race/ espèce/faction bien spécifique, précisée dans la parenthèse. Ainsi, une arme dotée de la Règle Spéciale Fléau (Orques) inflige 1D3 Blessures au lieu d'une seule, par coup touchant au but, aux figurines ayant le mot-clef Orque",
+        "etat": "actif"
+    },
+    {
+        "nom": "Terreur (x)",
+        "effet": "Quand une figurine souhaite charger un adversaire qui cause la Terreur (même si cette figurine est actuellement hors de portée), elle doit d'abord, avant de faire n'importe quoi d'autre, effectuer un test de Bravoure. Si le test est réussi, la charge se passe normalement. Si le test est raté, elle n'a pas le droit de charger et reste figée sur place pour le reste du tour. Parfois, la Terreur est dirigée contre un certain type d'ennemi. Dans ce cas, les créatures affectées par la Terreur sont clairement indiquées. Typiquement, il peut y avoir une Terreur (Orque) qui ne demandera un Test de Bravoure qu'aux figurines Orques.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Maîtresse des Lames",
+        "effet": "Tauriel bénéficie d'un bonus d'une Attaque supplémentaire pour chaque figurine ennemie contre laquelle elle est engagée après la première. Ce bonus est déterminé au début de chaque Combat et dure jusqu'à ce que tous les coups du combat aient été portés.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Rage Vengeresse",
+        "effet": "Si Kíli, Champion d'Erebor est dans votre armée et est tué, la Force de Tauriel augmente immédiatement à 5 et sa Défense chute à 4, et ce jusqu'à la fin de la partie.",
+        "etat": "passif"
     }
 ]
