@@ -255,7 +255,7 @@
         },
         "capacites": {
             "Puissance": 2,
-            "Volonté": 2,
+            "Volonté": 1,
             "Destin": 1,
             "Points de vie": 2,
             "Kill": 0
@@ -1006,7 +1006,7 @@
         "faction": "Lothlorien",
         "personnage": "Celeborn",
         "points": "130",
-        "equipements": [],
+      
         "caracteristiques": {
             "M": 6,
             "C": "6/3+",
@@ -1033,7 +1033,7 @@
                 "valeur": 10,
                 "action": {
                     "caracteristique": "D",
-                    "valeur": 1
+                    "valeur": 2
                 }
             },
             {

@@ -84,13 +84,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] + action.valeur
                     };
 
-                    // Vérifie si l'option est Armure Lourde et si le personnage a déjà des équipements
-                    if (option.nom === 'Armure Lourde' && selectedCharacter.equipements !== undefined && !selectedCharacter.equipements.length > 0) {
-                        updatedCaracteristiques = {
-                            ...updatedCaracteristiques,
-                            [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] + 2
-                        };
-                    }
+                
 
                     const updatedPoints = parseInt(selectedCharacter.points) + valeur;
 
@@ -269,14 +263,6 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         ...selectedCharacter.caracteristiques,
                         [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] - action.valeur
                     };
-
-                    // Vérifie si l'option est Armure Lourde et si le personnage a déjà des équipements
-                    if (option.nom === 'Armure Lourde' && selectedCharacter.equipements !== undefined && !selectedCharacter.equipements.length > 0) {
-                        updatedCaracteristiques = {
-                            ...updatedCaracteristiques,
-                            [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] - 2
-                        };
-                    }
 
                     const updatedPoints = parseInt(selectedCharacter.points) - valeur;
 
@@ -468,9 +454,9 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                                             <tr key={capacite}>
                                                 <td>{capacite}</td>
                                                 <td>
-                                                    <button onClick={() => handleChangeCapaciteServant(index, capacite, 'decrease')}>-</button>
+                                                    <button className='btnmod' onClick={() => handleChangeCapaciteServant(index, capacite, 'decrease')}>-</button>
                                                     {value}
-                                                    <button onClick={() => handleChangeCapaciteServant(index, capacite, 'increase')}>+</button>
+                                                    <button className='btnmod' onClick={() => handleChangeCapaciteServant(index, capacite, 'increase')}>+</button>
                                                 </td>
                                             </tr>
                                         ))}
