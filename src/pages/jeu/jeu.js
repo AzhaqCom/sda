@@ -19,19 +19,30 @@ function Jeu() {
 
     const handleAddCharacter = () => {
         if (selectedCharacter) {
-            setSelectedCharacters(prevSelectedCharacters => {
-                if (!prevSelectedCharacters.includes(selectedCharacter)) {
-                    return [...prevSelectedCharacters, selectedCharacter];
-                }
-                return prevSelectedCharacters;
-            });
-            setSelectedCharacter('');
+            const selectedCharacterObj = PersoData.find(character => character.personnage === selectedCharacter);
+            if (selectedCharacterObj) {
+                setSelectedCharacters(prevSelectedCharacters => {
+                    return [...prevSelectedCharacters, selectedCharacterObj];
+                });
+                setSelectedCharacter('');
+            }
         }
     };
 
     const handleRemoveCharacter = (characterName) => {
         setSelectedCharacters(prevSelectedCharacters => {
-            return prevSelectedCharacters.filter(name => name !== characterName);
+            return prevSelectedCharacters.filter(character => character.personnage !== characterName);
+        });
+    };
+
+    const updateCharacter = (updatedCharacter) => {
+        setSelectedCharacters(prevSelectedCharacters => {
+            return prevSelectedCharacters.map(character => {
+                if (character.personnage === updatedCharacter.personnage) {
+                    return updatedCharacter;
+                }
+                return character;
+            });
         });
     };
 
@@ -49,7 +60,7 @@ function Jeu() {
                 {Object.keys(groupedCharacters).map((faction, index) => (
                     <optgroup key={index} label={faction}>
                         {groupedCharacters[faction].map((character, characterIndex) => (
-                            <option key={characterIndex} value={character.personnage}>{character.personnage} ({character.points }pts)</option>
+                            <option key={characterIndex} value={character.personnage}>{character.personnage} ({character.points}pts)</option>
                         ))}
                     </optgroup>
                 ))}
@@ -57,8 +68,9 @@ function Jeu() {
             <button className='btn-add' onClick={handleAddCharacter}>Ajouter</button>
             {selectedCharacters.map((character, index) => (
                 <div key={index} className='card'>
-                    <JeuCard selectedCharacter={character} />
-                    <button className='btnsuppr' onClick={() => handleRemoveCharacter(character)}>Supprimer</button>
+                    
+                    <JeuCard selectedCharacter={character} updateCharacter={updateCharacter}/>
+                    <button className='btnsuppr' onClick={() => handleRemoveCharacter(character.personnage)}>Supprimer</button>
                 </div>
             ))}
         </div>

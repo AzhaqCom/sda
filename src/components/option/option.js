@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-function Option({ optionName, optionValue, onChange }) {
+function Option({ optionName, optionValue, isChecked, onChange }) {
     const handleCheckboxChange = (event) => {
         const isChecked = event.target.checked;
         onChange(optionName, isChecked);
@@ -9,11 +9,11 @@ function Option({ optionName, optionValue, onChange }) {
     return (
         <div>
             <label>
-                <input type="checkbox" onChange={handleCheckboxChange} />
+                <input type="checkbox" checked={isChecked || false} onChange={handleCheckboxChange} />
                 {optionName} : {optionValue}pts
             </label>
         </div>
     );
 }
 
-export default Option
+export default Option;

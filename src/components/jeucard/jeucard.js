@@ -1,309 +1,411 @@
-import React, { useEffect, useState } from 'react';
-import PersoData from '../../perso.json';
+import React from 'react';
 import './jeucard.css';
 import Modal from '../modal/modal';
 import Option from '../option/option';
 import Modalpower from '../modalpower/modalpower';
-function JeuCard({ selectedCharacter }) {
-    const [personnage, setPersonnage] = useState(null);
-
-    useEffect(() => {
-        const foundCharacter = PersoData.find(character => character.personnage === selectedCharacter);
-        setPersonnage(foundCharacter);
-
-    }, [selectedCharacter]);
+function JeuCard({ selectedCharacter, updateCharacter }) {
 
     const handleChangeCapacite = (capacite, operation) => {
-        setPersonnage(prevPersonnage => {
-            const updatedCapacites = { ...prevPersonnage.capacites };
+        const updatedCapacites = { ...selectedCharacter.capacites };
+
+        // Met à jour la valeur de la capacité selon l'opération
+        updatedCapacites[capacite] = operation === 'increase' ? selectedCharacter.capacites[capacite] + 1 : selectedCharacter.capacites[capacite] - 1;
+
+        // Crée une nouvelle copie du personnage avec les capacités mises à jour
+        const updatedCharacter = {
+            ...selectedCharacter,
+            capacites: updatedCapacites
+        };
+        updateCharacter(updatedCharacter);
+    };
+    const handleChangeCapaciteServant = (servantIndex, capacite, operation) => {
+        // Assurez-vous que l'index du servant est valide
+        if (servantIndex >= 0 && servantIndex < selectedCharacter.servants.length) {
+            // Faites une copie du servant que vous voulez mettre à jour
+            const updatedServant = { ...selectedCharacter.servants[servantIndex] };
+
+            // Faites une copie des capacités du servant
+            const updatedCapacites = { ...updatedServant.capacites };
 
             // Met à jour la valeur de la capacité selon l'opération
             updatedCapacites[capacite] = operation === 'increase' ? updatedCapacites[capacite] + 1 : updatedCapacites[capacite] - 1;
 
-            return {
-                ...prevPersonnage,
-                capacites: updatedCapacites
+            // Met à jour les capacités du servant dans la copie
+            updatedServant.capacites = updatedCapacites;
+
+            // Faites une copie du personnage avec le servant mis à jour
+            const updatedCharacter = {
+                ...selectedCharacter,
+                servants: [
+                    ...selectedCharacter.servants.slice(0, servantIndex), // Avant le servant mis à jour
+                    updatedServant, // Servant mis à jour
+                    ...selectedCharacter.servants.slice(servantIndex + 1), // Après le servant mis à jour
+                ],
             };
-        });
+
+            // Appelez la fonction de mise à jour du personnage fournie par le parent
+            updateCharacter(updatedCharacter);
+        }
     };
 
     const handleChangeOption = (optionName, isChecked) => {
         if (isChecked) {
-            // Logique pour modifier les caractéristiques du personnage en fonction de l'option sélectionnée
-            const option = personnage.options.find(option => option.nom === optionName);
+            const option = selectedCharacter.options.find(option => option.nom === optionName);
 
             if (option) {
                 const { action, valeur } = option;
-
+                option.isChecked = true;
                 if (action.caracteristique === 'M') {
                     // Logique pour modifier la vitesse de la monture
-                    setPersonnage(prevPersonnage => ({
-                        ...prevPersonnage,
-                        caracteristiques: {
-                            ...prevPersonnage.caracteristiques,
-                            [action.caracteristique]: action.valeur
-                        },
-                        points: parseInt(prevPersonnage.points) + valeur,
-                        capacites: {
-                            ...prevPersonnage.capacites,
-                            PvMonture: 1
-                        }
-                    }));
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        [action.caracteristique]: action.valeur
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    const updatedCapacites = {
+                        ...selectedCharacter.capacites,
+                        PvMonture: 1
+                    };
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 } else if (action.caracteristique === 'D') {
-                    // Logique pour augmenter la défense de 1
-                    if (option.nom === 'Armure Lourde' && personnage.equipements !== undefined && !personnage.equipements.length > 0) {
-                        setPersonnage(prevPersonnage => ({
-                            ...prevPersonnage,
-                            caracteristiques: {
-                                ...prevPersonnage.caracteristiques,
-                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] + 2
-                            },
-                            points: parseInt(prevPersonnage.points) + valeur
-                        }));
-                    } else {
-                        setPersonnage(prevPersonnage => ({
-                            ...prevPersonnage,
-                            caracteristiques: {
-                                ...prevPersonnage.caracteristiques,
-                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] + action.valeur
-                            },
-                            points: parseInt(prevPersonnage.points) + valeur
-                        }));
+                    // Logique pour augmenter ou diminuer la défense
+                    let updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] + action.valeur
+                    };
+
+                    // Vérifie si l'option est Armure Lourde et si le personnage a déjà des équipements
+                    if (option.nom === 'Armure Lourde' && selectedCharacter.equipements !== undefined && !selectedCharacter.equipements.length > 0) {
+                        updatedCaracteristiques = {
+                            ...updatedCaracteristiques,
+                            [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] + 2
+                        };
                     }
 
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 } else if (action.effet === 'regles') {
                     // Logique pour les règles spéciales
-                    setPersonnage(prevPersonnage => {
-                        // Utilisez prevPersonnage à l'intérieur de cette fonction de rappel
-                        const updatedRegles = [...prevPersonnage.regles, option.nom];
-                        let updatedCaracteristiques = { ...prevPersonnage.caracteristiques };
-                        let updatedPoints = parseInt(prevPersonnage.points) + valeur;
+                    let updatedRegles = [...selectedCharacter.regles, option.nom];
+                    let updatedCaracteristiques = { ...selectedCharacter.caracteristiques };
+                    let updatedPoints = parseInt(selectedCharacter.points) + valeur;
 
-                        if (option.nom === 'Bannière de Minas Tirith') {
-                            const updatedC = prevPersonnage.caracteristiques['C'];
-                            const newC = updatedC.split('/')[0];
-                            const newCValue = parseInt(newC) + 1;
-                            const newCStr = newCValue + '/4+';
-                            updatedCaracteristiques = {
-                                ...prevPersonnage.caracteristiques,
-                                C: newCStr
+                    // Vérifie si l'option est Bannière de Minas Tirith pour mettre à jour la caractéristique C
+                    if (option.nom === 'Bannière de Minas Tirith') {
+                        const updatedC = selectedCharacter.caracteristiques['C'];
+                        const newC = updatedC.split('/')[0];
+                        const newCValue = parseInt(newC) + 1;
+                        const newCStr = newCValue + '/4+';
+                        updatedCaracteristiques = {
+                            ...selectedCharacter.caracteristiques,
+                            C: newCStr
+                        };
+                    }
+
+                    // Crée une nouvelle copie du personnage avec les règles spéciales, les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        regles: updatedRegles,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                } else if (action.effet === 'servant') {
+                    // Logique pour les servants
+                    let updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    const updatedServants = selectedCharacter.servants.map((servant, index) => {
+                        if (index === 0) {
+                            // Mettre à jour les caractéristiques du premier servant
+                            return {
+                                ...servant,
+                                caracteristiques: {
+                                    ...servant.caracteristiques,
+                                    M: 6,
+                                    C: "4/4+",
+                                    F: 4,
+                                    D: 6,
+                                    A: 2,
+                                    B: 4
+                                },
+                                capacites: {
+                                    ...servant.capacites,
+                                    Puissance: 2,
+                                    "Points de vie": 2
+                                },
+                                personnage: 'Capitaine de Minas Tirith'
                             };
+                        } else {
+                            // Ne rien changer pour les autres servants
+                            return servant;
                         }
-
-                        return {
-                            ...prevPersonnage,
-                            regles: updatedRegles,
-                            caracteristiques: updatedCaracteristiques,
-                            points: updatedPoints
-                        };
                     });
-                }
-                else if (action.effet === 'servant') {
-                    setPersonnage(prevPersonnage => {
-                        let updatedPoints = parseInt(prevPersonnage.points) + valeur;
-                        const updatedServants = prevPersonnage.servants.map((servant, index) => {
-                            if (index === 0) {
-                                // Mettre à jour les caractéristiques du premier servant
-                                return {
-                                    ...servant,
-                                    caracteristiques: {
-                                        ...servant.caracteristiques,
-                                        M: 6,
-                                        C: "4/4+",
-                                        F: 4,
-                                        D: 6,
-                                        A: 2,
-                                        B: 4
 
-                                    },
-                                    capacites: {
-                                        ...servant.capacites,
-                                        Puissance: 2,
-                                        "Points de vie": 2
-                                    },
-                                    personnage: 'Capitaine de Minas Tirith'
-                                };
-                            } else {
-                                // Ne rien changer pour les autres servants
-                                return servant;
-                            }
-                        });
+                    // Crée une nouvelle copie du personnage avec les servants et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: updatedServants,
+                        points: updatedPoints
+                    };
 
-                        return {
-                            ...prevPersonnage,
-                            servants: updatedServants,
-                            points: updatedPoints
-                        };
-                    });
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 } else if (option.action === 'addmiroir') {
-                    setPersonnage(prevPersonnage => {
-                        const updatedRegles = [...prevPersonnage.regles, 'Miroir de Galadriel'];
-                        const newServant = {
-                            personnage: 'Miroir de Galadriel',
-                            caracteristiques: {
-                                M: '',
-                                C: "",
-                                F: '',
-                                D: 8,
-                                A: '',
-                                B: ''
-                            },
-                            capacites: {
-           
-                                "Points de vie": 3
-                            }
-                        };
-                
-                        return {
-                            ...prevPersonnage,
-                            servants: [newServant],
-                            regles: updatedRegles,
-                            points: parseInt(prevPersonnage.points) + valeur
-                        };
-                    });
+                    // Logique pour ajouter le miroir de Galadriel
+                    const updatedRegles = [...selectedCharacter.regles, 'Miroir de Galadriel'];
+                    const newServant = {
+                        personnage: 'Miroir de Galadriel',
+                        caracteristiques: {
+                            M: '',
+                            C: "",
+                            F: '',
+                            D: 8,
+                            A: '',
+                            B: ''
+                        },
+                        capacites: {
+                            "Points de vie": 3
+                        }
+                    };
+
+                    // Crée une nouvelle copie du personnage avec le nouveau servant et les règles spéciales mises à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [newServant],
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) + valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                } else if (option.action === 'addgripoil') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 12
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    const updatedCapacites = {
+                        ...selectedCharacter.capacites,
+                        PvMonture: 1
+                    };
+                    const newServant = {
+                        personnage: 'Gripoil',
+                        caracteristiques: {
+                            M: '12',
+                            C: "",
+                            F: 4,
+                            D: 5,
+                            A: '',
+                            B: 5
+                        },
+                        capacites: {
+                            "Volonté": 2,
+                            "Destin": 1,
+                            "Points de vie": 1
+                        }
+                    };
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [newServant],
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 }
-                
             }
         } else {
             // Logique pour annuler les effets de l'option décochée
-            const option = personnage.options.find(option => option.nom === optionName);
+            const option = selectedCharacter.options.find(option => option.nom === optionName);
 
             if (option) {
                 const { action, valeur } = option;
-
+                option.isChecked = false;
                 if (action.caracteristique === 'M') {
                     // Logique pour annuler les effets sur la monture
-                    setPersonnage(prevPersonnage => {
-                        // Supprimer la capacité PvMonture
-                        const { PvMonture, ...updatedCapacites } = prevPersonnage.capacites;
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        [action.caracteristique]: 6
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+                    const { PvMonture, ...updatedCapacites } = selectedCharacter.capacites;
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        capacites: updatedCapacites
+                    };
 
-                        return {
-                            ...prevPersonnage,
-                            caracteristiques: {
-                                ...prevPersonnage.caracteristiques,
-                                [action.caracteristique]: 6
-                            },
-                            points: parseInt(prevPersonnage.points) - valeur,
-                            capacites: updatedCapacites
-                        };
-                    });
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 } else if (action.caracteristique === 'D') {
-                    // Logique pour réduire la défense de 1
-                    if (option.nom === 'Armure Lourde' && personnage.equipements !== undefined && !personnage.equipements.length > 0) {
-                        setPersonnage(prevPersonnage => ({
-                            ...prevPersonnage,
-                            caracteristiques: {
-                                ...prevPersonnage.caracteristiques,
-                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] - 2
-                            },
-                            points: parseInt(prevPersonnage.points) + valeur
-                        }));
-                    } else {
-                        setPersonnage(prevPersonnage => ({
-                            ...prevPersonnage,
-                            caracteristiques: {
-                                ...prevPersonnage.caracteristiques,
-                                [action.caracteristique]: prevPersonnage.caracteristiques[action.caracteristique] - action.valeur
-                            },
-                            points: parseInt(prevPersonnage.points) - valeur
-                        }));
+                    // Logique pour réduire la défense
+                    let updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] - action.valeur
+                    };
+
+                    // Vérifie si l'option est Armure Lourde et si le personnage a déjà des équipements
+                    if (option.nom === 'Armure Lourde' && selectedCharacter.equipements !== undefined && !selectedCharacter.equipements.length > 0) {
+                        updatedCaracteristiques = {
+                            ...updatedCaracteristiques,
+                            [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] - 2
+                        };
                     }
 
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 } else if (action.effet === 'regles') {
-                    // Logique pour les règles spéciales
-                    setPersonnage(prevPersonnage => {
-                        // Utilisez prevPersonnage à l'intérieur de cette fonction de rappel
+                    // Logique pour annuler les règles spéciales
+                    let updatedCaracteristiques = { ...selectedCharacter.caracteristiques };
+                    let updatedPoints = parseInt(selectedCharacter.points) - valeur;
 
-                        let updatedCaracteristiques = { ...prevPersonnage.caracteristiques };
-                        let updatedPoints = parseInt(prevPersonnage.points) - valeur;
+                    // Vérifie si l'option est Bannière de Minas Tirith pour mettre à jour la caractéristique C
+                    if (option.nom === 'Bannière de Minas Tirith') {
+                        const updatedC = selectedCharacter.caracteristiques['C'];
+                        const newC = updatedC.split('/')[0];
+                        const newCValue = parseInt(newC) - 1;
+                        const newCStr = newCValue + '/4+';
+                        updatedCaracteristiques = {
+                            ...selectedCharacter.caracteristiques,
+                            C: newCStr
+                        };
+                    }
 
-                        if (option.nom === 'Bannière de Minas Tirith') {
-                            const updatedC = prevPersonnage.caracteristiques['C'];
-                            const newC = updatedC.split('/')[0];
-                            const newCValue = parseInt(newC) - 1;
-                            const newCStr = newCValue + '/4+';
-                            updatedCaracteristiques = {
-                                ...prevPersonnage.caracteristiques,
-                                C: newCStr
+                    // Crée une nouvelle copie du personnage avec les règles spéciales, les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        regles: selectedCharacter.regles.filter(rule => rule !== option.nom),
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                } else if (action.effet === 'servant') {
+                    // Logique pour annuler les effets sur le servant
+                    let updatedPoints = parseInt(selectedCharacter.points) - valeur;
+                    const updatedServants = selectedCharacter.servants.map((servant, index) => {
+                        if (index === 0) {
+                            // Mettre à jour les caractéristiques du premier servant
+                            return {
+                                ...servant,
+                                caracteristiques: {
+                                    ...servant.caracteristiques,
+                                    M: 6,
+                                    C: "3/4+",
+                                    F: 3,
+                                    D: 5,
+                                    A: 1,
+                                    B: 3
+                                },
+                                capacites: {
+                                    ...servant.capacites,
+                                    Puissance: 1,
+                                    "Points de vie": 1
+                                },
+                                personnage: 'Vétéran - Guerrier de Minas Tirith'
                             };
+                        } else {
+                            // Ne rien changer pour les autres servants
+                            return servant;
                         }
+                    });
 
-                        return {
-                            ...prevPersonnage,
-                            regles: prevPersonnage.regles.filter(rule => rule !== option.nom),
-                            caracteristiques: updatedCaracteristiques,
-                            points: updatedPoints
-                        };
-                    });
-                }
-                else if (action.effet === 'servant') {
-                    setPersonnage(prevPersonnage => {
-                        let updatedPoints = parseInt(prevPersonnage.points) - valeur;
-                        const updatedServants = prevPersonnage.servants.map((servant, index) => {
-                            if (index === 0) {
-                                // Mettre à jour les caractéristiques du premier servant
-                                return {
-                                    ...servant,
-                                    caracteristiques: {
-                                        ...servant.caracteristiques,
-                                        M: 6,
-                                        C: "3/4+",
-                                        F: 3,
-                                        D: 5,
-                                        A: 1,
-                                        B: 3
-                                    },
-                                    capacites: {
-                                        ...servant.capacites,
-                                        Puissance: 1,
-                                        "Points de vie": 1
-                                    },
-                                    personnage: 'Vétéran - Guerrier de Minas Tirith'
-                                };
-                            } else {
-                                // Ne rien changer pour les autres servants
-                                return servant;
-                            }
-                        });
+                    // Crée une nouvelle copie du personnage avec les servants et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: updatedServants,
+                        points: updatedPoints
+                    };
 
-                        return {
-                            ...prevPersonnage,
-                            servants: updatedServants,
-                            points: updatedPoints
-                        };
-                    });
-                }else if (option.action === 'addmiroir') {
-                    setPersonnage(prevPersonnage => {
-                        return {
-                            ...prevPersonnage,
-                            servants: [],
-                            regles: prevPersonnage.regles.filter(rule => rule !== 'Miroir de Galadriel'),
-                            points: parseInt(prevPersonnage.points) - valeur
-                        };
-                    });
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                } else if (option.action === 'addmiroir') {
+                    // Logique pour retirer le miroir de Galadriel
+                    const updatedRegles = selectedCharacter.regles.filter(rule => rule !== 'Miroir de Galadriel');
+
+                    // Crée une nouvelle copie du personnage avec le miroir de Galadriel retiré et les règles spéciales mises à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [],
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) - valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                } else if (option.action === 'addgripoil') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 6
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+                    const { PvMonture, ...updatedCapacites } = selectedCharacter.capacites;
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [],
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 }
-                
             }
         }
     };
 
-
-    if (!personnage) {
-        return null;
-    }
-
     return (
         <div className='card-content'>
-            <h2 className='name-perso'>{personnage.personnage} <span className='point-perso'>{personnage.points}pts</span></h2>
+            <h2 className='name-perso'>{selectedCharacter.personnage} <span className='point-perso'>{selectedCharacter.points}pts</span></h2>
             <table>
                 <tbody>
                     <tr>
-                        {Object.entries(personnage.caracteristiques).map(([key, value]) => (
+                        {Object.entries(selectedCharacter.caracteristiques).map(([key, value]) => (
                             <td key={`${key}-${value}`}>{key}</td>
                         ))}
                     </tr>
                     <tr>
-                        {Object.entries(personnage.caracteristiques).map(([key, value]) => (
+                        {Object.entries(selectedCharacter.caracteristiques).map(([key, value]) => (
                             <td key={`${key}-${value}`}>{value}</td>
                         ))}
                     </tr>
@@ -312,7 +414,7 @@ function JeuCard({ selectedCharacter }) {
             <h3>Capacités</h3>
             <table>
                 <tbody>
-                    {Object.entries(personnage.capacites).map(([capacite, value]) => (
+                    {Object.entries(selectedCharacter.capacites).map(([capacite, value]) => (
                         <tr key={capacite}>
                             <td>{capacite}</td>
                             <td>
@@ -324,19 +426,26 @@ function JeuCard({ selectedCharacter }) {
                     ))}
                 </tbody>
             </table>
-            {personnage.options && personnage.options.length > 0 && (
+            {selectedCharacter.options && selectedCharacter.options.length > 0 && (
                 <>
                     <h3>Options</h3>
-                    {personnage.options.map((option, index) => (
-                        <Option key={option.nom} optionName={option.nom} optionValue={option.valeur} onChange={handleChangeOption} />
+                    {selectedCharacter.options.map((option, index) => (
+                        <Option
+                            key={option.nom}
+                            optionName={option.nom}
+                            optionValue={option.valeur}
+                            isChecked={option.isChecked} // Passer isChecked
+                            onChange={handleChangeOption}
+                        />
                     ))}
                 </>
             )}
-            {personnage.servants && personnage.servants.length > 0 && (
+
+            {selectedCharacter.servants && selectedCharacter.servants.length > 0 && (
                 <>
                     <h3>Servants</h3>
                     <div className='container-servant'>
-                        {personnage.servants.map((servant, index) => (
+                        {selectedCharacter.servants.map((servant, index) => (
                             <div key={index} className='servant'>
                                 <h5>{servant.personnage}</h5>
                                 <table>
@@ -359,9 +468,9 @@ function JeuCard({ selectedCharacter }) {
                                             <tr key={capacite}>
                                                 <td>{capacite}</td>
                                                 <td>
-                                                    <button onClick={() => handleChangeCapacite(capacite, 'decrease')}>-</button>
+                                                    <button onClick={() => handleChangeCapaciteServant(index, capacite, 'decrease')}>-</button>
                                                     {value}
-                                                    <button onClick={() => handleChangeCapacite(capacite, 'increase')}>+</button>
+                                                    <button onClick={() => handleChangeCapaciteServant(index, capacite, 'increase')}>+</button>
                                                 </td>
                                             </tr>
                                         ))}
@@ -370,36 +479,36 @@ function JeuCard({ selectedCharacter }) {
                             </div>
                         ))}
                     </div>
-
                 </>
             )}
+
             <div className='grid2'>
 
-                {personnage.regles && personnage.regles.length > 0 && (
+                {selectedCharacter.regles && selectedCharacter.regles.length > 0 && (
                     <div className='regle-spe-perso'>
                         <h3>Règles spéciales</h3>
                         <div className='regle-perso'>
-                            {personnage.regles.map((rule, index) => (<Modal key={rule} ruleName={rule} />))}
+                            {selectedCharacter.regles.map((rule, index) => (<Modal key={rule} ruleName={rule} />))}
                         </div>
                     </div>
                 )}
 
-                {personnage.actions && personnage.actions.length > 0 && (
+                {selectedCharacter.actions && selectedCharacter.actions.length > 0 && (
                     <div className='action-hero-perso'>
                         <h3>Actions Héroïques</h3>
                         <div className='action-perso'>
-                            {personnage.actions.map((action, index) => (<Modal key={action} ruleName={action} />))}
+                            {selectedCharacter.actions.map((action, index) => (<Modal key={action} ruleName={action} />))}
                         </div>
                     </div>
                 )}
             </div>
 
-            {personnage.pouvoirsMagiques && personnage.pouvoirsMagiques.length > 0 && (
+            {selectedCharacter.pouvoirsMagiques && selectedCharacter.pouvoirsMagiques.length > 0 && (
                 <div className='pouvoir-hero-perso'>
                     <h3>Pouvoirs Magiques</h3>
 
                     <div className='action-perso'>
-                        {personnage.pouvoirsMagiques.map((pouvoir, index) => (<Modalpower key={pouvoir.nom} powerName={pouvoir.nom} powerLancement={pouvoir.valeur} />))}
+                        {selectedCharacter.pouvoirsMagiques.map((pouvoir, index) => (<Modalpower key={pouvoir.nom} powerName={pouvoir.nom} powerLancement={pouvoir.valeur} />))}
 
                     </div>
 

@@ -165,8 +165,18 @@
         "etat": "actif"
     },
     {
+        "nom": "Tir rapide",
+        "effet": "Une Baliste à répétition tire 1D6 fois chaque tour au lieu d'une seule fois. Chaque tir est résolu de la même manière qu'un tir classique plutôt que d'un jet d'engin de siège. Il n'y a donc pas de jets de déviation. Résolvez chaque tir individuellement, jetez un dé pour toucher et un pour blesser, avant de passer au tir suivant. Les tirs de Baliste à répétition ne tuent pas les cibles sur le coup et ne les jettent pas à terre",
+        "etat": "engin"
+    },
+    {
         "nom": "Tir Indirect",
         "effet": "Un Trébuchet tire toujours en utilisant la règle Tir de volée, avec une portée de 12\"à 96\".",
+        "etat": "engin"
+    },
+    {
+        "nom": "Courte portée",
+        "effet": "Une Baliste à répétition tire jusqu'à 24\" au lieu de 48\".",
         "etat": "engin"
     },
     {
