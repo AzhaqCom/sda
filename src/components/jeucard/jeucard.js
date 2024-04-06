@@ -277,7 +277,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
-                }else if (option.action === 'addelan') {
+                } else if (option.action === 'addelan') {
                     // Logique pour modifier la vitesse de la monture
                     const updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,
@@ -288,7 +288,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         ...selectedCharacter.capacites,
                         PvMonture: 2
                     };
-                    let updatedRegles =[...selectedCharacter.regles,'Elan de Thranduil']
+                    let updatedRegles = [...selectedCharacter.regles, 'Elan de Thranduil']
                     const newServant = {
                         personnage: 'Elan',
                         caracteristiques: {
@@ -306,7 +306,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         servants: [newServant],
                         caracteristiques: updatedCaracteristiques,
                         points: updatedPoints,
-                        regles:updatedRegles,
+                        regles: updatedRegles,
                         capacites: updatedCapacites
                     };
 
@@ -315,22 +315,22 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                 }
                 else if (option.action === 'orcrist') {
                     // Logique pour modifier la vitesse de la monture
-                
+
                     const updatedPoints = parseInt(selectedCharacter.points) + valeur;
-                   
-                    let updatedRegles =[...selectedCharacter.regles,'Orcrist','Lame de facture Elfique (épée bâtarde)','Fléau (x)','Terreur (x)']
+
+                    let updatedRegles = [...selectedCharacter.regles, 'Orcrist', 'Lame de facture Elfique (épée bâtarde)', 'Fléau (x)', 'Terreur (x)']
 
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
                         ...selectedCharacter,
                         points: updatedPoints,
-                        regles:updatedRegles,
+                        regles: updatedRegles,
 
                     };
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
-                }else if (option.action === 'addbouquetin') {
+                } else if (option.action === 'addbouquetin') {
                     // Logique pour modifier la vitesse de la monture
                     const updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,
@@ -341,7 +341,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         ...selectedCharacter.capacites,
                         PvMonture: 1
                     };
-                    let updatedRegles =[...selectedCharacter.regles,'Montagnard','Charge Dévastatrice']
+                    let updatedRegles = [...selectedCharacter.regles, 'Montagnard', 'Charge Dévastatrice']
                     const newServant = {
                         personnage: 'Bouquetin de Guerre',
                         caracteristiques: {
@@ -359,7 +359,42 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         servants: [newServant],
                         caracteristiques: updatedCaracteristiques,
                         points: updatedPoints,
-                        regles:updatedRegles,
+                        regles: updatedRegles,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                }
+                else if (option.action === 'addsanglier') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 8
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    const updatedCapacites = {
+                        ...selectedCharacter.capacites,
+                        PvMonture: 2
+                    };
+
+                    const newServant = {
+                        personnage: 'Sanglier de Guerre',
+                        caracteristiques: {
+                            M: '8',
+                            C: '4/5+',
+                            F: 4,
+                            D: 6,
+                            A: '',
+                            B: 3
+                        }
+                    };
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [newServant],
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
                         capacites: updatedCapacites
                     };
 
@@ -538,7 +573,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
 
                     let updatedPoints = parseInt(selectedCharacter.points) - valeur;
                     let updatedRegles = selectedCharacter.regles.filter(rule => rule !== 'Diadème des Rois');
-                  
+
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
                         ...selectedCharacter,
@@ -550,7 +585,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
-                }else if (option.action === 'addelan') {
+                } else if (option.action === 'addelan') {
                     // Logique pour modifier la vitesse de la monture
                     const updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,
@@ -566,51 +601,69 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         caracteristiques: updatedCaracteristiques,
                         points: updatedPoints,
                         capacites: updatedCapacites,
-                        regles:updatedRegles
+                        regles: updatedRegles
                     };
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
-                }  else if (option.action === 'orcrist') {
+                } else if (option.action === 'orcrist') {
                     // Logique pour modifier la vitesse de la monture
-                
-                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
-                   
-                    let updatedRegles =[ "Créature des Bois",
-                    "Tir Mortel"]
 
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+
+                   
+                        let updatedRegles = selectedCharacter.regles.filter(regle => regle !=='Orcrist' && regle !=='Lame de facture Elfique (épée bâtarde)'  && regle !== 'Fléau (x)' && regle !== 'Terreur (x)') 
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
                         ...selectedCharacter,
                         points: updatedPoints,
-                        regles:updatedRegles,
+                        regles: updatedRegles,
 
                     };
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
-                }else if (option.action === 'addbouquetin') {
+                } else if (option.action === 'addbouquetin') {
                     // Logique pour modifier la vitesse de la monture
                     const updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,
                         M: 5
                     };
-                    const {PvMonture, ...updatedCapacites}=selectedCharacter.capacites
+                    const { PvMonture, ...updatedCapacites } = selectedCharacter.capacites
                     const updatedPoints = parseInt(selectedCharacter.points) - valeur;
-                
-                    let updatedRegles =[
-                        "Maître Stratège (5+)",
-                        "Mur de Boucliers"
-                    ]
-                
-                  
+
+                    let updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Montagnard' && regle !== 'Charge Dévastatrice');
+
+
+
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
                         ...selectedCharacter,
-                  
+                        servants:[],
                         caracteristiques: updatedCaracteristiques,
                         points: updatedPoints,
-                        regles:updatedRegles,
+                        regles: updatedRegles,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                } else if (option.action === 'addsanglier') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 5
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+
+
+                    const { PvMonture, ...updatedCapacites } = selectedCharacter.capacites
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants:[],
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
                         capacites: updatedCapacites
                     };
 

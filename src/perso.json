@@ -1746,5 +1746,410 @@
             "Maître Stratège (5+)",
             "Mur de Boucliers"
         ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Dáin Pied-d'Acier, Seigneur des Monts de Fer",
+        "points": "140",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 5,
+            "D": 8,
+            "A": 3,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Marche Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Sanglier de Guerre",
+                "valeur": 20,
+                "action": "addsanglier"
+            }
+        ],
+        "regles": [
+            "Costaud",
+            "Sans Peur",
+            "Seigneur des Monts de Fer",
+            "Caractère Impétueux",
+            "Charge Effroyable",
+            "Coup de tête"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Dori, Champion d'Erebor",
+        "points": "75",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 8,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Force Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Protecteur Attitré (Thorin)",
+            "Maître d'Armes",
+            "Un Bon Camarade"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Dwalin, Champion d'Erebor",
+        "points": "115",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 5,
+            "D": 8,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "Bouquetin de Guerre",
+                "valeur": 10,
+                "action": "addbouquetin"
+            }
+        ],
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Costaud",
+            "Sans Peur",
+            "Maître d'Armes",
+            "Le Bourreau du Roi",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Fíli, Champion d'Erebor",
+        "points": "75",
+        "caracteristiques": {
+            "M": "5",
+            "C": "5/3+",
+            "F": "4",
+            "D": "8",
+            "A": "2",
+            "B": "5"
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bouquetin de guerre",
+                "valeur": 10,
+                "action": "addbouquetin"
+            },
+            {
+                "nom": "Arc Nain",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Synergie de Combat",
+            "Du Bekâr !",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Glóin, Champion d'Ereborr",
+        "points": "90",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [],
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Maître d'Armes",
+            "Un Guerrier-Né",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Kíli, Champion d'Erebor",
+        "points": "75",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/3+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "Bouquetin de guerre",
+                "valeur": 10,
+                "action": "addbouquetin"
+            },
+            {
+                "nom": "Arc nain",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Synergie de Combat",
+            "Du Bekâr !",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Nori, Champion d'Erebor",
+        "points": "80",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [],
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Maître d'Armes",
+            "Synergie Martiale",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Óin, Champion d'Erebor",
+        "points": "65",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [],
+        "actions": [
+            "Résistance Héroïque"
+        ],
+        "regles": [
+            "Herbes Médicinales",
+            "Pronostic",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Ori, Champion d'Erebor",
+        "points": "55",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/3+",
+            "F": 3,
+            "D": 7,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [],
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Chroniqueur",
+            "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Dáin Pied-d'Acier, Roi sous la Montagne",
+        "points": "130",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 3,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3
+        },
+        "options": [],
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Barazantathûl",
+            "Sans Peur",
+            "Âge Vénérable",
+            "Roi sous la Montagne"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Thorin III Heaume-de-Pierre",
+        "points": "110",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "options": [],
+        "actions": [
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Imperturbable"
+        ]
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "personnage": "Thorin Ecu-de-Chêne, Roi sous la Montagne",
+        "points": "115",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3
+        },
+        "options": [
+            {
+                "nom": "Bouquetin de guerre",
+                "valeur": 10,
+                "action": "addbouquetin"
+            },
+            {
+                "nom": "Orcrist",
+                "valeur": 10,
+                "action": "orcrist"
+            }
+        ],
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Un Compte à Régler",
+            "Fureur Ancestrale"
+        ]
     }
 ]

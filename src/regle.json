@@ -71,7 +71,7 @@
     },
     {
         "nom": "Glamdring",
-        "effet": "Glamdring est une de facture elfique (épée bâtarde), elle peut être utilisée comme une épée simple ou comme une épée à deux mains. De plus, Glamdring augmente la Force de Gandalf de 1 quand il l'utilise.",
+        "effet": "Glamdring est une lame de facture elfique (épée bâtarde), elle peut être utilisée comme une épée simple ou comme une épée à deux mains. De plus, Glamdring augmente la Force de Gandalf de 1 quand il l'utilise.",
         "etat": "actif"
     },
     {
@@ -388,16 +388,145 @@
         "nom": "Robuste",
         "effet": "Quand Bombur porte ses coups, il peut choisir d'user du coup spécial Balayage comme s'il avait une masse.",
         "etat": "actif"
-    },    {
+    },
+    {
         "nom": "Maladroit",
         "effet": "Bombur ne peut pas déclarer d'Elan Héroïque. De plus, il doit relancer les 6 à ses jets de Saut et d'Escalade.",
         "etat": "passif"
-    },    {
+    },
+    {
         "nom": "Regain de Moral",
         "effet": "Une fois par tour, n'importe quand durant la Phase de Mouvement de Bombur, un Héros en contact avec lui peut regagner un point de Volonté dépensé sur 4+.",
         "etat": "actif"
+    },
+    {
+        "nom": "Montagnard",
+        "effet": "Les figurines Montagnardes peuvent relancer leur jet lors de tests de Franchissement, Saut et Escalade. De plus, elles peuvent traverser sans pénalité de Mouvement les décors rocheux désignés comme terrains difficiles.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Charge Dévastatrice",
+        "effet": "Quand cette figurine charge un ou plusieurs ennemis de taille humaine, lancez 1D6 pour chaque. Sur 5+, la figurine est immédiatement jetée au sol.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Maître Stratège (5+)",
+        "effet": "À chaque fois qu'un Héros ennemi tente une Action Héroïque dans un rayon de 6\" autour d'un Maître Stratège, ce dernier a la possibilité de déclarer la même Action Héroïque gratuitement (sans dépenser de points de Puissance), et ce même s'il n'a habituellement pas accès à cette Action en particulier. Il arrive que certaines figurines aient la Règle Spéciale Maître Stratège, mais avec un nombre entre crochets à côté, de type Maître Stratège [5+]. Dans ce cas, la capacité s'active sur un jet de 1D6, à effectuer à chaque tentative d'Action Héroïque adverse à 6\" que la figurine veut copier gratuitement.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Seigneur des Monts de Fer",
+        "effet": "Tant que Dáin Pied-d'Acier est en vie, tous les Nains des Monts de Fer à moins de 12\" de Dáin réussissent automatiquement leurs tests de Bravoure.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Caractère Impétueux",
+        "effet": "Dès lors que Dáin Pied-d'Acier tue un ennemi, il doit charger à chaque fois qu'il le peut pour le reste de la partie.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Charge Effroyable",
+        "effet": "Quand Dáin Pied-d'Acier charge au combat, il cause la Terreur jusqu'à la fin du tour.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Coup de tête",
+        "effet": "Si Dáin Pied-d'Acier remporte un Duel mais échoue à tuer son adversaire, il peut quand même donner un coup de tête sur une figurine de taille humaine. Sur 5+, la cible est jetée à terre.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Sans Peur",
+        "effet": "Cette figurine passe automatiquement tout test de Bravoure qu'elle est amenée à effectuer.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Costaud",
+        "effet": "La figurine ne subit pas de -1 au jet de Duel lorsqu'elle combat avec une arme à deux mains. De plus, elle peut porter un Objet Lourd et tout de même bouger de son plein Mouvement.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Maître d'Armes",
+        "effet": "La figurine ne peut jamais être considérée comme désarmée et ne subit pas de -1 au jet de Duel pour l'usage d'une arme à deux mains.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Un Bon Camarade",
+        "effet": "Si Bilbon Sacquet est à moins de 3“ de Dori, il peut dépenser les points de Puissance, de Volonté ou de Destin de Dori comme s'ils étaient les siens.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Le Bourreau du Roi",
+        "effet": "Tant qu'il a le mot-clef Infanterie, Dwalin peut choisir au début d'un combat d'utiliser une hache à deux mains ou une hache dans chaque main, auquel cas il dispose de 4 Attaques.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Arc Nain",
+        "effet": "Portée 18\" Force 3",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Synergie de Combat",
+        "effet": "S'ils sont en contact, Fíli et Kíli peuvent choisir d'échanger leurs places au début de n'importe quelle phase (ceci ne comptant pas comme un mouvement).",
+        "etat": "actif"
+    },
+    {
+        "nom": "Du Bekâr !",
+        "effet": "Une figurine dotée de cette règle compte comme étant à portée d'une Bannière si elle est à moins de 6\" de Thorin Ecu-de-Chêne.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Un Guerrier-Né",
+        "effet": "Glóin relance les 1 pour Blesser au combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Synergie Martiale",
+        "effet": "Nori peut relancer un dé pour remporter un Duel et un dé pour Blesser.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Herbes Médicinales",
+        "effet": "Durant sa Phase de Mouvement, au lieu de bouger, Óin peut tenter de soigner une figurine amie en contact avec lui en jetant 1D6. Sur 1-3, il ne se passe rien ; sur 4-5, la figurine regagne un Point de Vie perdu ; sur un 6, la figurine regagne tous ses Points de Vie perdus.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Pronostic",
+        "effet": "Une fois par Phase de Combat, Óin peut dépenser un point de Volonté pour permettre à une figurine amie à moins de 3“ de relancer un simpledé pour remporter un Duel.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Chroniqueur",
+        "effet": "A chaque fois que Thorin Ecu-de-Chêne ou un Champion d'Erebor tue un Héros ou un Monstre ennemi à moins de 3\" d'Ori, la figurine amie regagne un point de Puissance, de Volonté ou de Destin dépensé (selon le choix du joueur).",
+        "etat": "actif"
+    },
+    {
+        "nom": "Barazantathûl",
+        "effet": "Il s'agit d'une Hache bâtarde de Maître.\nArmes bâtardes : Une arme bâtarde peut être utilisée soit comme une arme à une main soit comme une arme à deux mains. Lorsqu'une figurine équipée d'une arme bâtarde se bat au corps à corps, le joueur la contrôlant doit décider au début du combat dans quel style la figurine va combattre.\nArme de maître : Une figurine qui utilise une arme de maître ne souffre pas du malus de -1 sur le jet de Duel pour l'utilisation d'une arme à deux mains.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Âge Vénérable",
+        "effet": "Dáin Pied-d'Acier doit lancer deux dés et conserver uniquement le pire résultat lorsqu'il fait un test de Franchissement, de Saut ou d'Escalade.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Roi sous la Montagne",
+        "effet": "Tous les Nains d'Erebor alliés, y compris les Héros, peuvent bénéficier de la règle « Tenez bon ! » de Dain, peu importe à quelle distance ils sont de lui.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Imperturbable",
+        "effet": "Quand Thorin III déclare une Action Héroïque, lancez 1D6. Sur un 5+, la Puissance n'est pas dépensée et l'Action Héroïque est gratuite. De plus, si Thorin III déclare une Action Héroïque puis qu'un adversaire en lance une à son tour, Thorin III peut choisir de modifier l'Action Héroïque qu'il avait déclarée plus tôt.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Un Compte à Régler",
+        "effet": "Thorin Ecu-de-Chêne relance tous les jets pour Blesser ratés quand il porte ses coups contre Azog.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Fureur Ancestrale",
+        "effet": "Thorin Ecu-de-Chêne peut déclarer un Combat Héroïque à chaque Phase de Combat sans dépenser de point de Puissance.",
+        "etat": "actif"
     }
-
-
-   
 ]
