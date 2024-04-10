@@ -66,7 +66,7 @@
     },
     {
         "nom": "Dagues de jet",
-        "effet": "Une figurine avec une Arme de Jet peut la lancer une fois par tour pendant la phase de Tir même si elle s'est déplacée de plus de la moitié de son Mouvement. Une figurine ne peut pas combattre avec ses Armes de Jet pendant la phase de Combat.\n\nUne Arme de Jet peut être également utilisée lorsque son porteur charge au combat. Le joueur déplace sa figurine comme si elle chargeait l'ennemi, mais avant de la mettre au contact socle à socle, elle s'arrête à 1\" de son adversaire.\n\nElle peut alors jeter son Arme de Jet sur la cible qu'elle charge. Ce tir est résolu en utilisant les règles des tirs même si cela se passe pendant la phase de Mouvement. Les Armes de Jet lancées pendant la charge ne souffrent pas du malus de -1 pour s'être déplacé dans le même tour.\n\nSi la cible n'est pas tuée, la figurine qui a jeté son Arme de Jet doit la charger. Si la cible est tuée, la figurine qui a jeté son Arme de Jet peut finir son Mouvement comme elle le souhaite – s'arrêter, charger une autre figurine, ou autre.\n\nLes Armes de Jet ne comptent pas dans la Limite d'Arcs de l'armée.",
+        "effet": "Une figurine avec une Arme de Jet peut la lancer une fois par tour pendant la phase de Tir même si elle s'est déplacée de plus de la moitié de son Mouvement. Une figurine ne peut pas combattre avec ses Armes de Jet pendant la phase de Combat.\n\nUne Arme de Jet peut être également utilisée lorsque son porteur charge au combat. Le joueur déplace sa figurine comme si elle chargeait l'ennemi, mais avant de la mettre au contact socle à socle, elle s'arrête à 1\" de son adversaire.\n\nElle peut alors jeter son Arme de Jet sur la cible qu'elle charge. Ce tir est résolu en utilisant les règles des tirs même si cela se passe pendant la phase de Mouvement. Les Armes de Jet lancées pendant la charge ne souffrent pas du malus de -1 pour s'être déplacé dans le même tour.\n\nSi la cible n'est pas tuée, la figurine qui a jeté son Arme de Jet doit la charger. Si la cible est tuée, la figurine qui a jeté son Arme de Jet peut finir son Mouvement comme elle le souhaite - s'arrêter, charger une autre figurine, ou autre.\n\nLes Armes de Jet ne comptent pas dans la Limite d'Arcs de l'armée.",
         "etat": "equipement"
     },
     {
@@ -527,6 +527,21 @@
     {
         "nom": "Fureur Ancestrale",
         "effet": "Thorin Ecu-de-Chêne peut déclarer un Combat Héroïque à chaque Phase de Combat sans dépenser de point de Puissance.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Arwen, Communauté",
+        "effet": "Arwen peut être intégrée dans une armée de la Communauté de l'Anneau comme un membre de la liste d'armée de la Communauté, si votre force contient Aragorn - Grand-Pas.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Dard",
+        "effet": "Dard est une Dague de facture elfique. Quand il l'utilise, Bilbon ajoute 1 à sa valeur de Force lorsqu'il porte ses coups.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Anneau Unique",
+        "effet": "Porter l'anneau :\nLa figurine avec l'Anneau peut l'enfiler à n'importe quel moment de sa phase de Mouvement. Une figurine déjà Engagée au Combat ne peut pas enfiler l'Anneau. Une fois que l'Anneau est à son doigt, le porteur de l'Anneau devient invisible. Si une figurine qui met l'Anneau est montée, sa monture fuit automatiquement et elle devra faire un test de chute de Cavalier. \n\nInvisible: \nTant que la figurine porte l'Anneau, elle ne peut pas être directement ciblée par un Pouvoir Magique ou un tir (et ne compte pas étant sur la Trajectoire). Le porteur de l'Anneau n'a pas de zone de contrôle tant qu'il est invisible et les figurines ennemies peuvent passer «à travers» lui ; de la même façon, il peut «traverser» les figurines amies ou ennemies tant qu'il ne termine pas son Mouvement à un endroit où se trouve une autre figurine. \n\nSi une figurine ennemie souhaite finir son mouvement là où se trouve le porteur de l'Anneau, décalez ce dernier de la distance minimale pour faire de la place à la figurine ennemie - cela peut impliquer de franchir des murets, bouger à travers les ennemis ou être poussé du haut d'une falaise ! Cela ne peut être fait si la figurine Invisible est Engagée au Combat. \n\nSi une figurine ennemie souhaite charger le porteur de l'Anneau, elle doit réussir un test de Bravoure en appliquant un malus de -1 pour chaque pouce qui la sépare du porteur de l'Anneau. Les figurines qui réussissent automatiquement leur test de Bravoure doivent quand même passer le test, car il représente le fait d'être capable de repérer le porteur de l'Anneau. Si une figurine rate ce test, elle ne peut juste pas voir la figurine Invisible, et peut tout de même poursuivre son tour normalement, sans toutefois pouvoir charger la figurine Invisible ce tour. Pendant la phase de Combat, toute figurine engagée au corps à corps contre le porteur de l'Anneau divise par deux sa valeur de Combat pour le temps du combat. Une figurine Invisible peut toujours déclarer des Actions Héroïques, mais ne peut pas en faire profiter ses alliés en criant « Avec Moi ! », « Marche forcée ! » ou toute autre action impliquant des figurines alliées. Ainsi, si une figurine Invisible déclare un Combat Héroïque, ses alliés ne pourront pas se redéplacer s'il est réussi. \n\nAucune de ces règles ne s'applique ni à Sauron ni aux Nazgûl. Ces derniers gagnent même des bonus décrits dans leurs Règles Spéciales et dans leur règle La Volonté du Mal.\n\nRetirer l'Anneau : \nSi le joueur contrôlant le porteur de l'Anneau souhaite qu'il retire l'Anneau, il doit réussir un test de Bravoure. Il peut être fait à n'importe quel point de la phase de Mouvement du porteur de l'Anneau, une fois qu'il a été établi quel camp contrôle son mouvement. \n\nSi le test est raté, le porteur de l'Anneau doit continuer à le porter jusqu'au prochain tour, où il aura une nouvelle chance de le retirer. Une figurine ne peut pas mettre l'Anneau et le retirer lors du même tour.",
         "etat": "actif"
     }
 ]

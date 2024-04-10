@@ -400,6 +400,41 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
+                }else if (option.action === 'addasfaloth') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 12
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    const updatedCapacites = {
+                        ...selectedCharacter.capacites,
+                        PvMonture: 1
+                    };
+                    let updatedRegles = [...selectedCharacter.regles, 'Pied Léger']
+                    const newServant = {
+                        personnage: 'Asfaloth',
+                        caracteristiques: {
+                            M: '12',
+                            C: '3',
+                            F: 3,
+                            D: 4,
+                            A: '',
+                            B: 2
+                        }
+                    };
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [newServant],
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        regles: updatedRegles,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 }
             }
         } else {
@@ -664,6 +699,29 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                         servants:[],
                         caracteristiques: updatedCaracteristiques,
                         points: updatedPoints,
+                        capacites: updatedCapacites
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                }else if (option.action === 'addasfaloth') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 6
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    let updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Pied Léger');
+
+                    let {Pvmonture, ...updatedCapacites} = selectedCharacter.capacites
+                  
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [],
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints,
+                        regles: updatedRegles,
                         capacites: updatedCapacites
                     };
 

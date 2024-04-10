@@ -58,9 +58,9 @@ function Jeu() {
             <select value={selectedCharacter} onChange={handleSelectChange}>
                 <option value="">Sélectionner un personnage</option>
                 {Object.keys(groupedCharacters).map((faction, index) => (
-                    <optgroup key={index} label={faction}>
+                    <optgroup key={index} label={faction} className='red'>
                         {groupedCharacters[faction].map((character, characterIndex) => (
-                            <option key={characterIndex} value={character.personnage}>{character.personnage} ({character.points}pts)</option>
+                            <option className='black' key={characterIndex} value={character.personnage}>{character.personnage} ({character.points}pts)</option>
                         ))}
                     </optgroup>
                 ))}

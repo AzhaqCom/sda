@@ -30,7 +30,7 @@ function Modal({ ruleName }) {
     }, [ruleName]);
     return (
         <>
-            <div className="rule-name" onClick={togglePopup}>{ruleName}{etat && (<span className={`etat ${etat}`}>{etat}</span>)}{phase &&(<span className={`phase ${phase}`}>{phase}</span>)}</div>
+            <div className="rule-name" onClick={togglePopup}><div className='rule-title'>{ruleName}</div>{etat && (<span className={`etat ${etat}`}>{etat}</span>)}{phase &&(<span className={`phase ${phase}`}>{phase}</span>)}</div>
             {showPopup && (
                 <div className="popup" onClick={togglePopup}>
                     <div className="popup-content">

@@ -2151,5 +2151,112 @@
             "Un Compte à Régler",
             "Fureur Ancestrale"
         ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Arwen Undomiel",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Résistance Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Créature des Bois",
+            "Arwen, Communauté"
+        ],
+        "options": [
+            {
+                "nom": "Asfaloth",
+                "valeur": 10,
+                "action": "addasfaloth"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Colère de bruinen",
+                "valeur": "4+"
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Bilbon Sacquet",
+        "points": "40",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 2,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Résistance Héroïque"
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)"
+        ],
+        "options": [
+            {
+                "nom": "Cotte de Mithril",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 3
+                }
+            },
+            {
+                "nom": "Dard",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Anneau Unique",
+                "valeur": 0,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
     }
 ]

@@ -26,6 +26,9 @@
 .blue{
     color:  #3a7bd5;
 }
+.black{
+    color: #292929;
+}
 table{
     border-collapse: collapse;
     min-width: 300px;
