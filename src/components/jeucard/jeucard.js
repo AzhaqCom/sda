@@ -528,6 +528,55 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
                 }
+                else if (option.action === 'addponey') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 8
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+                    let updatedRegles = [...selectedCharacter.regles, 'Poney : Timide']
+
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        regles: updatedRegles,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                } else if (option.action === 'addarquelance') {
+                    // Logique pour ajouter le miroir de Galadriel
+                    const updatedRegles = [...selectedCharacter.regles, 'Tir précis (Engins de sièges)'];
+                    const newServant = {
+                        personnage: 'Arquelance',
+                        caracteristiques: {
+                            M: '',
+                            C: '',
+                            F: 10,
+                            D: 10,
+                            A: '',
+                            B: ''
+                        },
+                        capacites: {
+                            "Points de vie": 3
+                        }
+                    };
+
+                    // Crée une nouvelle copie du personnage avec le nouveau servant et les règles spéciales mises à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [newServant],
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) + valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                }
             }
         } else {
             // Logique pour annuler les effets de l'option décochée
@@ -908,6 +957,41 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(updatedCharacter);
+                } else if (option.action === 'addponey') {
+                    // Logique pour modifier la vitesse de la monture
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        M: 4
+                    };
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+                    let updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Poney : Timide') 
+
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        regles: updatedRegles,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
+                }else if (option.action === 'addarquelance') {
+                    // Logique pour ajouter le miroir de Galadriel
+                
+                   let updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Tir précis (Engins de sièges)')
+
+                    // Crée une nouvelle copie du personnage avec le nouveau servant et les règles spéciales mises à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        servants: [],
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) - valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(updatedCharacter);
                 }
             }
         }
@@ -916,7 +1000,7 @@ function JeuCard({ selectedCharacter, updateCharacter }) {
     return (
         <div className='card-content'>
             <h2 className='name-perso'>{selectedCharacter.personnage} <span className='point-perso'>{selectedCharacter.points}pts</span></h2>
-            <Modal  ruleName={selectedCharacter.faction} />
+           <Modal  ruleName={selectedCharacter.faction} />
             <table>
                 <tbody>
                     <tr>

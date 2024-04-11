@@ -1062,15 +1062,18 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Aura de Vaillance",
-                "valeur": "2+"
+                "valeur": "2+",
+                "portee": ""
             },
             {
                 "nom": "Lames Enchantées",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "6’’"
             },
             {
                 "nom": "Immobilisation",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12’’"
             }
         ]
     },
@@ -1114,19 +1117,23 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Lumière Aveuglante",
-                "valeur": "2+"
+                "valeur": "2+",
+                "portee": ""
             },
             {
                 "nom": "Bénédiction des Valar",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12’’"
             },
             {
                 "nom": "Immobilisation",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12’’"
             },
             {
                 "nom": "Injonction",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "12’’"
             }
         ]
     },
@@ -1219,11 +1226,13 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Appel aux Vents",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12’’"
             },
             {
                 "nom": "Lames Enchantées",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "6’’"
             }
         ]
     },
@@ -1329,15 +1338,860 @@
         "pouvoirsMagiques": [
             {
                 "nom": "L'Hymne d'Elbereth",
-                "valeur": ""
+                "valeur": "",
+                "portee": "12’’"
             },
             {
                 "nom": "Eldamar Madrigal",
-                "valeur": ""
+                "valeur": "",
+                "portee": "12’’"
             },
             {
                 "nom": "Le Lai de Gondolin",
-                "valeur": ""
+                "valeur": "",
+                "portee": "°"
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Aldor, Archer du Rohan",
+        "points": "20",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "regles": [
+            "Nerfs Instables",
+            "Tir Chanceux",
+            "Arc"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Capitaine du Rohan",
+        "points": "45",
+        "caracteristiques": {
+            "M": 10,
+            "C": "4/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Debout, Cavaliers de Théoden !"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Armure lourde",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Déorwine, Maître de la Cavalerie Royale",
+        "points": "75",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Garde du Corps",
+            "Seigneur des Chevaux",
+            "Pour Théoden !"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Dernhelm",
+        "points": "75",
+        "caracteristiques": {
+            "M": 10,
+            "C": "5/4+",
+            "F": 3,
+            "D": 5,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2,
+            "PvMonture": 1
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Résistant à la Magie",
+            "Seigneur des Chevaux",
+            "Dernhelm",
+            "Je te tuerai si tu le touches !",
+            "Merry",
+            "Jet de Pierres (Portée 8\", Force 1)"
+        ],
+        "options": [
+            {
+                "nom": "Javelots",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Dernhelm - Éowyn, Damoiselle Protectrice du Rohan",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "5/4+",
+                    "F": 3,
+                    "D": 5,
+                    "A": 2,
+                    "B": 5
+                },
+                "capacites": {
+                    "Puissance": 2,
+                    "Volonté": 2,
+                    "Destin": 2,
+                    "Points de vie": 2,
+                    "Kill": 0
+                }
+            },
+            {
+                "personnage": "Dernhelm - Meriadoc Brandebouc, Chevalier de la Marche",
+                "caracteristiques": {
+                    "M": 4,
+                    "C": "3/3+",
+                    "F": 2,
+                    "D": 5,
+                    "A": 1,
+                    "B": 4
+                },
+                "capacites": {
+                    "Puissance": 1,
+                    "Volonté": 1,
+                    "Destin": 2,
+                    "Points de vie": 1,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Elfhelm, Capitaine du Rohan",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/3+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Précision Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Précision Chirurgicale",
+            "Javelots"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Éomer, Maréchal de la Marche",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 6,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Le Prix du Chagrin"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Javelots",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Eorl le Jeune",
+        "points": "115",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 7,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Felarof",
+            "Seigneur des Chevaux",
+            "Eorl le Jeune",
+            "Héros de Légende (Eorl)"
+        ],
+        "options": [],
+        "servants": [
+            {
+                "personnage": "Felarof",
+                "caracteristiques": {
+                    "M": 12,
+                    "C": 3,
+                    "F": 3,
+                    "D": 5,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Puissance": 0,
+                    "Volonté": 0,
+                    "Destin": 0,
+                    "Points de vie": 1,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Erkenbrand, Capitaine du Rohan",
+        "points": "75",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Cor de Helm (Erkenbrand)",
+            "Erkenbrand"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Éowyn, Damoiselle Protectrice du Rohan",
+        "points": "40",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 3,
+            "D": 3,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Je te tuerai si tu le touches !"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Javelots",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Gamelin, Capitaine du Rohan",
+        "points": "55",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Protecteur Attitré (Théoden)"
+        ],
+        "options": [
+            {
+                "nom": "Étendard Royal du Rohan",
+                "valeur": 50,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Grand Veneur du Roi",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/3+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "regles": [
+            "Maître Archer"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Grimbold de Grimslade",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Coup Puissant",
+            "Helmingas"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Haleth, Fils de Hama",
+        "points": "30",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Il y a toujours de l'espoir",
+            "Battez-vous jusqu'au dernier"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Hama, Capitaine du Rohan",
+        "points": "55",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Protecteur Attitré (Théoden)"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Helm Poing de Marteau",
+        "points": "165",
+        "caracteristiques": {
+            "M": 10,
+            "C": "5/4+",
+            "F": 5,
+            "D": 7,
+            "A": 3,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Costaud",
+            "Seigneur des Chevaux",
+            "Cor de Helm (Helm)",
+            "Présence Inspirante",
+            "Le Poing de Marteau"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Meriadoc Brandebouc, Chevalier de la Marche",
+        "points": "25",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 4,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)"
+        ],
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey"
+            },
+            {
+                "nom": "Cape elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Théoden, Roi du Rohan",
+        "points": "75",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Frappe Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "La Volonté des Hommes est si aisément corruptible",
+            "En avant ! Ne craignez aucune obscurité !",
+            "Herugrim"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure lourde",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "personnage": "Théodred, Héritier du Rohan",
+        "points": "80",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 6,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Charge Téméraire"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Javelots",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
             }
         ]
     },
@@ -1595,6 +2449,362 @@
             "Créature des Bois",
             "Vouge Elfique"
         ]
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Alfrid le Conseiller",
+        "points": "20",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Désarmé",
+            "Conseil Douteux"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Bain, Fils de Bard",
+        "points": "40",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Lien Familial"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Bard l'Archer",
+        "points": "140",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 4,
+            "D": 4,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Précision Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Tir Rapide (Bard)",
+            "La Flèche Noire",
+            "Sauveur de Lacville"
+        ],
+        "options": [
+            {
+                "nom": "Arquelance",
+                "valeur": 75,
+                "action": "addarquelance"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Bilbon Sacquet, Maître Cambrioleur",
+        "points": "90",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 6,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Anneau unique",
+            "Dard",
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)",
+            "Il ne s'est pas encore réveillé"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Capitaine de la Milice de Lacville",
+        "points": "40",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Gandalf le Gris",
+        "points": "170",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 6,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Canalisation Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Glamdring",
+            "Narya",
+            "Bâton de Pouvoir"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Lumière Aveuglante",
+                "valeur": "2+",
+                "portee": ""
+            },
+            {
+                "nom": "Aura de Terreur",
+                "valeur": "2+",
+                "portee": ""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12’’"
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12’’"
+            },
+            {
+                "nom": "Protection des Valar",
+                "valeur": "4+",
+                "portee": ""
+            },
+            {
+                "nom": "Volonté de Fer",
+                "valeur": "4+",
+                "portee": "12’’"
+            },
+            {
+                "nom": "Eboulement",
+                "valeur": "5+",
+                "portee": "6’’"
+            },
+            {
+                "nom": "Impact Magique",
+                "valeur": "5+",
+                "portee": "12’’"
+            }
+        ]
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Hilda Bianca",
+        "points": "30",
+        "caracteristiques": {
+            "M": 6,
+            "C": "2/3+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Soyons aux côtés de nos hommes !"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Percy",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/3+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "regles": [
+            "Archers, suivez-moi !"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Sigrid",
+        "points": "16",
+        "caracteristiques": {
+            "M": 6,
+            "C": "2/4+",
+            "F": 2,
+            "D": 2,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 1,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Désarmé",
+            "Papa ! Ici !",
+            "Une Raison de se Battre",
+            "Sigrid & Tilda"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "personnage": "Tilda",
+        "points": "14",
+        "caracteristiques": {
+            "M": 6,
+            "C": "1/4+",
+            "F": 2,
+            "D": 2,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 1,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Désarmé",
+            "Papa ! Ici !",
+            "Une Raison de se Battre",
+            "Sigrid & Tilda"
+        ],
+        "options": []
     },
     {
         "faction": "Erebor Reconquis",
@@ -2205,7 +3415,8 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Colère de bruinen",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "3\""
             }
         ]
     },
@@ -2351,19 +3562,23 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Aura de Vaillance",
-                "valeur": "2+"
+                "valeur": "2+",
+                "portee": "6\""
             },
             {
                 "nom": "Lumière Aveuglante",
-                "valeur": "2+"
+                "valeur": "2+",
+                "portee": "6\""
             },
             {
                 "nom": "Lames Enchantées",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "6\""
             },
             {
                 "nom": "Aura de Confusion",
-                "valeur": "5+"
+                "valeur": "5+",
+                "portee": "6\""
             }
         ]
     },
@@ -2573,11 +3788,13 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Colère de bruinen",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "6=3\""
             },
             {
                 "nom": "Guérison",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12\""
             }
         ]
     },
@@ -2608,8 +3825,7 @@
             "Créature des Bois",
             "Dagues de Noldorin"
         ],
-        "options": [],
-        "pouvoirsMagiques": []
+        "options": []
     },
     {
         "faction": "Fondcombe",
@@ -2647,7 +3863,8 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Immobilisation",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12\""
             }
         ]
     },
@@ -2828,11 +4045,13 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Appel aux Vents",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12\""
             },
             {
                 "nom": "Volonté de Fer",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "12\""
             }
         ]
     },
@@ -2969,7 +4188,6 @@
         "actions": [
             "Frappe Héroïque",
             "Force Héroïque"
-         
         ],
         "regles": [
             "Sang de Númenor"
@@ -2997,6 +4215,97 @@
                 "action": {
                     "effet": "regles"
                 }
+            }
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "personnage": "Amdûr, Seigneur des Lames",
+        "points": "130",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Sang & Gloire",
+            "Agilité Surnaturelle",
+            "Phalange",
+            "La Horde Etincelante",
+            "Héraut de Victoire",
+            "Le Seigneur des Lames",
+            "Durtûz, le Fauchon d'Argent"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "personnage": "Brórgîr le Conjureur",
+        "points": "80",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 5,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Adepte de la Sorcellerie",
+            "Bâton oriental de combat"
+        ],
+        "options": [],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Colère des Lames",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Frénésie (Orientaux)",
+                "valeur": "3+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Lames Enchantées",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Secousse sismique",
+                "valeur": "5+",
+                "portee": "6\""
             }
         ]
     },

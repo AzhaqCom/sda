@@ -11,7 +11,7 @@ function Modal({ ruleName }) {
     const [regleSpe, setRegleSpe] = useState('');
     const togglePopup = () => {
         setShowPopup(!showPopup);
-        document.body.classList.toggle('no-scroll');
+        // document.body.classList.toggle('no-scroll');
     };
     useEffect(() => {
         const lowercaseRuleName = ruleName.toLowerCase();

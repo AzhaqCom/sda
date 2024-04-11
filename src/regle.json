@@ -330,11 +330,6 @@
         "etat": "actif"
     },
     {
-        "nom": "Terreur",
-        "effet": "Quand une figurine souhaite charger un adversaire qui cause la Terreur (même si cette figurine est actuellement hors de portée), elle doit d'abord, avant de faire n'importe quoi d'autre, effectuer un test de Bravoure. Si le test est réussi, la charge se passe normalement. Si le test est raté, elle n'a pas le droit de charger et reste figée sur place pour le reste du tour. Parfois, la Terreur est dirigée contre un certain type d'ennemi. Dans ce cas, les créatures affectées par la Terreur sont clairement indiquées. Typiquement, il peut y avoir une Terreur (Orque) qui ne demandera un Test de Bravoure qu'aux figurines Orques.",
-        "etat": "passif"
-    },
-    {
         "nom": "Maîtresse des Lames",
         "effet": "Tauriel bénéficie d'un bonus d'une Attaque supplémentaire pour chaque figurine ennemie contre laquelle elle est engagée après la première. Ce bonus est déterminé au début de chaque Combat et dure jusqu'à ce que tous les coups du combat aient été portés.",
         "etat": "actif"
@@ -718,5 +713,239 @@
         "nom": "Détermination Inflexible",
         "effet": "Elendil bénéficie toujours des effets du Pouvoir Magique Esprit Fortifié, même si ses points de Volonté sont réduits à 0.",
         "etat": "passif"
-    }
+    },
+    {
+        "nom": "Dernhelm",
+        "effet": "Dernhelm est un profil spécial qui vous permet d'utiliser Eowyn et Merry ensemble comme décrit dans les films et les livres, et vous permet même d'utiliser les règles des Passagers pour ce duo dans vos parties de jeu compétitives. Dernhelm est Eowyn, Damoiselle Protectrice du Rohan avec Armure et Bouclier, et chevauche avec Meriadoc Brandebouc, Chevalier de la Marche avec Bouclier monté en tant que Passager sur son cheval. Les deux commenceront toujours montés et ensemble. Tant qu'il est monté, Dernhelm suivra les règles fournies dans ces pages plutôt que celles du profil d'Eowyn ; cependant, si Dernhelm est désarçonné, revenez au profil et aux mots-clés listés au-dessus pour Eowyn et utilisez-les à partir ce moment. Tous les Points de Vie perdus, ou les points de Puissance, Volonté et Destin dépensés par Dernhelm sont alors reportés sur le profil d'Eowyn.",
+        "etat": "règle"
+    },
+    {
+        "nom": "Je te tuerai si tu le touches !",
+        "effet": "Si Théoden est dans votre armée et qu'il est tué, placez un marqueur de 25mm à l'endroit où il est tombé. Eowyn doit bouger directement en direction de ce marqueur durant chacune de ses phases de Mouvement si elle est en mesure de le faire. Une fois qu'Eowyn est arrivée à moins de 3\" de ce marqueur, elle ne peut plus s'en éloigner de plus de 3\" pour le reste de la partie. De plus, tant qu'elle est à moins de 3\" du marqueur, Eowyn gagne la règle spéciale Sans Peur et peut relancer tous ses jets pour Blesser ratés. Par ailleurs, elle reçoit également un bonus de +1 pour Blesser quand elle porte des coups contre la figurine qui a tué Théoden.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Merry",
+        "effet": "Merry suit les règles des Passagers comme présenté dans le livre de règles, avec l'exception que tant qu'il reste le passager de Dernhelm, il peut dépenser ses points de Puissance pour déclarer des Actions Héroïques et affecter les jets de Dernhelm de la manière habituelle. De plus, tant que Merry est Passager, Dernhelm gagne aussi le bénéfice de la règle spéciale Résistant à la Magie. Si Merry est tué, ou désarçonné, passez la valeur d'Attaque de Dernhelm à 2.",
+        "etat": "règle"
+    },
+    {
+        "nom": "Javelots",
+        "effet": "Portée 8\" Force 3",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Pour Théoden !",
+        "effet": "Si Théoden est Engagé dans un Combat à moins de 12\" de Déorwine, alors Déorwine peut déclarer un Combat Héroïque sans utiliser de Puissance. Si le Combat Héroïque est réussi, alors Déorwine doit utiliser le mouvement suivant pour rejoindre le combat de Théoden. Si cela n'est pas possible, Déorwine doit aller au plus près possible de Théoden.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Nerfs Instables",
+        "effet": "Aldor tire toujours en premier lors de la phase de Tir, avant que les Tirs Héroïques ne soient résolus.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Tir Chanceux",
+        "effet": "Aldor peut relancer les jets pour Toucher et pour Blesser quand il tire avec son Arc.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Le Prix du Chagrin",
+        "effet": "Si Théoden ou Eowyn sont dans la même armée que Eomer, et qu'au moins l'un des deux est tué, pour le reste de la partie, Eomer ajoute +1 à tous ses jets pour Blesser durant la phase de Combat. De plus, pour le reste de la partie, Eomer doit charger à chaque tour s'il est en mesure de le faire.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Eorl le Jeune",
+        "effet": "Si votre armée contient Eorl le Jeune, elle ne peut inclure d'autres Héros nommés de la liste d'armée du Rohan sous peine de perdre son Bonus d'Armée. De plus, si votre armée inclut Eorl le Jeune, alors toutes les autres forces deviennent des Alliés Impossibles à l'exception de Minas Tirith - tant que la force du Gondor ne comporte pas de Héros nommé non plus.",
+        "etat": "règle"
+    },
+    {
+        "nom": "Héros de Légende (Eorl)",
+        "effet": "A chaque tour, la première fois qu'Eorl le Jeune dépense un point de Puissance, lancez 1D6. Sur un 4+, le point de Puissance est gratuit et n'est pas déduit de sa réserve de Puissance.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Cor de Helm (Erkenbrand)",
+        "effet": "C'est un Cor de Guerre qui confère +2 Bravoure au lieu de +1. Cependant, ce Cor n'affecte que les figurines du Rohan.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Erkenbrand",
+        "effet": "Si votre armée inclut Erkenbrand, Capitaine du Rohan, vous pouvez améliorer tous les Cavaliers du Rohan de sa troupe en Boucliers Rouges de l'Ouestfold pour un surcoût de +1pt par unité. Les Boucliers Rouges de l'Ouestfold considèrent Erkenbrand comme une Bannière lorsqu'ils sont à moins de 3\" de lui.",
+        "etat": "amélioration"
+    },
+    {
+        "nom": "Felarof",
+        "effet": "La noble monture d'Eorl est un cheval caparaçonné avec un Mouvement de 12\"",
+        "etat": "règle"
+    },
+    {
+        "nom": "Protecteur Attitré (Théoden)",
+        "effet": "Un Protecteur Attitré est assigné à la garde d'une figurine bien spécifique, mentionnée entre crochets après la Règle Spéciale. Tant que la figurine désignée est en vie, il réussit tous les tests de Bravoure qu'il est amené à effectuer.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Étendard Royal du Rohan",
+        "effet": "Ce précieux héritage est une Bannière. De plus, un seul Héros du Rohan qui est à moins de 3\" de l'Étendard Royal du Rohan au début d'un tour, et qui n'a plus de Puissance restante, gagne automatiquement 1 point de Puissance dans sa réserve. Cela ne peut pas amener sa Puissance au-delà de son niveau de départ. Gamelin ne souffre d'aucune pénalité lorsqu'il porte l'Étendard Royal du Rohan.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Maître Archer",
+        "effet": "Les Grands Veneurs du Roi ne ratent leurs jets de Trajectoire que sur un 1. De plus, chaque fois que cette figurine tue un Héros ou un Monstre, restaurez la Puissance du Grand Veneur du Roi à son niveau de départ.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Helmingas",
+        "effet": "Si votre armée inclut Grimbold de Grimslade, vous pouvez améliorer tous les Guerriers du Rohan de votre armée en Helmingas pour un surcoût de +1pt par unité. Les Helmingas ont une Force de 4 au lieu de 3.",
+        "etat": "amélioration"
+    },
+    {
+        "nom": "Il y a toujours de l'espoir",
+        "effet": "Tant qu'il est à 6\" d'Aragorn, Haleth gagne une Attaque supplémentaire pour un total de 2.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Battez-vous jusqu'au dernier",
+        "effet": "Si au début de la phase de Combat, Haleth est engagé en combat, pour la durée du tour Aragorn et toute autre figurine d'Infanterie alliée du Rohan à moins de 6\" d'Haleth ajoutent +1 à leur valeur de Combat. Cet avantage est annulé immédiatement si Haleth est tué.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Cor de Helm (Helm)",
+        "effet": "C'est un Cor de Guerre. De plus, dans un tour où Helm charge en combat, il cause la Terreur jusqu'à la fin du tour.\n\nCor de guerre : Si vous avez un ou plusieurs cors de guerre sur le champ de bataille, toutes les figurines de votre armée reçoivent +1 en bravoure.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Présence Inspirante",
+        "effet": "Les Guerriers du Rohan alliés à 6\" de Helm Poing de Marteau ajoutent +1 à leur valeur de Combat.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Le Poing de Marteau",
+        "effet": "Helm peut choisir de combattre avec ses poings à la place de son épée, dans ce cas il peut utiliser le coup spécial Balayage. De plus, Helm ne compte jamais comme étant désarmé. Si votre armée contient Helm Poing de Marteau, elle ne peut inclure d'autres Héros nommés de la liste d'armée du Rohan. De plus, si votre armée inclut Helm Main-Marteau, alors toutes les autres forces deviennent des Alliés Impossibles.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Poney : Timide",
+        "effet": "Une figurine montant un Poney doit faire un test de Bravoure pour Charger, même si elle a une règle qui lui fait réussir automatiquement ses tests de Bravoure. De plus, elle ne bénéficie pas de l'Attaque supplémentaire ni de la possibilité de renverser l'adversaire si elle charge. Comme il n'a pas d'Attaque, il est toujours retiré comme perte si son Cavalier démonte ou est tué.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Herugrim",
+        "effet": "Herugrim est une épée. De plus, Théoden peut utiliser le Coup Spécial Feinte même si sa valeur de Combat est inférieure à celle de son adversaire.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "La Volonté des Hommes est si aisément corruptible",
+        "effet": "Si Grima Langue-de-Serpent est à moins de 6\" de Théoden, Roi du Rohan, alors Théoden réduit sa valeur de Combat à 3/4+ et il passe à 1 Attaque. De plus, il ne peut pas déclarer d'Actions Héroïques et ne peut pas utiliser de point de Volonté.",
+        "etat": "passif"
+    },
+    {
+        "nom": "En avant ! Ne craignez aucune obscurité !",
+        "effet": "La règle « Tenez-Bon ! » de Théoden a une portée de 12\" au lieu de 6\".",
+        "etat": "actif"
+    },
+    {
+        "nom": "Charge Téméraire",
+        "effet": "Théodred doit charger une figurine adverse s'il est en mesure de le faire. De plus, dans un tour où il Charge, Théodred peut relancer tous les jets pour Blesser ratés durant la phase de Combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Lien Familial",
+        "effet": "Tant que Bain se trouve à moins de 6\" de Bard l'Archer, il gagne un bonus de +1 à sa valeur de Bravoure.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Conseil Douteux",
+        "effet": "Alfrid peut dépenser des points de Volonté au début de la Phase d'Initiative (avant que les dés soit lancés). Pour chaque point dépensé, nommez un Héros de Lacville à moins de 6\" et lancez 1D6. Sur 2+, ce Héros gagne un point de Puissance. Sur un 1, ce même Héros perd un point de Puissance que gagne alors Alfrid (les cibles de cette règle peuvent acquérir une quantité de points de Puissance supérieure au niveau initial).",
+        "etat": "actif"
+    },
+    {
+        "nom": "Tir Rapide (Bard)",
+        "effet": "Si Bard l'Archer touche un ennemi avec son Grand Arc, il peut de suite effectuer un autre tir sur la même figurine ou sur une cible à moins de 3\", pour un maximum de trois tirs par tour.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Tir précis (Engins de sièges)",
+        "effet": "Le tir d'une Arquelance dévie de 3\" au lieu de 6\" lorsqu'elle vise une Cible du Champ de Bataille.",
+        "etat": "engin"
+    },
+    {
+        "nom": "La Flèche Noire",
+        "effet": "Une fois par partie, Bard l'Archer peut tirer sa Flèche Noire au lieu de tirer normalement avec l'Arquelance. Auquel cas Bard relance les jets pour Toucher ratés et les tests de Trajectoire. De plus, aucun jet n'est requis sur le tableau de Déviation ; une touche réussie contre une cible compte automatiquement comme un 6, un Tir parfait.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Sauveur de Lacville",
+        "effet": "Bain, Percy, Hilda Bianca, les Capitaines de la Milice et les Miliciens de Lacville à moins de 6\" de Bard reçoivent un bonus de +1 à leur valeur de Combat et comptent comme étant à portée d'une Bannière.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Il ne s'est pas encore réveillé",
+        "effet": "Bilbon Sacquet ignore la section sur la Volonté de Sauron dans les règles de l'Anneau Unique. En outre, si Bilbon est la seule figurine restante contrôlée par le joueur du Bien, et qu'il porte l'Anneau Unique, il n'est pas retiré comme perte, comme cela devrait normalement être le cas.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Soyons aux côtés de nos hommes !",
+        "effet": "Si Hilda Bianca charge, elle-même ainsi que les Miliciens de Lacville à moins de 3\" (et qui eux aussi doivent avoir chargé) gagnent un bonus de +1 aux jets pour Blesser.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Archers, suivez-moi !",
+        "effet": "Percy et les Miliciens de Lacville à moins de 6\" de lui peuvent relancer les 1 de leurs jets pour Toucher quand ils tirent à l'Arc.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Papa ! Ici !",
+        "effet": "Bard l'Archer et Bain, Fils de Bard, reçoivent un bonus de +1 à leur valeur de Combat s'ils sont à moins de 6\" de Sigrid ou de Tilda. S'ils sont à moins de 6\" des deux, ils peuvent en plus déclarer gratuitement un Combat Héroïque à chaque tour.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Une Raison de se Battre",
+        "effet": "Si l'une des filles est tuée, Bard l'Archer réussira automatiquement tous ses tests de Bravoure mais il devra charger sinon se rapprocher au maximum de leur assassin. Une fois que Bard l'a tué, il devra pareillement charger ou se déplacer sur l'ennemi le plus proche et ainsi de suite jusqu'à la fin de la partie. Si deux ennemis sont responsables de la mort de Sigrid et Tilda, Bard opère de la même manière en ciblant d'abord le meurtrier le plus proche puis l'autre.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Sigrid & Tilda",
+        "effet": "Sigrid et Tilda ne peuvent être incluses dans votre armée que si Bard l'Archer ou Bain, Fils de Bard, en font aussi partie, et elles se déploient seulement au sein de leurs troupes.",
+        "etat": "règle"
+    },
+    {
+        "nom": "Durtûz, le Fauchon d'Argent",
+        "effet": "Durtûz est une Lame de facture elfique Bâtarde.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Phalange",
+        "effet": "Les Orientaux peuvent utiliser en même temps pique et bouclier sans pénalité. De plus, si un Oriental à pied doté de la règle spéciale Phalange perd un combat, jusqu'à deux autres guerriers - eux aussi dotés de cette règle - peuvent faire de la place au lieu d'un seul.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Héraut de Victoire",
+        "effet": "Toutes les figurines d'Oriental traitent Amdûr comme une Bannière (lui-même inclus). Si Amdûr vient vaincre le général ennemi, la portée de cet effet passe à 6\".",
+        "etat": "passif"
+    },
+    {
+        "nom": "Le Seigneur des Lames",
+        "effet": "Quand un ennemi au combat avec Amdûr déclare une Frappe Héroïque, Amdûr peut aussi en déclarer une gratuitement. Si Amdûr a déjà déclaré une autre Action Héroïque, il peut changer d'avis ; mais il ne regagne aucun point de Puissance précédemment dépensé.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Agilité Surnaturelle",
+        "effet": "Quand une telle figurine est jetée à terre, lancez 1D6. Sur un 4+, elle se maintient debout. Si elle est montée au moment où elle se fait mettre à terre et qu'elle réussit le 4+, elle perd tout de même son cheval mais retombe sur ses pieds. Si elle est censée subir le résultat d'un Vol Plané automatique et qu'elle réussit le 4+, alors elle perd sa monture mais évite les autres effets.",
+        "etat": "actif"
+    },
+    {
+        "nom": "La Horde Etincelante",
+        "effet": "La figurine gagne la règle spéciale Mur de Boucliers tant qu'elle est montée. Le bonus de +1 en Défense s'applique à la fois au cavalier et à la monture. Les Héros non équipés d'un Bouclier bénéficient aussi de cette règle.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Bâton oriental de combat",
+        "effet": "Peut être utilisé comme une lance ou comme une hache à deux mains.",
+        "etat": "equipement"
+    },{
+        "nom": "Adepte de la Sorcellerie",
+        "effet": "Si, lorsqu'il tente de lancer un sort, Brórgîr le Conjureur obtient un 6 naturel sur ses dés, alors il récupère un seul point de Volonté après que les effets du sort aient été réalisés.",
+        "etat": "actif"
+      }
 ]
