@@ -25,21 +25,23 @@ function Modalpower({ powerName, powerLancement }) {
             <div className='pouvoir-container'>
                 <div className="pouvoir-name" onClick={togglePopup}>{powerName}</div>
                 <div className="pouvoir-porte">{selectedPouvoir.portee}</div>
-                {powerLancement && (<div className="pouvoir-lancement">{powerLancement}</div>)} 
+                {powerLancement && (<div className="pouvoir-lancement">{powerLancement}</div>)}
 
                 {showPopup && (
                     <div className="popup" onClick={togglePopup}>
-                        <div className="popup-content">
-                            <h3 className='pouvoir-title'>{powerName}</h3>
-                            {selectedPouvoir && (
-                                <div>
-                                    <p className='rule-effect'><b>Effet: </b>{selectedPouvoir.effet}</p>
-                                    {selectedPouvoir.effetCanalise && (
-                                        <p><b>Effet Canalise</b>: {selectedPouvoir.effetCanalise}</p>
+                        <div className='popup-container'>
+                            <div className="popup-content">
+                                <h3 className='pouvoir-title'>{powerName}</h3>
+                                {selectedPouvoir && (
+                                    <div>
+                                        <p className='rule-effect'><b>Effet: </b>{selectedPouvoir.effet}</p>
+                                        {selectedPouvoir.effetCanalise && (
+                                            <p><b>Effet Canalise</b>: {selectedPouvoir.effetCanalise}</p>
 
-                                    )}
-                                </div>
-                            )}
+                                        )}
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 )}

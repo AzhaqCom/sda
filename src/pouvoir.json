@@ -94,27 +94,39 @@
     "nom": "L'Hymne d'Elbereth",
     "portee": "12\"",
     "effet": "Ce chant magnifique affermit la détermination de la cible. La figurine alliée ciblée réussit automatiquement tous les tests de Bravoure qu'elle est amenée à passer pour le reste du tour."
-  
   },
   {
     "nom": "Eldamar Madrigal",
     "portee": "12\"",
     "effet": "La figurine ennemie ciblée doit immédiatement faire un test de Bravoure. Si elle réussit, rien ne se passe. Sinon, elle passe pour la durée du tour sous le contrôle du joueur adverse qui peut la déplacer de son mouvement maximum, même si elle s'est déjà déplacée ce tour.\nNéanmoins, le joueur ne peut pas la faire entrer dans une zone de contrôle ennemie, la faire descendre de monture, s'allonger, ou toute autre action qui risquerait de la blesser (comme une escalade), ni aucune action qui nécessiterait un jet de dé (comme un test de Saut). La figurine affectée ne peut pas se déplacer plus tard dans le tour."
-  
   },
   {
     "nom": "Le Lai de Gondolin",
     "portee": "°",
     "effet": "Ces vers emplis de chagrin évoquent la puissante cité Elfe de Gondolin - un nom qui terrorise instantanément n'importe quelle créature maléfique. Une Sentinelle qui chante ce poème cause la Terreur jusqu'à la fin du tour."
-  
-  },{
-    "nom":"Aura de Confusion",
-    "portee":"°",
-    "effet":"Durée : Épuisement\nCe pouvoir cible le lanceur. Tant que ce pouvoir est en jeu, le lanceur et toutes les figurines alliées à moins de 6\" de lui causent la Terreur."
   },
   {
-    "nom":"Colère de la Nature",
-    "portee":"°",
-    "effet":"Ce pouvoir affecte toutes les figurines ennemies à portée. Toutes les figurines ennemies à moins de 3\" du lanceur sont jetées à terre. Les figurines de Cavalerie sont automatiquement traitées comme si elles avaient fait un Vol plané du tableau de chute de Cavalier - le cavalier et la monture sont jetés à terre."
+    "nom": "Aura de Confusion",
+    "portee": "°",
+    "effet": "Durée : Épuisement\nCe pouvoir cible le lanceur. Tant que ce pouvoir est en jeu, le lanceur et toutes les figurines alliées à moins de 6\" de lui causent la Terreur.",
+    "effetCanalise": "La portée du pouvoir passe à 12\""
+  },
+  {
+    "nom": "Colère de la Nature",
+    "portee": "°",
+    "effet": "Ce pouvoir affecte toutes les figurines ennemies à portée. Toutes les figurines ennemies à moins de 3\" du lanceur sont jetées à terre. Les figurines de Cavalerie sont automatiquement traitées comme si elles avaient fait un Vol plané du tableau de chute de Cavalier - le cavalier et la monture sont jetés à terre.",
+    "effetCanalise": "Toutes les figurines ennemies subissent en plus une touche de Force 2 après avoir été jetées à terre."
+  },
+  {
+    "nom": "Colère de bruinen",
+    "portee": "°",
+    "effet": "Ce pouvoir affecte toutes les figurines ennemies à portée. Toutes les figurines ennemies à moins de 3\" du lanceur sont jetées à terre. Les figurines de Cavalerie sont automatiquement traitées comme si elles avaient subit un Vol plané sur le tableau de chute de Cavalier – le cavalier et la monture sont jetés à terre. Toutes les figurines affectées subissent en plus une touche de Force 2 (ou de Force 8 si elles sont dans une rivière ou dans une zone aquatique)",
+    "effetCanalise": "Toutes les figurines affectées subissent en plus une touche de Force 3 après avoir été jetées à terre (ou de Force 9 si elles sont dans une rivière ou dans une zone aquatique)."
+  },
+  {
+    "nom": "Guérison",
+    "portee": "12\"",
+    "effet": "Le pouvoir cible une figurine alliée à portée. La figurine ciblée récupère immédiatement 1 PV perdu précédemment. Si la cible est une figurine de Cavalerie, alors le lanceur doit choisir qui entre le cavalier et la monture regagne le PV",
+    "effetCanalise": "La cible regagne 1D3 PV perdus"
   }
 ]

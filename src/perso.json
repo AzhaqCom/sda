@@ -801,7 +801,7 @@
                 }
             },
             {
-                "nom": "Lance de Cavalerie",
+                "nom": "Lance de cavalerie",
                 "valeur": 5,
                 "action": {
                     "effet": "regles"
@@ -944,7 +944,7 @@
         ],
         "regles": [
             "Résistant à la Magie",
-            "Lame de facture Elfique (épée bâtarde)",
+            "Lame de facture Elfique, épée bâtarde",
             "Cavalier Expert",
             "Pied Léger",
             "Créature des Bois"
@@ -1044,7 +1044,7 @@
                 }
             },
             {
-                "nom": "Lame de facture Elfique (épée bâtarde)",
+                "nom": "Lame de facture Elfique, épée bâtarde",
                 "valeur": 5,
                 "action": {
                     "effet": "regles"
@@ -1184,7 +1184,7 @@
             "Archer Expert",
             "Alliés jusqu'à la Fin",
             "Coup de Grâce",
-            "Lame de facture Elfique (épée bâtarde)"
+            "Lame de facture Elfique, épée bâtarde"
         ]
     },
     {
@@ -2255,6 +2255,940 @@
                 "valeur": 0,
                 "action": {
                     "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Capitaine Haut Elfe",
+        "points": "75",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Cavalier Expert",
+            "Lame de facture Elfique, épée bâtarde"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Lance de cavalerie",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Cirdan",
+        "points": "80",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 4,
+            "D": 4,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Résistance Héroïque"
+        ],
+        "regles": [
+            "Désarmé",
+            "Résistant à la Magie",
+            "Terreur",
+            "Créature des Bois",
+            "Le Pouvoir du Charpentier"
+        ],
+        "options": [],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Aura de Vaillance",
+                "valeur": "2+"
+            },
+            {
+                "nom": "Lumière Aveuglante",
+                "valeur": "2+"
+            },
+            {
+                "nom": "Lames Enchantées",
+                "valeur": "4+"
+            },
+            {
+                "nom": "Aura de Confusion",
+                "valeur": "5+"
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Elladan",
+        "points": "160",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Lames des Jumeaux",
+            "Lien Fraternel",
+            "Elladan & Elrohir",
+            "Lame de facture Elfique"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 20,
+                "action": "chevauxjumeau"
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 10,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 10,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 10,
+                "action": "armurejumeau"
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Elrohir (Jumeau)",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "6/3+",
+                    "F": 4,
+                    "D": 5,
+                    "A": 2,
+                    "B": 6
+                },
+                "capacites": {
+                    "Puissance": 3,
+                    "Volonté": 2,
+                    "Destin": 2,
+                    "Points de vie": 2,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Elrohir",
+        "points": "160",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Lames des Jumeaux",
+            "Lien Fraternel",
+            "Elladan & Elrohir",
+            "Lame de facture Elfique"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 20,
+                "action": "chevauxjumeau"
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 10,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 10,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 10,
+                "action": "armurejumeau"
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Elladan (Jumeau)",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "6/3+",
+                    "F": 4,
+                    "D": 5,
+                    "A": 2,
+                    "B": 6
+                },
+                "capacites": {
+                    "Puissance": 3,
+                    "Volonté": 2,
+                    "Destin": 2,
+                    "Points de vie": 2,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Elond, Maître de Fondcombe",
+        "points": "170",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Terreur",
+            "Seigneur de l'Ouest",
+            "Clairvoyance des Eldar",
+            "Hadhafang",
+            "Vilya"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 2
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Colère de bruinen",
+                "valeur": "4+"
+            },
+            {
+                "nom": "Guérison",
+                "valeur": "3+"
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Erestor",
+        "points": "85",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Terreur",
+            "Créature des Bois",
+            "Dagues de Noldorin"
+        ],
+        "options": [],
+        "pouvoirsMagiques": []
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Gildor Inglorion",
+        "points": "70",
+        "caracteristiques": {
+            "M": 8,
+            "C": "6/3+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Résistance Héroïque",
+            "Marche Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Terreur",
+            "Cape Elfique",
+            "Lame de facture Elfique",
+            "Gildor Inglorion"
+        ],
+        "options": [],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+"
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Gil-Galad, Haut Roi des Elfes",
+        "points": "170",
+        "caracteristiques": {
+            "M": 6,
+            "C": "9/3+",
+            "F": 4,
+            "D": 7,
+            "A": 3,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Sang & Gloire",
+            "Terreur",
+            "Créature des Bois",
+            "Haut Roi des Elfes",
+            "Seigneur de l'Ouest",
+            "Aeglos",
+            "Gil-Galad Alliances",
+            "Gil-Galad perte du bonus d'Armée",
+            "Gil-Galad, Haut Roi des Elfes"
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Glorfindel, Seigneur de l'Ouest",
+        "points": "145",
+        "caracteristiques": {
+            "M": 6,
+            "C": "7/3+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "options": [
+            {
+                "nom": "Armure de Gondolin",
+                "valeur": 15,
+                "action": "armuregondolin"
+            },
+            {
+                "nom": "Asfaloth",
+                "valeur": 10,
+                "action": "addasfaloth"
+            }
+        ],
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Seigneur des Chevaux",
+            "Terreur",
+            "Créature des Bois",
+            "Seigneur de l'Ouest",
+            "Résolution Inflexible"
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Lindir de Fondcombe",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 4,
+            "D": 4,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 2
+                }
+            }
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Chant pour Elbereth",
+            "Sage Conseil",
+            "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "personnage": "Maitre des Orages Haut Elfe",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Créature des Bois",
+            "Pouvoirs de la Nature",
+            "Lame de facture Elfique"
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Appel aux Vents",
+                "valeur": "3+"
+            },
+            {
+                "nom": "Volonté de Fer",
+                "valeur": "4+"
+            }
+        ]
+    },
+    {
+        "faction": "Númenor",
+        "personnage": "Capitaine de Númenor",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Sang de Númenor"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance de cavalerie",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Númenor",
+        "personnage": "Elendil, Haut Roi du Gondor et de l'Arnor",
+        "points": "185",
+        "caracteristiques": {
+            "M": 6,
+            "C": "7/4+",
+            "F": 5,
+            "D": 7,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Défi Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Haut Roi du Gondor et de l'Arnor",
+            "Détermination Inflexible"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Númenor",
+        "personnage": "Isildur",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 5,
+            "D": 7,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+         
+        ],
+        "regles": [
+            "Sang de Númenor"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Anneau Unique",
+                "valeur": 0,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "personnage": "Aragorn - Grand-Pas",
+        "points": "160",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Marche Héroïque",
+            "Précision Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Héros Mythique",
+            "Seigneur des Chevaux"
+        ],
+        "options": [
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "personnage": "Legolas Vertefeuille",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Tir Mortel",
+            "Décompte final, 42"
+        ],
+        "options": [
+            {
+                "nom": "Armure",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "personnage": "Gimli, fils de Glóin",
+        "points": "100",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Les Haches des Nains !",
+            "Je suis assis sur mon 43ème",
+            "Hache à deux mains de maître",
+            "Haches de jet"
+        ],
+        "options": [
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "personnage": "Le Roi des Morts",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 6,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Les Lames des Morts",
+            "Terreur",
+            "Drain d'Âme",
+            "Les morts et les Vivants",
+            "Marche Spectrale"
+        ],
+        "options": []
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "personnage": "Héraut des Morts",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 3,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [],
+        "regles": [
+            "Les Lames des Morts",
+            "Terreur",
+            "Marche Spectrale",
+            "Conseil du Roi",
+            "Oriflamme des Morts"
+        ],
+        "options": [
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
                 }
             }
         ]

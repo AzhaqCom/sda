@@ -85,7 +85,7 @@
         "etat": "equipement"
     },
     {
-        "nom": "Lame de facture Elfique (épée bâtarde)",
+        "nom": "Lame de facture Elfique, épée bâtarde",
         "effet": "Les figurines utilisant des armes de facture elfique ont plus de chance de remporter le jet pour départager une égalité dans un combat. Si c'est une figurine du Bien, elle remportera sur un score qui donne 3-6 au lieu de 4-6.\n\nUne arme bâtarde peut être utilisée soit comme une arme à une main soit comme une arme à deux mains. Lorsqu'une figurine équipée d'une arme bâtarde se bat au corps à corps, le joueur la contrôlant doit décider au début du combat dans quel style la figurine va combattre.\n\nUne figurine utilisant une arme à deux mains au combat ne peut pas utiliser un Bouclier en même temps (elle n'a pas assez de mains !), mais elle peut porter d'autres objets (sur son dos ou dans un sac).\nUne figurine utilisant une arme à deux mains au corps à corps souffre d'un malus de -1 au jet de Duel - mais lorsqu'elle porte ses coups pour Blesser avec une arme à deux mains, elle ajoute +1 à ses jets. Par conséquent, un jet qui donne 3 fera 4 et ainsi de suite. Veuillez noter que dans le cas où deux jets sont requis pour Blesser (comme 6/4+ par exemple), le bonus s'applique aux deux jets (5/3+ pour notre exemple).",
         "etat": "equipement"
     },
@@ -325,12 +325,12 @@
         "etat": "equipement"
     },
     {
-        "nom": "Fléau (x)",
+        "nom": "Fléau",
         "effet": "Les armes disposant de cette règle infligent 1D3 Blessures au lieu d'une seule, par coup touchant au but (non sauvé par du Destin), contre une race/ espèce/faction bien spécifique, précisée dans la parenthèse. Ainsi, une arme dotée de la Règle Spéciale Fléau (Orques) inflige 1D3 Blessures au lieu d'une seule, par coup touchant au but, aux figurines ayant le mot-clef Orque",
         "etat": "actif"
     },
     {
-        "nom": "Terreur (x)",
+        "nom": "Terreur",
         "effet": "Quand une figurine souhaite charger un adversaire qui cause la Terreur (même si cette figurine est actuellement hors de portée), elle doit d'abord, avant de faire n'importe quoi d'autre, effectuer un test de Bravoure. Si le test est réussi, la charge se passe normalement. Si le test est raté, elle n'a pas le droit de charger et reste figée sur place pour le reste du tour. Parfois, la Terreur est dirigée contre un certain type d'ennemi. Dans ce cas, les créatures affectées par la Terreur sont clairement indiquées. Typiquement, il peut y avoir une Terreur (Orque) qui ne demandera un Test de Bravoure qu'aux figurines Orques.",
         "etat": "passif"
     },
@@ -543,5 +543,180 @@
         "nom": "Anneau Unique",
         "effet": "Porter l'anneau :\nLa figurine avec l'Anneau peut l'enfiler à n'importe quel moment de sa phase de Mouvement. Une figurine déjà Engagée au Combat ne peut pas enfiler l'Anneau. Une fois que l'Anneau est à son doigt, le porteur de l'Anneau devient invisible. Si une figurine qui met l'Anneau est montée, sa monture fuit automatiquement et elle devra faire un test de chute de Cavalier. \n\nInvisible: \nTant que la figurine porte l'Anneau, elle ne peut pas être directement ciblée par un Pouvoir Magique ou un tir (et ne compte pas étant sur la Trajectoire). Le porteur de l'Anneau n'a pas de zone de contrôle tant qu'il est invisible et les figurines ennemies peuvent passer «à travers» lui ; de la même façon, il peut «traverser» les figurines amies ou ennemies tant qu'il ne termine pas son Mouvement à un endroit où se trouve une autre figurine. \n\nSi une figurine ennemie souhaite finir son mouvement là où se trouve le porteur de l'Anneau, décalez ce dernier de la distance minimale pour faire de la place à la figurine ennemie - cela peut impliquer de franchir des murets, bouger à travers les ennemis ou être poussé du haut d'une falaise ! Cela ne peut être fait si la figurine Invisible est Engagée au Combat. \n\nSi une figurine ennemie souhaite charger le porteur de l'Anneau, elle doit réussir un test de Bravoure en appliquant un malus de -1 pour chaque pouce qui la sépare du porteur de l'Anneau. Les figurines qui réussissent automatiquement leur test de Bravoure doivent quand même passer le test, car il représente le fait d'être capable de repérer le porteur de l'Anneau. Si une figurine rate ce test, elle ne peut juste pas voir la figurine Invisible, et peut tout de même poursuivre son tour normalement, sans toutefois pouvoir charger la figurine Invisible ce tour. Pendant la phase de Combat, toute figurine engagée au corps à corps contre le porteur de l'Anneau divise par deux sa valeur de Combat pour le temps du combat. Une figurine Invisible peut toujours déclarer des Actions Héroïques, mais ne peut pas en faire profiter ses alliés en criant « Avec Moi ! », « Marche forcée ! » ou toute autre action impliquant des figurines alliées. Ainsi, si une figurine Invisible déclare un Combat Héroïque, ses alliés ne pourront pas se redéplacer s'il est réussi. \n\nAucune de ces règles ne s'applique ni à Sauron ni aux Nazgûl. Ces derniers gagnent même des bonus décrits dans leurs Règles Spéciales et dans leur règle La Volonté du Mal.\n\nRetirer l'Anneau : \nSi le joueur contrôlant le porteur de l'Anneau souhaite qu'il retire l'Anneau, il doit réussir un test de Bravoure. Il peut être fait à n'importe quel point de la phase de Mouvement du porteur de l'Anneau, une fois qu'il a été établi quel camp contrôle son mouvement. \n\nSi le test est raté, le porteur de l'Anneau doit continuer à le porter jusqu'au prochain tour, où il aura une nouvelle chance de le retirer. Une figurine ne peut pas mettre l'Anneau et le retirer lors du même tour.",
         "etat": "actif"
+    },
+    {
+        "nom": "Décompte final, 42",
+        "effet": "Si Legolas et Gimli font partie de la même armée, alors gardez une trace de leur nombre de victimes. A n'importe quel moment où Legolas a tué moins d'adversaires que Gimli, alors la valeur de Tir de Legolas est augmentée de 1.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Les Haches des Nains !",
+        "effet": "Au début de chaque Combat, Gimli peut choisir de se battre soit en utilisant sa Hache à Deux Mains, soit en utilisant ses deux Haches simples. Dans ce dernier cas, il passe alors à 3 Attaques.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Je suis assis sur mon 43ème",
+        "effet": "Si Legolas et Gimli font partie de la même armée, alors gardez une trace de leur nombre de victimes. À n'importe quel moment où Gimli a tué moins d'adversaires que Legolas, alors Gimli reçoit un bonus de +1 pour Blesser en combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Hache à deux mains de maître",
+        "effet": "Une figurine qui utilise une arme de maître ne souffre pas du malus de -1 sur le jet de Duel pour l'utilisation d'une arme à deux mains.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Haches de jet",
+        "effet": "Une figurine avec une Arme de Jet peut la lancer une fois par tour pendant la phase de Tir même si elle s'est déplacée de plus de la moitié de son Mouvement. Une figurine ne peut pas combattre avec ses Armes de Jet pendant la phase de Combat.\n\nUne Arme de Jet peut être également utilisée lorsque son porteur charge au combat. Le joueur déplace sa figurine comme si elle chargeait l'ennemi, mais avant de la mettre au contact socle à socle, elle s'arrête à 1\" de son adversaire.\n\nElle peut alors jeter son Arme de Jet sur la cible qu'elle charge. Ce tir est résolu en utilisant les règles des tirs même si cela se passe pendant la phase de Mouvement. Les Armes de Jet lancées pendant la charge ne souffrent pas du malus de -1 pour s'être déplacé dans le même tour.\n\nSi la cible n'est pas tuée, la figurine qui a jeté son Arme de Jet doit la charger. Si la cible est tuée, la figurine qui a jeté son Arme de Jet peut finir son Mouvement comme elle le souhaite - s'arrêter, charger une autre figurine, ou autre.\n\nLes Armes de Jet ne comptent pas dans la Limite d'Arcs de l'armée.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Émissaire du Mal",
+        "effet": "Tout ennemi présent dans un rayon de 12\" autour de l'Émissaire du Mal subit un malus de -1 à sa valeur de Bravoure. Notez que cette pénalité n'est pas cumulable avec d'autres malus similaires comme ceux du Tambour Gobelin ou du Mal Ancien.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Drain d'Âme",
+        "effet": "Une figurine qui subit une Blessure par le Nécromancien durant la phase de Combat est automatiquement tuée, quelque soit le nombre de PV qu'il lui reste. Les Héros peuvent tenter d'éviter la blessure avec leurs points de Destin, mais à la moindre Blessure qui n'est pas évitée, le Héros est automatiquement tué et retiré comme perte.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Les Lames des Morts",
+        "effet": "Quand une figurine ayant cette Règle Spéciale blesse au combat, elle compare sa Force à la Bravoure de la cible, plutôt qu'à la Défense comme habituellement sur le Tableau des Blessures. Cependant, aucun Coup Spécial ne peut être effectué par le détenteur de cette règle.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Les Morts et les Vivants",
+        "effet": "Seuls les Hérauts des Morts, les Guerriers des Morts et les Cavaliers des Morts peuvent bénéficier de la règle spéciale « Tenez Bon ! » du Roi des Morts ou de ses Actions Héroïques.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Marche Spectrale",
+        "effet": "Une figurine avec cette règle spéciale se déplace sur l'eau comme sur un terrain découvert classique.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Conseil du Roi",
+        "effet": "Si le Roi des Morts est à moins de 3\" d'un ou de plusieurs Hérauts des Morts au début de n'importe quelle phase, le Roi des Morts peut dépenser un point de Volonté du Héraut pour déclarer une Action Héroïque à la place d'un de ses propres points de Puissance.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Oriflamme des Morts",
+        "effet": "Les Esprits alliés situés à moins de 3\" d'une Oriflamme des Morts gagnent la règle spéciale Résistant à la Magie.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Désarmé",
+        "effet": "Une figurine est désarmée uniquement lorsque cela est clairement indiqué dans son profil. Une figurine désarmée souffre d'un malus de -1 à ses jets de Duel et à ses jets pour Blesser.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Le pouvoir du Charpentier",
+        "effet": "Cirdan peut dépenser un point de Volonté chaque tour sans réduire sa propre réserve de Volonté.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Lames des Jumeaux",
+        "effet": "Lorsqu'ils se battent à pied, Elladan et Elrohir doivent choisir de se battre de l'une des façons suivantes. Ils peuvent choisir de se battre avec une seule lame, qui compte alors comme une arme à deux mains ; ils peuvent choisir de se battre avec deux Épées et gagnent alors 1 Attaque supplémentaire ; enfin, ils peuvent choisir de parer les coups adverses, et comptent alors comme Protégés derrière un bouclier.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Lien Fraternel",
+        "effet": "Si l'un des frères est tué, le survivant augmente immédiatement sa Force de 1 et diminue sa Défense de 1. Le frère survivant réussit automatiquement tous les tests de Bravoure qu'il est amené à faire, et doit faire son maximum pour charger l'adversaire responsable de la mort de son frère aussi vite que possible. Une fois celui-ci mort, le frère survivant doit charger ou se diriger le plus vite possible vers l'adversaire le plus proche. De plus, si le responsable de la mort de son frère est un Héros, la première fois que le survivant le charge, il doit déclarer un Défi Héroïque visant ce Héros, qui ne lui coûte pas de point de Puissance. Ce Défi Héroïque doit être lancé même si le Héros adverse en question est d'un moindre rang héroïque que le frère survivant.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Elladan & Elrohir",
+        "effet": "Elladan & Elrohir ne peuvent pas être joués l'un sans l'autre.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Hadhafang",
+        "effet": "Il s'agit d'une Lame de facture elfique (épée bâtarde). De plus, Elrond gagne un bonus de +1 pour Blesser les Esprits lorsqu'il leur porte des coups avec Hadhafang.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Vilya",
+        "effet": "Elrond, Maître de Fondcombe peut relancer le dé lorsqu'il utilise un point de Destin.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Clairvoyance des Eldar",
+        "effet": "Avant que la partie ne commence, lancez 1D6 et notez le résultat - ce sont les points de Clairvoyance d'Elrond pour cette bataille. Lors de la phase d'Initiative, après que les dés aient été lancés et s'il est présent sur le champ de bataille, Elrond peut choisir de dépenser des points de Clairvoyance pour modifier le résultat du joueur qui le contrôle. Pour chaque point de Clairvoyance dépensé, Elrond peut ajouter ou soustraire 1 au résultat du dé, jusqu'à un minimum de 1 ou un maximum de 6.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Dagues de Noldorin",
+        "effet": "Ces dagues sont de facture elfique. Erestor peut les utiliser comme armes de jet. Il peut également relancer les jets pour Blesser ratés quand il lance ses dagues ou lorsqu'il porte des coups avec.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Gildor Inglorion",
+        "effet": "Si votre armée inclut Gildor Inglorion, vous pouvez inclure des Guerriers Elfes Sylvestres de la liste d'armée de la Lothlorien (voir liste Lothlorien) dans sa troupe comme s'ils faisaient partie de cette liste d'armée. Ces Guerriers Elfes Sylvestres doivent être améliorés en Exilés Noldorin pour 1pt supplémentaire par figurine. Les Exilés Noldorin ont un Mouvement de 8\".",
+        "etat": "amélioration"
+    },
+    {
+        "nom": "Aeglos",
+        "effet": "Aeglos est une Lance de facture elfique. De plus, Gil-Galad peut ajouter +1 à tous ses jets pour Blesser lorsqu'il porte des coups avec Aeglos.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Haut Roi des Elfes",
+        "effet": "La discipline avec laquelle Gil-Galad mène ses troupes est incroyable. La règle « Tenez-bon ! » de Gil-Galad a une portée de 12\" et, contrairement aux « Tenez-bon ! » des autres Héros, peut également affecter les autres Héros Elfes alliés.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Sang & Gloire",
+        "effet": "À chaque fois que cette figurine élimine un Héros au combat, elle récupère un point de Puissance précédemment dépensé pendant la bataille.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Gil-Galad Alliances",
+        "effet": "Si votre force contient Gil-Galad, alors elle devient automatiquement un Allié Impossible de toutes les autres forces à l'exception des suivantes : Numenor (Allié Historique), Lothlorien, Fangorn, et les Monts Brumeux (Alliés de Circonstance).",
+        "etat": "règle"
+    },
+    {
+        "nom": "Gil-Galad perte du bonus d'Armée",
+        "effet": "Si votre force contient Gil-Galad et soit Arwen, Elladan & Elrohir, Lindir, ou Bilbon, elle perd automatiquement son Bonus d'Armée. De plus, votre force devient automatiquement un Allié Impossible pour toutes les autres listes au regard de sa propre incohérence.",
+        "etat": "règle"
+    },
+    {
+        "nom": "Gil-Galad, Haut Roi des Elfes",
+        "effet": "Si votre armée inclut Gil-Galad, Haut Roi des Elfes, vous pouvez améliorer chaque Guerrier Haut Elfe de sa troupe en Garde du Roi, pour 1pt supplémentaire par figurine. Les Gardes du Roi ont une valeur de Combat de 6/3+.",
+        "etat": "amélioration"
+    },
+    {
+        "nom": "Résolution Inflexible",
+        "effet": "Glorfindel compte toujours comme ayant reçu les effets du pouvoir magique Esprit Fortifié. Cet effet est toujours actif, même quand sa Volonté est réduite à 0.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Armure de Gondolin",
+        "effet": "C'est une armure lourde. De plus, tant qu'il porte l'armure de Gondolin, les Monstres ne peuvent pas cibler Glorfindel avec des Attaques Brutales.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Chant pour Elbereth",
+        "effet": "Les figurines de Fondcombe dans un rayon de 6\" de Lindir gagnent la règle spéciale Résistant à la Magie.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Sage Conseil",
+        "effet": "Si Lindir est à moins de 6\" d'Elrond, celui-ci peut dépenser un seul point de Volonté par tour sans réduire sa propre réserve, même s'il n'en a plus.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Sang de Númenor",
+        "effet": "Une figurine dotée de cette règle bénéficie de la Règle Spéciale Résistant à la Magie tant qu'elle est à 6\" d'Elendil, Isildur ou Anárion.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Haut Roi du Gondor et de l'Arnor",
+        "effet": "La portée de la règle « Tenez Bon ! » d'Elendil est de 12\" au lieu de 6\".",
+        "etat": "actif"
+    },
+    {
+        "nom": "Détermination Inflexible",
+        "effet": "Elendil bénéficie toujours des effets du Pouvoir Magique Esprit Fortifié, même si ses points de Volonté sont réduits à 0.",
+        "etat": "passif"
     }
 ]

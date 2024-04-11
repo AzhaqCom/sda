@@ -1,0 +1,42 @@
+[
+    {
+        "faction": "Númenor",
+        "bonus": "Les Hommes de Númenor augmentent leur valeur de Bravoure de 1.",
+        "regles": ""
+    },
+    {
+        "faction": "Gondor",
+        "bonus": "Toutes les figurines du Gondor de cette Liste d'Armée augmentent leur valeur de Bravoure de 1",
+        "regles": ""
+    },
+    {
+        "faction": "Fondcombe",
+        "bonus": "Lorsqu'elles sont à moins de 6\" de leur Général, les figurines de Fondcombe alliées peuvent relancer leurs jets pour Toucher lorsqu'elles tirent dans un tour où elles n'ont pas bougé.",
+        "regles": ""
+    },
+    {
+        "faction": "Rohan",
+        "bonus": "Les figurines de Cavalerie du Rohan alliés gagnent +1 en Force durant un tour où elles ont chargé.",
+        "regles": "Les Cavaliers du Rohan dans cette Liste d'Armée ne comptent pas dans la Limite d'Arcs de votre Force. "
+    },
+    {
+        "faction": "Lothlorien",
+        "bonus": "Les figurines de Lorien alliées gagnent la règle spéciale Résistant à la Magie.",
+        "regles": ""
+    },
+    {
+        "faction": "Mirkwood",
+        "bonus": "Les Rangers de la Forêt Noire ne comptent pas dans la Limite d'Arcs de la liste d'armée.\nDe plus, tant qu'ils sont à moins de 3\" de Thranduil, tous les Capitaines des Gardes du Palais, Capitaines de la Forêt Noire, Gardes du Palais, Cavaliers de la Forêt Noire et Elfes de la Forêt Noire bénéficient d'un bonus de +1 sur leurs jets pour Blesser quand ils portent des Coups.",
+        "regles": ""
+    },
+    {
+        "faction": "Erebor Reconquis",
+        "bonus": "Tous les Nains d'Erebor de cette liste d'armée comptent comme étant à portée d'une Bannière tant qu'ils sont à moins de 6\" de Thorin Ecu-de-Chêne ou de Dain Pied-d'Acier, Roi sous la Montagne.",
+        "regles": "Thorin et les douze Champions d'Erebor peuvent être déployés comme une seule troupe (sans autre suivant) si vous le souhaitez. Si votre armée contient Dain Pied-d'Acier, Roi sous la Montagne ou Thorin III Heaume-de-Pierre, alors toutes les figurines de cette liste d'armée changent leur mot-clef Monts de Fer pour le mot-clef Erebor. Additionnellement, vous ne pouvez pas recruter les figurines suivantes : Thorin Ecude-Chêne, Roi sous la Montagne ; Kíli, Champion d'Erebor ; Fíli, Champion d'Erebor ; Balin, Champion d'Erebor ; Bombur, Champion d'Erebor ; Ori, Champion d'Erebor ; Óin, Champion d'Erebor ; Dáin Pied-d'Acier, Seigneur des Monts de Fer. De plus, Dwalin, Champion d'Erebor perd l'option du Bouquetin de Guerre. \nDans ce cadre, ignorez la matrice d'alliance prévue pour cette liste. A la place, Erebor Restauré est un Allié Historique de la Garnison de Dale tant qu'elle contient Brand, Roi de Dale ou Bard II, Prince de Dale ; et c'est un Allié de Circonstance des Morts de Dunharrow, de Fangorn, de la Communauté, des Fiefs, du Domaine de Thranduil, de Fondcombe, de la Lothlorien, de Minas Tirith, des Monts Brumeux, des Rangers, du Rohan, de la Comté et des Hommes Sauvages de Druadan. Toutes les autres listes sont des Alliés Impossibles."
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "bonus": "Une armée du Retour du Roi doit toujours inclure Aragorn - Grands-Pas et le Roi des Morts. Aragorn est systématiquement le général de l'armée. \nDans cette liste d'armée, Aragorn, Legolas et Gimli peuvent mener des Guerriers des Morts et des Cavaliers des Morts.",
+        "regles": "L'héritier d'Isildur : Aragorn n'a pas à dépenser de points pour obtenir Andúril, Flamme de l'Ouest. Il l'a automatiquement, l'amélioration est gratuite. \n\nLe Roi des Morts :Le Roi des Morts gagne la Règle Spéciale Émissaire du Mal.\n\nCombattez pour moi et regagnez votre honneur : Les figurines avec le mot-clef Esprit de cette liste comptent comme étant dans l'aire d'effet d'une bannière si elles sont à moins de 6\" d'Aragorn"
+    }
+]
