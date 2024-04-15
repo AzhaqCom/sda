@@ -355,6 +355,11 @@
         "etat": "actif"
     },
     {
+        "nom": "Vouge Impériale",
+        "effet": "Il s'agit d'une lance de facture elfique qui peut utiliser le coup spécial Feinte et qui permet à son porteur d'utiliser la règle Se protéger derrière son bouclier. Cependant, il ne peut pas soutenir un allié tant qu'il est monté sur le Palanquin Royal.",
+        "etat": "equipement"
+    },
+    {
         "nom": "Longue Barbe",
         "effet": "Balin peut dépenser un point de Volonté pour relancer le jet d'Initiative",
         "etat": "actif"
@@ -943,9 +948,116 @@
         "nom": "Bâton oriental de combat",
         "effet": "Peut être utilisé comme une lance ou comme une hache à deux mains.",
         "etat": "equipement"
-    },{
+    },
+    {
         "nom": "Adepte de la Sorcellerie",
         "effet": "Si, lorsqu'il tente de lancer un sort, Brórgîr le Conjureur obtient un 6 naturel sur ses dés, alors il récupère un seul point de Volonté après que les effets du sort aient été réalisés.",
         "etat": "actif"
+    },
+    {
+        "nom": "Bouclier de Lames",
+        "effet": "Armés de leurs deux épées, les Chevaliers Dragons peuvent utiliser la règle Se protéger derrière son bouclier.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Chevaliers du Culte du Dragon",
+        "effet": "La troupe menée par un Chevalier Dragon ne peut inclure que des Adeptes du Culte du Dragon ou des Guerriers Orientaux promus Dragons Noirs.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Chef Suprême des Orientaux",
+        "effet": "Tous les Orientaux alliés sur la table bénéficient du « Tenez Bon ! » de l'Empereur-Dragon de Rhûn.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Étendards Royaux",
+        "effet": "Le Palanquin Royal est une bannière d'une portée de 12\". Ces étendards étant fixés directement au palanquin, ni l'Empereur ni les six Dragons Noirs ne subissent le malus habituel de -1 au jet de Duel.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Au Nom de l'Empereur",
+        "effet": "Les Guerriers avec le mot-clef Oriental alliés situés à moins de 6\" du Palanquin Royal, et qui ont une Ligne de Vue sur lui, gagnent un bonus de +1 à leur valeur de Combat.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Palanquin Royal - Infanterie",
+        "effet": "Le Palanquin Royal est une monture pour l'Empereur-Dragon mais il n'agit pas comme de la Cavalerie et ne confère donc ce mot-clef ni à lui-même ni au héros. L'ensemble de la figurine est traité comme de l'Infanterie.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Palanquin Royal - Démoralisation",
+        "effet": "L'Empereur-Dragon de Rhûn et son Palanquin Royal comptent comme une seule figurine au regard du test de Démoralisation.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Palanquin Royal - PV et Mouvement",
+        "effet": "Tant que le Palanquin Royal a au moins 3 Points de Vie restants, il se déplace normalement. Si les PV sont réduits à 2, sa valeur de Mouvement diminue à 3\". S'il lui reste seulement 1 PV, alors il ne peut plus du tout se déplacer.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Palanquin Royal - Tir",
+        "effet": "Quand la figurine est visée par un Tir, un test de Trajectoire doit être effectué pour déterminer qui de l'Empereur ou du Palanquin est touché. Sur 1-4, c'est le Palanquin ; sur 5-6, c'est l'Empereur.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Palanquin Royal - Démontage",
+        "effet": "Si l'Empereur-Dragon démonte du Palanquin Royal pour n'importe quelle raison, ou s'il est tué alors qu'il était dessus, remplacez la figurine par un effectif de guerriers Dragons Noirs équivalent au nombre de Points de Vie restants. Ces guerriers n'ont pas besoin d'effectuer de test de Bravoure pour savoir s'ils fuient ou pas ; ils sont directement placés à l'intérieur de l'ancien emplacement du Palanquin.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Palanquin Royal - Stat et combat",
+        "effet": "Contrairement à d'autres montures, l'Empereur-Dragon est cantonné à ses propres caractéristiques et ne peut jamais utiliser celles du Palanquin. S'il gagne un jet de Duel (sauf s'il Se protège derrière son bouclier), en plus des coups portés par lui-même, son Palanquin Royal peut porter un nombre de coups égal à ses Points de Vie restants. Les coups des porteurs du palanquin sont toujours résolus après ceux du Héros et ne peuvent pas faire l'objet de Coups Spéciaux.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Palanquin Royal - Attaque Brutales et Pouvoirs Magiques",
+        "effet": "Aucun élément composant cette figurine ne peut pas être affecté par les Attaques Brutales Projeter ou Refouler. De plus, elle ne peut pas être déplacée par les Pouvoirs Magiques Appel aux Vents ou Impact Magique, bien qu'elle en subira les autres effets en-dehors du déplacement forcé.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Palanquin Royal - Jeté à terre",
+        "effet": "Le Palanquin Royal ne peut en aucun cas être jeté à terre, sauf s'il est directement touché par un Engin de Siège.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Heaume du Dragon",
+        "effet": "Le Heaume du Dragon confère à son porteur la règle spéciale Résistant à la Magie.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Drain de Vitalité",
+        "effet": "Si Khamûl remporte un combat et porte un Coup qui inflige au moins une blessure à un ennemi, il regagne instantanément un point de Volonté dépensé plus tôt pour chaque blessure infligée (sauf si la blessure a été annulée par un point de Destin ou une règle similaire). Sa Volonté ne peut en aucun cas dépasser 12. \n\nDe plus, au début de la phase de Combat et avant que les Actions Héroïques soient déclarées, Khamûl peut dépenser un seul point de Volonté pour augmenter de 1 sa valeur de Combat, de Force ou d'Attaque pour la durée de cette phase. S'il est monté, Khamûl peut seulement augmenter ses propres valeurs et non celles de sa monture.",
+        "etat": "actif"
+    },
+    {
+        "nom": "La Volonté du Mal",
+        "effet": "Cette figurine perd 1 point de Volonté à la fin de chaque phase de Combat durant laquelle elle a combattu au corps à corps (une ou plusieurs fois, qu'importe). Notez que si une figurine est en contact socle à socle avec un ennemi, elle doit combattre, elle ne peut pas l'éviter. \nUne fois que la figurine ayant la Volonté du Mal tombe à 0 de Volonté, elle est bannie et est donc retirée du jeu comme perte. Une figurine possédant cette règle spéciale ne peut pas utiliser son dernier point de Volonté pour lancer un Pouvoir Magique, et être ainsi retirée comme perte. En outre, un possesseur de l'Anneau ayant enfilé l'Unique n'est aucunement invisible aux yeux d'une figurine disposant de la Volonté du Mal. Cette dernière ne perd pas de Volonté quand elle combat le porteur de l'Anneau, même si d'autres figurines ennemies participent au combat.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Charge Monstrueuse",
+        "effet": "Une telle figurine chargeant au combat gagne les bonus de Jet au sol et d'Attaque Supplémentaire comme si elle était de la Cavalerie (Voir la section Cavalerie du livre de règle), avec les exceptions suivantes : Cette figurine jette aussi à terre la Cavalerie et les Monstres chargés, tant que leur Force est inférieure à la sienne (y compris les figurines à Force 6 ou supérieure), après que les modificateurs éventuels ont été appliqués (comme une Force Héroïque). Une figurine de Cavalerie ainsi renversée effectue automatiquement un Vol Plané sur son test de Chute de Cavalier. De plus, le bonus d'Attaque Supplémentaire est conservé par la créature à la Charge Monstrueuse, même si elle est Chargée à son tour par une figurine de Cavalerie ou par une figurine avec cette Règle Spéciale. Enfin, si la créature dotée de cette règle est une monture de Cavalerie (une Ombre Ailée, au hasard), alors elle compte comme étant sur la Trajectoire du cavalier pour ce qui est du Tir, à la différence près que les tireurs devront obtenir un 5-6 pour atteindre le cavalier, les résultats de 1-2-3-4 touchant la monture monstrueuse.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Vol",
+        "effet": "Cette figurine peut ignorer toutes les figurines encombrant son chemin, ainsi que les décors, en survolant les bâtiments, forêts, etc. Elle n'a pas le droit de terminer son mouvement de Vol à l'intérieur d'une forêt ou sur tout autre décor où son socle ne serait pas stable (pas de soucis pour des rochers plats, des collines, mais n'essayez pas de percher dangereusement votre figurine au sommet d'un arbre, d'un toit accidenté, etc.) Quand elle vole, une figurine peut bouger de 12\". Elle peut toujours choisir d'utiliser sa valeur de Mouvement normale si elle le souhaite, auquel cas elle perdra tous les bénéfices de la Règle Spéciale Vol décrits ici. Et si elle décide de s'aventurer dans les bois en marchant, elle ne pourra pas voler à nouveau avant d'être complètement sortie de la forêt. De plus, une figurine volante a le droit de passer «au-dessus» des Zones de Contrôle ennemies, sans avoir à les charger, tant qu'elle finit son mouvement en-dehors de la ou des Zone(s) de Contrôle en question.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Sauvage",
+        "effet": "Si le Nazgûl montant l'Ombre Ailée est tué ou descend de sa monture, la créature rate automatiquement son test de Bravoure et fuit le champ de bataille.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Maître Stratège (3+)",
+        "effet": "À chaque fois qu'un Héros ennemi tente une Action Héroïque dans un rayon de 6\" autour d'un Maître Stratège, ce dernier peut jeter 1D6. Sur un 3+, il peut alors déclarer la même Action Héroïque gratuitement (sans dépenser de points de Puissance) et ce même s'il n'a habituellement pas accès à cette Action en particulier.",
+        "etat": "actif"
+      },{
+        "nom": "Aucune Pitié",
+        "effet": "Quand elle porte des coups contre une figurine ennemie Bloquée, Rutabi peut relancer ses jets pour Blesser ratés.",
+        "etat": "actif"
       }
+      
+      
 ]

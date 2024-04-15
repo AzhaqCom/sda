@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import pouvoirData from '../../pouvoir.json';
 
-function Modalpower({ powerName, powerLancement }) {
+function Modalpower({powerJson }) {
     const [showPopup, setShowPopup] = useState(false);
     const [selectedPouvoir, setSelectedPouvoir] = useState(null);
 
@@ -10,7 +10,7 @@ function Modalpower({ powerName, powerLancement }) {
     };
 
     useEffect(() => {
-        const lowercasePouvoirName = powerName.toLowerCase().split('(')[0].trim();
+        const lowercasePouvoirName = powerJson.nom.toLowerCase()
         const pouvoir = pouvoirData.find(pouvoir => pouvoir.nom.toLowerCase() === lowercasePouvoirName);
 
         if (pouvoir) {
@@ -18,20 +18,20 @@ function Modalpower({ powerName, powerLancement }) {
         } else {
             setSelectedPouvoir(null);
         }
-    }, [powerName]);
+    }, [powerJson.nom]);
 
     return (
         selectedPouvoir && (
             <div className='pouvoir-container'>
-                <div className="pouvoir-name" onClick={togglePopup}>{powerName}</div>
-                <div className="pouvoir-porte">{selectedPouvoir.portee}</div>
-                {powerLancement && (<div className="pouvoir-lancement">{powerLancement}</div>)}
+                <div className="pouvoir-name" onClick={togglePopup}>{powerJson.nom}</div>
+                <div className="pouvoir-porte">{powerJson.portee}</div>
+                {powerJson.valeur && (<div className="pouvoir-lancement">{powerJson.valeur}</div>)}
 
                 {showPopup && (
                     <div className="popup" onClick={togglePopup}>
                         <div className='popup-container'>
                             <div className="popup-content">
-                                <h3 className='pouvoir-title'>{powerName}</h3>
+                                <h3 className='pouvoir-title'>{powerJson.nom}</h3>
                                 {selectedPouvoir && (
                                     <div>
                                         <p className='rule-effect'><b>Effet: </b>{selectedPouvoir.effet}</p>

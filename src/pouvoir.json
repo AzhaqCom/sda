@@ -140,5 +140,51 @@
     "portee": "6\"",
     "effet": "Ce pouvoir affecte une figurine ennemie à portée. Ce pouvoir peut seulement être effectué sur une figurine qui se trouve dans une ruine, un bâtiment en pierre ou en briques, une grotte, un terrain rocheux ou tout autre terrain où un magicien peut faire s'effondrer des rochers sous les pieds ou au-dessus d'une figurine. La cible subit une touche de Force 5.",
     "effetCanalise": "Toutes les figurines (alliées ou ennemies) à moins de 2\" de la cible subissent également une touche de Force 5."
+  },
+  {
+    "nom": "Colère des Lames",
+    "portee": "12''",
+    "effet": "Ce pouvoir affecte une figurine alliée à portée. Pendant la phase de Combat, tous les coups de la cible sont résolus avec une Force de 6, sans considération d'autres modificateurs éventuels.",
+    "effetCanalise": "Tous les coups sont résolus avec une Force 10."
+  },
+  {
+    "nom": "Frénésie (Orientaux)",
+    "portee": "6''",
+    "effet": "Toutes les figurines avec ce Pouvoir Magique auront entre parenthèses après Frénésie les figurines qui sont affectées par le sort - par exemple, Frénésie (Gobelin). Ce pouvoir affecte toutes les figurines alliées à moins de 6\" du lanceur qui possèdent les mots-clefs entre parenthèses. Veuillez noter que s'il y a plusieurs mots-clefs entre parenthèses, alors les figurines doivent posséder tous les mots-clefs pour être affectées. Tant que ce pouvoir est en jeu, toutes les cibles réussiront tous les tests de Bravoure qu'elles seront amenées à passer. Dans le cas de la Cavalerie, avoir du bon sens est requis pour appliquer les effets. Par exemple, si un Chaman Orque du Mordor lance Frénésie (Orque du Mordor) et qu'un Chevaucheur de Warg est à portée du Pouvoir Magique, seul le cavalier pourra en bénéficier car seul le cavalier est un Orque du Mordor.",
+    "effetCanalise": "De plus, à chaque fois qu'une figurine à moins de 6\" qui bénéficie des effets de la Frénésie subit une blessure, jetez un dé. Sur un 6, la cible ignore la blessure exactement comme si un point de Destin avait été dépensé. Ce jet doit se faire immédiatement après que la blessure a été infligée, et il peut être lancé avant que le Destin ne soit utilisé. Un Héros peut utiliser sa Puissance peut influencer le résultat."
+  },
+  {
+    "nom": "Secousse sismique",
+    "portee": "6''",
+    "effet": "Ce pouvoir affecte une figurine ennemie à portée et toutes les figurines exposées sur la ligne. Dessinez une ligne d'1mm de large qui s'étend sur 1D6\" depuis la cible et dans la direction opposée au lanceur. Toutes les figurines (alliées ou ennemies) touchées sont jetées à terre et subissent une touche de Force 6. Les figurines de Cavalerie sont automatiquement traitées comme si elles avaient subit un Vol plané sur le tableau de chute de Cavalier. Si une figurine affectée était en combat, alors toutes les figurines du combat sont touchées par le Pouvoir Magique. Une figurine affectée peut tenter de résister de manière normale.",
+    "effetCanalise": "La ligne mesure 2D6\"."
+  },
+  {
+    "nom": "Drain de Bravoure",
+    "portee": "12''",
+    "niveau": "3+",
+    "effet": "Ce pouvoir cible une figurine ennemie à portée. La cible réduit immédiatement sa valeur de Bravoure de 1 point pour le restant de la partie (jusqu'à un minimum 1). Ce pouvoir peut être lancé plusieurs fois sur la même figurine, en réduisant à chaque fois la valeur de Bravoure de la figurine. Si la cible est une figurine de Cavalerie, alors l'attaquant doit choisir qui entre le cavalier et la monture réduit sa valeur de Bravoure.",
+    "effetCanalise": "La Bravoure de la cible est réduite de 1D3."
+  },{
+    "nom": "Instiller la Peur",
+    "portee": "3''",
+    "niveau": "5+",
+    "effet": "Ce pouvoir affecte toutes les figurines ennemies à portée. Chaque figurine affectée doit passer un test de Bravoure, dans un ordre défini par le lanceur. Si le test est raté, alors la figurine doit se déplacer de la totalité de son Mouvement à l'opposé du lanceur. Si la figurine arrive au contact d'une autre figurine ou d'un terrain infranchissable, alors elle s'arrête sans entrer au contact socle à socle avec. Si une figurine arrive au contact du bord de table, elle s'arrête immédiatement (cela ne force donc pas une figurine à quitter le champ de bataille, si le scénario l'autorise). Les figurines qui ratent un test de Bravoure dû à ce Pouvoir Magique ne peuvent plus se déplacer lors de ce tour, quelle qu'en soit la raison.",
+    "effetCanalise": "Les tests de Bravoure causés par ce sort sont tentés en lançant 3D6 en retirant le plus haut résultat."
+  },{
+    "nom": "Trait de Ténèbres",
+    "portee": "12''",
+    "niveau": "6+",
+    "effet": "Ce pouvoir cible une figurine ennemie à portée. La cible subit immédiatement une touche de Force 9. Ce n'est pas un tir - ne jetez pas de dé pour Toucher ou pour les tests sur la Trajectoire. Si la cible est une figurine de Cavalerie, alors l'attaquant doit choisir qui entre le cavalier et la monture est touché. Ce pouvoir peut être utilisé même si la cible est engagée au Combat.",
+    "effetCanalise": "La cible perd un 1D3 PV au lieu de 1."
+  },{
+    "nom": "Volonté Sapée",
+    "portee": "12''",
+    "niveau": "5+",
+    "effet": "Ce pouvoir affecte une figurine ennemie à portée. La cible perd immédiatement 1D3 points de Volonté. Si la cible est une figurine de Cavalerie, alors l'attaquant doit choisir qui entre le cavalier et la monture perd sa Volonté.",
+    "effetCanalise": "La cible perd 1D6 points de Volonté."
   }
+  
+  
+  
 ]

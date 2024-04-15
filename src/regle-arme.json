@@ -35,10 +35,6 @@
         "regles": "Thorin et les douze Champions d'Erebor peuvent être déployés comme une seule troupe (sans autre suivant) si vous le souhaitez. Si votre armée contient Dain Pied-d'Acier, Roi sous la Montagne ou Thorin III Heaume-de-Pierre, alors toutes les figurines de cette liste d'armée changent leur mot-clef Monts de Fer pour le mot-clef Erebor. Additionnellement, vous ne pouvez pas recruter les figurines suivantes : Thorin Ecude-Chêne, Roi sous la Montagne ; Kíli, Champion d'Erebor ; Fíli, Champion d'Erebor ; Balin, Champion d'Erebor ; Bombur, Champion d'Erebor ; Ori, Champion d'Erebor ; Óin, Champion d'Erebor ; Dáin Pied-d'Acier, Seigneur des Monts de Fer. De plus, Dwalin, Champion d'Erebor perd l'option du Bouquetin de Guerre. \nDans ce cadre, ignorez la matrice d'alliance prévue pour cette liste. A la place, Erebor Restauré est un Allié Historique de la Garnison de Dale tant qu'elle contient Brand, Roi de Dale ou Bard II, Prince de Dale ; et c'est un Allié de Circonstance des Morts de Dunharrow, de Fangorn, de la Communauté, des Fiefs, du Domaine de Thranduil, de Fondcombe, de la Lothlorien, de Minas Tirith, des Monts Brumeux, des Rangers, du Rohan, de la Comté et des Hommes Sauvages de Druadan. Toutes les autres listes sont des Alliés Impossibles."
     },
     {
-        "faction": "LL Le retour du Roi",
-        "bonus": "Une armée du Retour du Roi doit toujours inclure Aragorn - Grands-Pas et le Roi des Morts. Aragorn est systématiquement le général de l'armée. \nDans cette liste d'armée, Aragorn, Legolas et Gimli peuvent mener des Guerriers des Morts et des Cavaliers des Morts.",
-        "regles": "L'héritier d'Isildur : Aragorn n'a pas à dépenser de points pour obtenir Andúril, Flamme de l'Ouest. Il l'a automatiquement, l'amélioration est gratuite. \n\nLe Roi des Morts :Le Roi des Morts gagne la Règle Spéciale Émissaire du Mal.\n\nCombattez pour moi et regagnez votre honneur : Les figurines avec le mot-clef Esprit de cette liste comptent comme étant dans l'aire d'effet d'une bannière si elles sont à moins de 6\" d'Aragorn"
-    },{
         "faction": "Survivants de Lacville",
         "bonus": "La règle « Tenez Bon ! » de Bard l'Archer affecte tous les Héros de Lacville. De plus, la portée de sa règle spéciale Sauveur de Lacville passe de 6\" à 12\".",
         "regles": ""
@@ -47,5 +43,15 @@
         "faction": "Orientaux",
         "bonus": "Dès lors que leur force est Démoralisée, les Orientaux reçoivent +1 à leur valeur de Bravoure. De plus, une fois par partie, dans les scénarios où un jet de dé est requis pour déterminer quand la partie se termine et tant qu'un Héros Oriental est sur le champ de bataille, le joueur contrôlant les Orientaux peut choisir de faire relancer le dé si le Scénario s'arrête avant qu'il ne le souhaite.\n\nS'il n'y a qu'un contingent Oriental dans une armée plus large, ce Bonus d'Armée ne s'applique que si 25% ou plus des figurines de l'armée possèdent le mot-clef Oriental.",
         "regles": ""
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "bonus": "Une armée du Retour du Roi doit toujours inclure Aragorn - Grands-Pas et le Roi des Morts. Aragorn est systématiquement le général de l'armée. \nDans cette liste d'armée, Aragorn, Legolas et Gimli peuvent mener des Guerriers des Morts et des Cavaliers des Morts.",
+        "regles": "L'héritier d'Isildur : Aragorn n'a pas à dépenser de points pour obtenir Andúril, Flamme de l'Ouest. Il l'a automatiquement, l'amélioration est gratuite. \n\nLe Roi des Morts :Le Roi des Morts gagne la Règle Spéciale Émissaire du Mal.\n\nCombattez pour moi et regagnez votre honneur : Les figurines avec le mot-clef Esprit de cette liste comptent comme étant dans l'aire d'effet d'une bannière si elles sont à moins de 6\" d'Aragorn"
+    },
+    {
+        "faction": "LL L'Ost De l'Empereur Dragon",
+        "bonus": "Le Culte du Dragon :Les Guerriers Orientaux et Cataphractaires Orientaux dans les Troupes menées par l’Empereur Dragon de Rhûn et les Chevaliers Dragon ne paient aucun point pour être promus en Dragons Noirs. L’amélioration est gratuite.",
+        "regles": "Champions des Orientaux : Les Héros Orientaux peuvent relancer un simple D6 lors de leur Jet de Duel.\nAucune Clémence ne sera accordée ! :Dès lors que leur force est Démoralisée, les Orientaux reçoivent +1 à leur valeur de Bravoure. De plus, une fois par partie, dans les scénarios où un jet de dé est requis pour déterminer quand la partie se termine et tant qu’un Héros Oriental est sur le champ de bataille, le joueur contrôlant les Orientaux peut choisir de faire relancer le dé si le Scénario s’arrête avant qu’il ne le souhaite."
     }
 ]

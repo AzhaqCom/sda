@@ -30,8 +30,19 @@ select {
     font-size: 16px;
     padding: 10px;
     max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    min-width: 90%;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+.note{
+    margin-left: 2px;
+}
 button.btn-add {
     background: transparent;
     color: #3a7bd5;
@@ -52,10 +63,12 @@ button {
     flex-wrap: wrap;
     flex-direction: column;
 }
-.servant{
+
+.servant {
     display: flex;
     flex-direction: column;
 }
+
 .grid2 {
     display: grid;
     grid-template-columns: 1fr;

@@ -1,6 +1,7 @@
 [
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Anborn, Ranger de l'Ithilien",
         "points": "35",
         "caracteristiques": {
@@ -29,6 +30,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Aragorn, le Roi Elessar",
         "points": "225",
         "caracteristiques": {
@@ -74,6 +76,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Baliste à répétition du Gondor",
         "points": "50",
         "caracteristiques": {
@@ -147,6 +150,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Beregond, Garde de la Citadelle",
         "points": "30",
         "caracteristiques": {
@@ -183,6 +187,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Boromir, Capitaine de la Tour Blanche",
         "points": "160",
         "caracteristiques": {
@@ -243,6 +248,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Capitaine de Minas Tirith",
         "points": "50",
         "caracteristiques": {
@@ -301,6 +307,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Chevalier de la Tour Blanche",
         "points": "60",
         "caracteristiques": {
@@ -330,6 +337,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Cirion Lieutenant d'Amon Barad",
         "points": "55",
         "caracteristiques": {
@@ -358,6 +366,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Damrod, Ranger de l'Ithilien",
         "points": "25",
         "caracteristiques": {
@@ -385,6 +394,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Denethor, Intendant du Gondor",
         "points": "35",
         "caracteristiques": {
@@ -411,6 +421,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Faramir, Capitaine du Gondor",
         "points": "80",
         "caracteristiques": {
@@ -489,6 +500,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Gandalf le Blanc",
         "points": "220",
         "caracteristiques": {
@@ -526,44 +538,54 @@
         "pouvoirsMagiques": [
             {
                 "nom": "Lumière Aveuglante",
-                "valeur": "2+"
+                "valeur": "2+",
+                "portee": "6\""
             },
             {
                 "nom": "Immobilisation",
-                "valeur": "2+"
+                "valeur": "2+",
+                "portee": "12\""
             },
             {
                 "nom": "Aura de Terreur",
-                "valeur": "2+"
+                "valeur": "2+",
+                "portee": "°"
             },
             {
                 "nom": "Injonction",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12\""
             },
             {
                 "nom": "Esprit Fortifié",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12\""
             },
             {
                 "nom": "Volonté de Fer",
-                "valeur": "3+"
+                "valeur": "3+",
+                "portee": "12\""
             },
             {
                 "nom": "Bannissement",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "12\""
             },
             {
                 "nom": "Impact Magique",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "12\""
             },
             {
                 "nom": "Votre Bâton est Rompu !",
-                "valeur": "4+"
+                "valeur": "4+",
+                "portee": "12\""
             }
         ]
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Hurin le Grand, gardien des Clefs",
         "points": "80",
         "caracteristiques": {
@@ -603,6 +625,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Ingold, Gardien de Rammas Echor",
         "points": "65",
         "caracteristiques": {
@@ -632,6 +655,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Irolas, Capitaine de le Garde",
         "points": "65",
         "caracteristiques": {
@@ -661,6 +685,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Mablung, Ranger de l'Ithilien",
         "points": "35",
         "caracteristiques": {
@@ -689,6 +714,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Madril, Capitaine de l'Ithilien",
         "points": "55",
         "caracteristiques": {
@@ -718,6 +744,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Peregrin Touque, Garde de la Citadelle",
         "points": "25",
         "caracteristiques": {
@@ -754,6 +781,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Roi des Hommes",
         "points": "60",
         "caracteristiques": {
@@ -823,6 +851,7 @@
     },
     {
         "faction": "Gondor",
+        "allegence": "Bien",
         "personnage": "Trebuchet du Gondor",
         "points": "80",
         "caracteristiques": {
@@ -897,6 +926,7 @@
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Capitaine Galadhrim",
         "points": "70",
         "caracteristiques": {
@@ -952,6 +982,7 @@
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Capitaine Elfe Sylvestre",
         "points": "65",
         "caracteristiques": {
@@ -1004,6 +1035,7 @@
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Celeborn",
         "points": "130",
         "caracteristiques": {
@@ -1068,17 +1100,18 @@
             {
                 "nom": "Lames Enchantées",
                 "valeur": "3+",
-                "portee": "6’’"
+                "portee": "6\""
             },
             {
                 "nom": "Immobilisation",
                 "valeur": "3+",
-                "portee": "12’’"
+                "portee": "12\""
             }
         ]
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Galadriel",
         "points": "130",
         "caracteristiques": {
@@ -1118,27 +1151,28 @@
             {
                 "nom": "Lumière Aveuglante",
                 "valeur": "2+",
-                "portee": ""
+                "portee": "6\""
             },
             {
                 "nom": "Bénédiction des Valar",
                 "valeur": "3+",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Immobilisation",
                 "valeur": "3+",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Injonction",
                 "valeur": "4+",
-                "portee": "12’’"
+                "portee": "12\""
             }
         ]
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Haldir",
         "points": "70",
         "caracteristiques": {
@@ -1196,6 +1230,7 @@
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Maitre des Orages Galadhrim",
         "points": "60",
         "caracteristiques": {
@@ -1227,17 +1262,18 @@
             {
                 "nom": "Appel aux Vents",
                 "valeur": "3+",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Lames Enchantées",
                 "valeur": "4+",
-                "portee": "6’’"
+                "portee": "6\""
             }
         ]
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Orophin",
         "points": "85",
         "caracteristiques": {
@@ -1268,6 +1304,7 @@
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Rumil",
         "points": "85",
         "caracteristiques": {
@@ -1306,6 +1343,7 @@
     },
     {
         "faction": "Lothlorien",
+        "allegence": "Bien",
         "personnage": "Sentinelle Elfe Sylvestre",
         "points": "60",
         "caracteristiques": {
@@ -1339,12 +1377,12 @@
             {
                 "nom": "L'Hymne d'Elbereth",
                 "valeur": "",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Eldamar Madrigal",
                 "valeur": "",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Le Lai de Gondolin",
@@ -1355,6 +1393,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Aldor, Archer du Rohan",
         "points": "20",
         "caracteristiques": {
@@ -1383,6 +1422,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Capitaine du Rohan",
         "points": "45",
         "caracteristiques": {
@@ -1443,6 +1483,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Déorwine, Maître de la Cavalerie Royale",
         "points": "75",
         "caracteristiques": {
@@ -1482,6 +1523,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Dernhelm",
         "points": "75",
         "caracteristiques": {
@@ -1563,6 +1605,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Elfhelm, Capitaine du Rohan",
         "points": "65",
         "caracteristiques": {
@@ -1602,6 +1645,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Éomer, Maréchal de la Marche",
         "points": "100",
         "caracteristiques": {
@@ -1663,6 +1707,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Eorl le Jeune",
         "points": "115",
         "caracteristiques": {
@@ -1716,6 +1761,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Erkenbrand, Capitaine du Rohan",
         "points": "75",
         "caracteristiques": {
@@ -1755,6 +1801,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Éowyn, Damoiselle Protectrice du Rohan",
         "points": "40",
         "caracteristiques": {
@@ -1817,6 +1864,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Gamelin, Capitaine du Rohan",
         "points": "55",
         "caracteristiques": {
@@ -1862,6 +1910,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Grand Veneur du Roi",
         "points": "50",
         "caracteristiques": {
@@ -1888,6 +1937,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Grimbold de Grimslade",
         "points": "60",
         "caracteristiques": {
@@ -1915,6 +1965,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Haleth, Fils de Hama",
         "points": "30",
         "caracteristiques": {
@@ -1942,6 +1993,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Hama, Capitaine du Rohan",
         "points": "55",
         "caracteristiques": {
@@ -1987,6 +2039,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Helm Poing de Marteau",
         "points": "165",
         "caracteristiques": {
@@ -2031,6 +2084,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Meriadoc Brandebouc, Chevalier de la Marche",
         "points": "25",
         "caracteristiques": {
@@ -2079,6 +2133,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Théoden, Roi du Rohan",
         "points": "75",
         "caracteristiques": {
@@ -2144,6 +2199,7 @@
     },
     {
         "faction": "Rohan",
+        "allegence": "Bien",
         "personnage": "Théodred, Héritier du Rohan",
         "points": "80",
         "caracteristiques": {
@@ -2197,6 +2253,7 @@
     },
     {
         "faction": "Mirkwood",
+        "allegence": "Bien",
         "personnage": "Thranduil, Roi du Royaume Sylvestre",
         "points": "100",
         "caracteristiques": {
@@ -2270,6 +2327,7 @@
     },
     {
         "faction": "Mirkwood",
+        "allegence": "Bien",
         "personnage": "Legolas vertefeuille, Prince de la Forêt Noire",
         "points": "95",
         "caracteristiques": {
@@ -2320,6 +2378,7 @@
     },
     {
         "faction": "Mirkwood",
+        "allegence": "Bien",
         "personnage": "Tauriel",
         "points": "85",
         "caracteristiques": {
@@ -2358,6 +2417,7 @@
     },
     {
         "faction": "Mirkwood",
+        "allegence": "Bien",
         "personnage": "Capitaine des Gardes du Palais",
         "points": "75",
         "caracteristiques": {
@@ -2396,6 +2456,7 @@
     },
     {
         "faction": "Mirkwood",
+        "allegence": "Bien",
         "personnage": "Capitaine Ranger de la Forêt Noire",
         "points": "75",
         "caracteristiques": {
@@ -2424,6 +2485,7 @@
     },
     {
         "faction": "Mirkwood",
+        "allegence": "Bien",
         "personnage": "Capitaine de la Forêt Noire",
         "points": "75",
         "caracteristiques": {
@@ -2452,6 +2514,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Alfrid le Conseiller",
         "points": "20",
         "caracteristiques": {
@@ -2477,6 +2540,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Bain, Fils de Bard",
         "points": "40",
         "caracteristiques": {
@@ -2503,6 +2567,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Bard l'Archer",
         "points": "140",
         "caracteristiques": {
@@ -2556,6 +2621,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Bilbon Sacquet, Maître Cambrioleur",
         "points": "90",
         "caracteristiques": {
@@ -2588,6 +2654,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Capitaine de la Milice de Lacville",
         "points": "40",
         "caracteristiques": {
@@ -2621,6 +2688,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Gandalf le Gris",
         "points": "170",
         "caracteristiques": {
@@ -2671,12 +2739,12 @@
             {
                 "nom": "Immobilisation",
                 "valeur": "3+",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Injonction",
                 "valeur": "4+",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Protection des Valar",
@@ -2686,22 +2754,23 @@
             {
                 "nom": "Volonté de Fer",
                 "valeur": "4+",
-                "portee": "12’’"
+                "portee": "12\""
             },
             {
                 "nom": "Eboulement",
                 "valeur": "5+",
-                "portee": "6’’"
+                "portee": "6\""
             },
             {
                 "nom": "Impact Magique",
                 "valeur": "5+",
-                "portee": "12’’"
+                "portee": "12\""
             }
         ]
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Hilda Bianca",
         "points": "30",
         "caracteristiques": {
@@ -2728,6 +2797,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Percy",
         "points": "50",
         "caracteristiques": {
@@ -2754,6 +2824,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Sigrid",
         "points": "16",
         "caracteristiques": {
@@ -2781,6 +2852,7 @@
     },
     {
         "faction": "Survivants de Lacville",
+        "allegence": "Bien",
         "personnage": "Tilda",
         "points": "14",
         "caracteristiques": {
@@ -2808,6 +2880,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Balin, Champion d'Erebor",
         "points": "75",
         "caracteristiques": {
@@ -2837,6 +2910,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Bifur, Champion d'Erebor",
         "points": "65",
         "caracteristiques": {
@@ -2866,6 +2940,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Bofur, Champion d'Erebor",
         "points": "65",
         "caracteristiques": {
@@ -2895,6 +2970,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Bombur, Champion d'Erebor",
         "points": "65",
         "caracteristiques": {
@@ -2925,6 +3001,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Capitaine des Monts de Fer",
         "points": "80",
         "caracteristiques": {
@@ -2959,6 +3036,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Dáin Pied-d'Acier, Seigneur des Monts de Fer",
         "points": "140",
         "caracteristiques": {
@@ -3001,6 +3079,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Dori, Champion d'Erebor",
         "points": "75",
         "caracteristiques": {
@@ -3029,6 +3108,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Dwalin, Champion d'Erebor",
         "points": "115",
         "caracteristiques": {
@@ -3066,6 +3146,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Fíli, Champion d'Erebor",
         "points": "75",
         "caracteristiques": {
@@ -3108,6 +3189,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Glóin, Champion d'Ereborr",
         "points": "90",
         "caracteristiques": {
@@ -3137,6 +3219,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Kíli, Champion d'Erebor",
         "points": "75",
         "caracteristiques": {
@@ -3179,6 +3262,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Nori, Champion d'Erebor",
         "points": "80",
         "caracteristiques": {
@@ -3208,6 +3292,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Óin, Champion d'Erebor",
         "points": "65",
         "caracteristiques": {
@@ -3236,6 +3321,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Ori, Champion d'Erebor",
         "points": "55",
         "caracteristiques": {
@@ -3263,6 +3349,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Dáin Pied-d'Acier, Roi sous la Montagne",
         "points": "130",
         "caracteristiques": {
@@ -3295,6 +3382,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Thorin III Heaume-de-Pierre",
         "points": "110",
         "caracteristiques": {
@@ -3323,6 +3411,7 @@
     },
     {
         "faction": "Erebor Reconquis",
+        "allegence": "Bien",
         "personnage": "Thorin Ecu-de-Chêne, Roi sous la Montagne",
         "points": "115",
         "caracteristiques": {
@@ -3364,6 +3453,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Arwen Undomiel",
         "points": "60",
         "caracteristiques": {
@@ -3422,6 +3512,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Bilbon Sacquet",
         "points": "40",
         "caracteristiques": {
@@ -3472,6 +3563,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Capitaine Haut Elfe",
         "points": "75",
         "caracteristiques": {
@@ -3531,6 +3623,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Cirdan",
         "points": "80",
         "caracteristiques": {
@@ -3584,6 +3677,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Elladan",
         "points": "160",
         "caracteristiques": {
@@ -3660,6 +3754,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Elrohir",
         "points": "160",
         "caracteristiques": {
@@ -3736,7 +3831,8 @@
     },
     {
         "faction": "Fondcombe",
-        "personnage": "Elond, Maître de Fondcombe",
+        "allegence": "Bien",
+        "personnage": "Elrond, Maître de Fondcombe",
         "points": "170",
         "caracteristiques": {
             "M": 6,
@@ -3789,7 +3885,7 @@
             {
                 "nom": "Colère de bruinen",
                 "valeur": "4+",
-                "portee": "6=3\""
+                "portee": "3\""
             },
             {
                 "nom": "Guérison",
@@ -3800,6 +3896,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Erestor",
         "points": "85",
         "caracteristiques": {
@@ -3829,6 +3926,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Gildor Inglorion",
         "points": "70",
         "caracteristiques": {
@@ -3870,6 +3968,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Gil-Galad, Haut Roi des Elfes",
         "points": "170",
         "caracteristiques": {
@@ -3926,6 +4025,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Glorfindel, Seigneur de l'Ouest",
         "points": "145",
         "caracteristiques": {
@@ -3972,6 +4072,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Lindir de Fondcombe",
         "points": "65",
         "caracteristiques": {
@@ -4016,6 +4117,7 @@
     },
     {
         "faction": "Fondcombe",
+        "allegence": "Bien",
         "personnage": "Maitre des Orages Haut Elfe",
         "points": "60",
         "caracteristiques": {
@@ -4057,6 +4159,7 @@
     },
     {
         "faction": "Númenor",
+        "allegence": "Bien",
         "personnage": "Capitaine de Númenor",
         "points": "50",
         "caracteristiques": {
@@ -4122,6 +4225,7 @@
     },
     {
         "faction": "Númenor",
+        "allegence": "Bien",
         "personnage": "Elendil, Haut Roi du Gondor et de l'Arnor",
         "points": "185",
         "caracteristiques": {
@@ -4169,6 +4273,7 @@
     },
     {
         "faction": "Númenor",
+        "allegence": "Bien",
         "personnage": "Isildur",
         "points": "120",
         "caracteristiques": {
@@ -4220,6 +4325,7 @@
     },
     {
         "faction": "Orientaux",
+        "allegence": "Mal",
         "personnage": "Amdûr, Seigneur des Lames",
         "points": "130",
         "caracteristiques": {
@@ -4234,7 +4340,7 @@
             "Puissance": 3,
             "Volonté": 3,
             "Destin": 1,
-            "Points de vie": 1
+            "Points de vie": 3
         },
         "actions": [
             "Frappe Héroïque",
@@ -4262,6 +4368,7 @@
     },
     {
         "faction": "Orientaux",
+        "allegence": "Mal",
         "personnage": "Brórgîr le Conjureur",
         "points": "80",
         "caracteristiques": {
@@ -4310,7 +4417,337 @@
         ]
     },
     {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Capitaine Oriental",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Phalange",
+            "La Horde Etincelante"
+        ],
+        "note": "Si le capitaine choisi de prendre l'option Cheaval aparaçonné, il remplace alors sa hallebarde par une épé",
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Cheavalier Dragon",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 6,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 0,
+            "Destin": 0,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Sang & Gloire",
+            "Agilité Surnaturelle",
+            "Phalange",
+            "La Horde Etincelante",
+            "Héraut de Victoire",
+            "Bouclier de Lames",
+            "Chevaliers du Culte du Dragon"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "L'Empereur-Dragon de Rhûn",
+        "points": "200",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 3,
+            "D": 7,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Phalange",
+            "Chef Suprême des Orientaux",
+            "Étendards Royaux",
+            "Au Nom de l'Empereur",
+            "Vouge Impériale",
+            "Heaume du Dragon",
+            "Palanquin Royal - Infanterie",
+            "Palanquin Royal - Démoralisation",
+            "Palanquin Royal - PV et Mouvement",
+            "Palanquin Royal - Tir",
+            "Palanquin Royal - Démontage",
+            "Palanquin Royal - Stat et combat",
+            "Palanquin Royal - Attaque Brutales et Pouvoirs Magiques",
+            "Palanquin Royal - Jeté à terre"
+        ],
+        "options": [],
+        "servants": [
+            {
+                "personnage": "Palanquin Royal",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "4/4+",
+                    "F": 3,
+                    "D": 6,
+                    "A": "*",
+                    "B": 4
+                },
+                "capacites": {
+                    "Puissance": 0,
+                    "Volonté": 0,
+                    "Destin": 0,
+                    "Points de vie": 6,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Kamul L'Oriental",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 12,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Défi Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Drain de Vitalité"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "6+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Prêtre-Guerrier Oriental",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Bâton oriental de combat"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Colère des Lames",
+                "valeur": "2+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Frénésie (Orientaux)",
+                "valeur": "3+",
+                "portee": "6\""
+            }
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Rutabi, Général de la Légion du Dragon",
+        "points": "110",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 4,
+            "D": 7,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Défi Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Maître Stratège (3+)",
+            "Agilité Surnaturelle",
+            "Phalange",
+            "Aucune Pitié"
+        ],
+        "options": []
+    },
+    {
         "faction": "LL Le retour du Roi",
+        "allegence": "LL-Bien",
         "personnage": "Aragorn - Grand-Pas",
         "points": "160",
         "caracteristiques": {
@@ -4352,6 +4789,7 @@
     },
     {
         "faction": "LL Le retour du Roi",
+        "allegence": "LL-Bien",
         "personnage": "Legolas Vertefeuille",
         "points": "100",
         "caracteristiques": {
@@ -4397,6 +4835,7 @@
     },
     {
         "faction": "LL Le retour du Roi",
+        "allegence": "LL-Bien",
         "personnage": "Gimli, fils de Glóin",
         "points": "100",
         "caracteristiques": {
@@ -4435,6 +4874,7 @@
     },
     {
         "faction": "LL Le retour du Roi",
+        "allegence": "LL-Bien",
         "personnage": "Le Roi des Morts",
         "points": "100",
         "caracteristiques": {
@@ -4467,6 +4907,7 @@
     },
     {
         "faction": "LL Le retour du Roi",
+        "allegence": "LL-Bien",
         "personnage": "Héraut des Morts",
         "points": "70",
         "caracteristiques": {
@@ -4501,5 +4942,294 @@
                 }
             }
         ]
+    },
+    {
+        "faction": "LL L'Ost De l'Empereur Dragon",
+        "allegence": "LL-Mal",
+        "personnage": "Brórgîr le Conjureur",
+        "points": "80",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 5,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Adepte de la Sorcellerie",
+            "Bâton oriental de combat"
+        ],
+        "options": [],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Colère des Lames",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Frénésie (Orientaux)",
+                "valeur": "3+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Lames Enchantées",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Secousse sismique",
+                "valeur": "5+",
+                "portee": "6\""
+            }
+        ]
+    },
+    {
+        "faction": "LL L'Ost De l'Empereur Dragon",
+        "allegence": "LL-Mal",
+        "personnage": "Capitaine Oriental",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Phalange",
+            "La Horde Etincelante"
+        ],
+        "note": "Si le capitaine choisi de prendre l'option Cheaval aparaçonné, il remplace alors sa hallebarde par une épé",
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "LL L'Ost De l'Empereur Dragon",
+        "allegence": "LL-Mal",
+        "personnage": "Cheavalier Dragon",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 6,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 0,
+            "Destin": 0,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Sang & Gloire",
+            "Agilité Surnaturelle",
+            "Phalange",
+            "La Horde Etincelante",
+            "Héraut de Victoire",
+            "Bouclier de Lames",
+            "Chevaliers du Culte du Dragon"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ]
+    },
+    {
+        "faction": "LL L'Ost De l'Empereur Dragon",
+        "allegence": "LL-Mal",
+        "personnage": "L'Empereur-Dragon de Rhûn",
+        "points": "200",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 3,
+            "D": 7,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Phalange",
+            "Chef Suprême des Orientaux",
+            "Étendards Royaux",
+            "Au Nom de l'Empereur",
+            "Vouge Impériale",
+            "Heaume du Dragon",
+            "Palanquin Royal - Infanterie",
+            "Palanquin Royal - Démoralisation",
+            "Palanquin Royal - PV et Mouvement",
+            "Palanquin Royal - Tir",
+            "Palanquin Royal - Démontage",
+            "Palanquin Royal - Stat et combat",
+            "Palanquin Royal - Attaque Brutales et Pouvoirs Magiques",
+            "Palanquin Royal - Jeté à terre"
+        ],
+        "options": [],
+        "servants": [
+            {
+                "personnage": "Palanquin Royal",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "4/4+",
+                    "F": 3,
+                    "D": 6,
+                    "A": "*",
+                    "B": 4
+                },
+                "capacites": {
+                    "Puissance": 0,
+                    "Volonté": 0,
+                    "Destin": 0,
+                    "Points de vie": 6,
+                    "Kill": 0
+                }
+            }
+        ]
+    },
+  
+    {
+        "faction": "LL L'Ost De l'Empereur Dragon",
+        "allegence": "LL-Mal",
+        "personnage": "Prêtre-Guerrier Oriental",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Bâton oriental de combat"
+        ],
+        "options": [
+            {
+                "nom": "Cheval caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Colère des Lames",
+                "valeur": "2+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Frénésie (Orientaux)",
+                "valeur": "3+",
+                "portee": "6\""
+            }
+        ]
+    },
+    {
+        "faction": "LL L'Ost De l'Empereur Dragon",
+        "allegence": "LL-Mal",
+        "personnage": "Rutabi, Général de la Légion du Dragon",
+        "points": "110",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 4,
+            "D": 7,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Défi Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Maître Stratège (3+)",
+            "Agilité Surnaturelle",
+            "Phalange",
+            "Aucune Pitié"
+        ],
+        "options": []
     }
 ]
