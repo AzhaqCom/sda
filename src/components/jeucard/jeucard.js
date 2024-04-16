@@ -4,7 +4,7 @@ import Modal from '../modal/modal';
 import Option from '../option/option';
 import Modalpower from '../modalpower/modalpower';
 
-function JeuCard({ selectedCharacter, updateCharacter, index, selectedCharacters }) {
+function JeuCard({ selectedCharacter, updateCharacter, index }) {
 
     const handleChangeCapacite = (capacite, operation) => {
         const updatedCapacites = { ...selectedCharacter.capacites };
@@ -49,7 +49,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index, selectedCharacters
         }
     };
 
-    const handleChangeOption = (optionName, isChecked, index) => {
+    const handleChangeOption = (optionName, isChecked, index, uniqueId) => {
         if (isChecked) {
             const option = selectedCharacter.options.find(option => option.nom === optionName);
     
@@ -1098,11 +1098,10 @@ function JeuCard({ selectedCharacter, updateCharacter, index, selectedCharacters
             }
         }
     };
-    
-    
+
 
     return (
-        <div className='card-content'>
+        <div className='card-content' >
             <h2 className='name-perso'>{selectedCharacter.personnage} <span className='point-perso'>{selectedCharacter.points}pts</span></h2>
             <Modal ruleName={selectedCharacter.faction} />
             <table>
@@ -1141,65 +1140,69 @@ function JeuCard({ selectedCharacter, updateCharacter, index, selectedCharacters
                         {selectedCharacter.note}
                     </div>
                 </div>
-            )}
-            {selectedCharacter.options && selectedCharacter.options.length > 0 && (
-                <>
-                    <h3>Options</h3>
-                    {selectedCharacter.options.map((option, optionIndex) => (
-                        <Option
-                            key={option.nom}
-                            character={selectedCharacter}
-                            optionName={option.nom}
-                            optionValue={option.valeur}
-                            isChecked={option.isChecked} // Passer isChecked
-                            onChange={(isChecked) => handleChangeOption(option.nom, isChecked, index)} 
-                            index={optionIndex}
-                            
-                        />
-                    ))}
-                </>
-            )}
-
-            {selectedCharacter.servants && selectedCharacter.servants.length > 0 && (
-                <>
-                    <h3>Servants</h3>
-                    <div className='container-servant'>
-                        {selectedCharacter.servants.map((servant, index) => (
-                            <div key={index} className='servant'>
-                                <h5>{servant.personnage}</h5>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            {Object.entries(servant.caracteristiques).map(([key, value]) => (
-                                                <td key={`${key}-${value}`}>{key}</td>
-                                            ))}
-                                        </tr>
-                                        <tr>
-                                            {Object.entries(servant.caracteristiques).map(([key, value]) => (
-                                                <td key={`${key}-${value}`}>{value}</td>
-                                            ))}
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table>
-                                    <tbody>
-                                        {servant.capacites && (Object.entries(servant.capacites).map(([capacite, value]) => (
-                                            <tr key={capacite}>
-                                                <td>{capacite}</td>
-                                                <td>
-                                                    <button className='btnmod' onClick={() => handleChangeCapaciteServant(index, capacite, 'decrease')}>-</button>
-                                                    {value}
-                                                    <button className='btnmod' onClick={() => handleChangeCapaciteServant(index, capacite, 'increase')}>+</button>
-                                                </td>
-                                            </tr>
-                                        )))}
-                                    </tbody>
-                                </table>
-                            </div>
+            )
+            }
+            {
+                selectedCharacter.options && selectedCharacter.options.length > 0 && (
+                    <>
+                        <h3>Options</h3>
+                        {selectedCharacter.options.map((option, optionIndex) => (
+                            <Option
+                                key={option.nom}
+                                character={selectedCharacter}
+                                optionIndex={optionIndex}
+                                onChange={(isChecked) => handleChangeOption(option.nom, isChecked, index, selectedCharacter.uniqueId)} // Passer uniqueId
+                                optionName={option.nom}
+                                optionValue={option.valeur}
+                                isChecked={option.isChecked}
+                            />
                         ))}
-                    </div>
-                </>
-            )}
+                    </>
+                )
+            }
+
+            {
+                selectedCharacter.servants && selectedCharacter.servants.length > 0 && (
+                    <>
+                        <h3>Servants</h3>
+                        <div className='container-servant'>
+                            {selectedCharacter.servants.map((servant, index) => (
+                                <div key={index} className='servant'>
+                                    <h5>{servant.personnage}</h5>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                {Object.entries(servant.caracteristiques).map(([key, value]) => (
+                                                    <td key={`${key}-${value}`}>{key}</td>
+                                                ))}
+                                            </tr>
+                                            <tr>
+                                                {Object.entries(servant.caracteristiques).map(([key, value]) => (
+                                                    <td key={`${key}-${value}`}>{value}</td>
+                                                ))}
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <tbody>
+                                            {servant.capacites && (Object.entries(servant.capacites).map(([capacite, value]) => (
+                                                <tr key={capacite}>
+                                                    <td>{capacite}</td>
+                                                    <td>
+                                                        <button className='btnmod' onClick={() => handleChangeCapaciteServant(index, capacite, 'decrease')}>-</button>
+                                                        {value}
+                                                        <button className='btnmod' onClick={() => handleChangeCapaciteServant(index, capacite, 'increase')}>+</button>
+                                                    </td>
+                                                </tr>
+                                            )))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            ))}
+                        </div>
+                    </>
+                )
+            }
 
             <div className='grid2'>
 
@@ -1222,19 +1225,21 @@ function JeuCard({ selectedCharacter, updateCharacter, index, selectedCharacters
                 )}
             </div>
 
-            {selectedCharacter.pouvoirsMagiques && selectedCharacter.pouvoirsMagiques.length > 0 && (
-                <div className='pouvoir-hero-perso'>
-                    <h3>Pouvoirs Magiques</h3>
+            {
+                selectedCharacter.pouvoirsMagiques && selectedCharacter.pouvoirsMagiques.length > 0 && (
+                    <div className='pouvoir-hero-perso'>
+                        <h3>Pouvoirs Magiques</h3>
 
-                    <div className='action-perso'>
-                        {selectedCharacter.pouvoirsMagiques.map((pouvoir, index) => (<Modalpower key={pouvoir.nom} powerJson={pouvoir} />))}
+                        <div className='action-perso'>
+                            {selectedCharacter.pouvoirsMagiques.map((pouvoir, index) => (<Modalpower key={pouvoir.nom} powerJson={pouvoir} />))}
+
+                        </div>
 
                     </div>
+                )
+            }
 
-                </div>
-            )}
-
-        </div>
+        </div >
     );
 }
 

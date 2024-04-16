@@ -15,9 +15,13 @@ function Jeu() {
         acc[character.faction].push(character);
         return acc;
     }, {});
+    function generateUniqueId() {
+        return '_' + Math.random().toString(36).substring(2, 9);
+    }
     useEffect(() => {
         localStorage.setItem('selectedCharacters', JSON.stringify(selectedCharacters));
     }, [selectedCharacters]);
+
 
     const handleSelectChange = (event) => {
         setSelectedCharacter('');
@@ -30,8 +34,14 @@ function Jeu() {
                 return character.personnage === selectedCharacter && selectedFactions.includes(character.faction);
             });
             if (selectedCharacterObj) {
+                const characterWithUniqueId = {
+                    ...selectedCharacterObj,
+                    uniqueId: generateUniqueId(),
+                    options: selectedCharacterObj.options.map(option => ({ ...option, isChecked: false })) 
+
+                };
                 setSelectedCharacters(prevSelectedCharacters => {
-                    return [...prevSelectedCharacters, selectedCharacterObj];
+                    return [...prevSelectedCharacters, characterWithUniqueId];
                 });
                 setSelectedCharacter('');
             }
@@ -51,7 +61,10 @@ function Jeu() {
             return prevSelectedCharacters.map((character, idx) => {
                 if (idx === index) {
                     // Mettre à jour uniquement le personnage à l'index spécifié
-                    return updatedCharacter;
+                    return {
+                        ...updatedCharacter,
+                        uniqueId: character.uniqueId
+                    }
                 }
                 return character;
             });
@@ -102,7 +115,7 @@ function Jeu() {
             <button className='btn-add' onClick={handleAddCharacter}>Ajouter</button>
             {selectedCharacters.map((character, index) => (
                 <div key={index} className='card'>
-                    <JeuCard selectedCharacter={character} updateCharacter={updateCharacter} index={index} selectedCharacters={selectedCharacters} />
+                    <JeuCard selectedCharacter={character} updateCharacter={updateCharacter} index={index} />
                     <button className='btnsuppr' onClick={() => handleRemoveCharacter(index)}>Supprimer</button>
                 </div>
             ))}
