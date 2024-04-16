@@ -183,7 +183,13 @@
     "niveau": "5+",
     "effet": "Ce pouvoir affecte une figurine ennemie à portée. La cible perd immédiatement 1D3 points de Volonté. Si la cible est une figurine de Cavalerie, alors l'attaquant doit choisir qui entre le cavalier et la monture perd sa Volonté.",
     "effetCanalise": "La cible perd 1D6 points de Volonté."
+  },{
+    "nom": "Panique",
+
+    "effet": "Ce pouvoir affecte une figurine ennemie à portée. Ce pouvoir peut cibler seulement des figurines de Cavalerie. Le cavalier est immédiatement démonté et la monture fuit. Retirez la monture du jeu et jetez un dé sur le tableau de chute de Cavalier pour déterminer les effets sur le cavalier.",
+    "effetCanalise": "Le pouvoir affecte toutes les figurines ennemies à moins de 3’’ de la cible initiale."
   }
+  
   
   
   

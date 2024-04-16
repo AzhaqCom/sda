@@ -1053,11 +1053,175 @@
         "nom": "Maître Stratège (3+)",
         "effet": "À chaque fois qu'un Héros ennemi tente une Action Héroïque dans un rayon de 6\" autour d'un Maître Stratège, ce dernier peut jeter 1D6. Sur un 3+, il peut alors déclarer la même Action Héroïque gratuitement (sans dépenser de points de Puissance) et ce même s'il n'a habituellement pas accès à cette Action en particulier.",
         "etat": "actif"
-      },{
+    },
+    {
         "nom": "Aucune Pitié",
         "effet": "Quand elle porte des coups contre une figurine ennemie Bloquée, Rutabi peut relancer ses jets pour Blesser ratés.",
         "etat": "actif"
-      }
-      
-      
+    },
+    {
+        "nom": "Changeur de peau",
+        "effet": "Pour faire se transformer Grimbeorn, le joueur le contrôlant peut lancer 1D6 au début de son mouvement s'il n'est pas en contact avec un ennemi. Sur 4+ (la Puissance peut modifier ce jet), Beorn passe de forme humaine à forme animale ou inversement ; remplacer la figurine en conséquence. Dans un cas comme dans l'autre, Beorn peut ensuite se déplacer normalement.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Terreur (Ours)",
+        "effet": "Quand une figurine souhaite charger un adversaire qui cause la Terreur, elle doit d'abord, avant tout mouvement, effectuer un test de Bravoure. Si le test est réussi, la charge se passe normalement. Si le test est raté, elle n'a pas le droit de charger et reste figée sur place pour le reste du tour. Parfois, la Terreur est dirigée contre un certain type d'ennemi. Dans ce cas, les créatures affectées par la Terreur sont clairement indiquées. Typiquement, il peut y avoir une Terreur (Orque) qui ne demandera un Test de Bravoure qu'aux figurines Orques.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Force Écrasante (Ours)",
+        "effet": "Si Beorn remporte un Duel, au lieu de frapper normalement, il peut choisir une seule figurine adverse dans le combat qui subit alors une touche de Force 10. Si le jet pour Blesser réussit, le même ennemi subit une nouvelle touche de Force 10, et ainsi de suite jusqu'à ce que Beorn (Ours) échoue ou que sa cible meurt.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Berserker (Ours)",
+        "effet": "Beorn (Ours) doit toujours charger un ennemi s'il le peut. De plus, il ne peut pas profiter des Actions Héroïques et des « Tenez Bon ! » des autres figurines, et inversement.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Seigneur des Aigles",
+        "effet": "Seules les figurines avec les mots-clefs Aigle et Sorcier peuvent bénéficier du « Tenez Bon ! » de Gwaihir et de ses actions héroïques.",
+        "etat": "actif"
+    },
+    {
+        "nom": "maître des oiseaux",
+        "effet": "Radagast compte comme ayant une ligne de vue sur la totalité du champ de bataille. De plus, les figurines avec le mot-clef Aigle à moins de 12\" de Radagast bénéficient de la règle spéciale Résistant à la Magie.",
+        "etat": "passif"
+    },
+    {
+        "nom": "un avec la nature",
+        "effet": "Quand il a le mot-clef Infanterie, Radagast peut se déplacer sans malus dans les terrains difficiles et il gagne la règle spéciale Discrétion.",
+        "etat": "passif"
+    },
+    {
+        "nom": "sébastien",
+        "effet": "Si Radagast est accompagné de Sébastien, ce dernier peut porter une Attaque en combat, avec des valeurs de Combat et de Force de 1 (son dé séparé ne peut être modifié par la Puissance de Radagast).",
+        "etat": "equipement"
+    },
+    {
+        "nom": "plein aux as",
+        "effet": "Le Maître de Lacville peut dépenser un seul point de puissance au début de la phase de combat, auquel cas Braga, Capitaine de la Garde, et n'importe quel capitaine ou garde de Lacville à moins de 6\" reçoit un bonus de +1 à sa valeur de combat et compte comme étant à portée d'une bannière pour le reste de la phase.",
+        "etat": "actif"
+    },
+    {
+        "nom": "le mal du dragon",
+        "effet": "En début de partie, votre adversaire peut désigner un de ses héros pour être le porteur d'un gros sac d'or. Si le Maître se retrouve en contact avec ce héros à la fin d'une phase de mouvement, il doit immédiatement réussir un test de bravoure ou être retiré comme perte.",
+        "etat": "passif"
+    },
+    {
+        "nom": "le pantin du maître",
+        "effet": "Si Braga déclare une action héroïque à moins de 6\" du Maître de Lacville et que ce dernier a au moins un point de volonté restant, lancez un D6. Sur 4+, l'action héroïque est gratuite.",
+        "etat": "actif"
+    },
+    {
+        "nom": "orgueil flagrant",
+        "effet": "Braga ainsi que tout capitaine ou garde de Lacville à moins de 3\" de lui ne prennent part à aucune action héroïque effectuée par Bard l'Archer, Bain, Sigrid ou Tilda.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Qui aura suffisamment de courage pour remettre en question mon autorité ?",
+        "effet": "Si votre armée contient le Maître de Lacville, alors il doit être votre Général, peu importe le rang héroïque des autres Héros de votre armée (sauf si votre armée inclut un autre Héros avec une règle similaire). \n\nDe plus, si votre armée est une Alliance de Circonstance ou une Alliance Impossible, alors le Maître de Lacville sera considéré comme un Héros Commun, tant pour monter votre armée que lors de vos parties.",
+        "etat": "passif"
+    },
+    {
+        "nom": "épée-masse",
+        "effet": "Cette arme peut utiliser les coups spéciaux Feinte et Balayage.",
+        "etat": "actif"
+    },
+    {
+        "nom": "le jeune sage",
+        "effet": "À la phase d'initiative, Balin peut dépenser un point de volonté permettant à son camp de relancer son jet.",
+        "etat": "actif"
+    },
+    {
+        "nom": "marteau-piolet",
+        "effet": "C'est une arme bâtarde, qui peut utiliser les coups spéciaux Balayage et Taille.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "furie naine",
+        "effet": "Avant le jet de duel, le jeune Dwalin peut choisir de réduire sa valeur de combat de 1D3, auquel cas il peut relancer tous ses jets ratés pour blesser durant ce même combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "aux armes !",
+        "effet": "Une fois par partie, quand Thorin se déplace, le joueur le contrôlant peut déclarer “Aux Armes !“. Au début de la phase de combat suivante, toute figurine Nain d'Erebor à moins de 3\" augmente sa force de 1 pour la durée de la phase.",
+        "etat": "actif"
+    },
+    {
+        "nom": "écu-de-chêne",
+        "effet": "L'Ecu-de-Chêne est un Bouclier. Si Thorin choisit de l'utiliser pour Se Protéger Derrière Son Bouclier et qu'il gagne le combat, il peut porter une attaque (une seule et sans bonus de ses armes).",
+        "etat": "equipement"
+    },
+    {
+        "nom": "L'Héritier de Durin",
+        "effet": "En plus des règles normales du « Tenez bon ! », lorsque Thráin réussit un tel jet, toutes les figurines amies Nain sur la table, y compris les Héros, sont automatiquement affectées.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Lien de Sang",
+        "effet": "Thráin relance tous ses jets pour Blesser quand il frappe Azog ou n'importe quelle figurine de l'armée de celui-ci.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Anneau de Durin",
+        "effet": "Une fois dans la partie, le porteur de l'Anneau de Durin peut relancer son jet d'Initiative.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Marteau de Maître à deux mains",
+        "effet": "Une figurine qui utilise une arme de maître ne souffre pas du malus de -1 sur le jet de Duel pour l'utilisation d'une arme à deux mains.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Arkenstone",
+        "effet": "Le porteur de l'Arkenstone réussit ses jets de Destin sur 3+. De plus, si le jet de Destin donne un 4+, le point de Destin n'est pas dépensé et le jet est donc gratuit.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Thrór, Roi sous la Montagne",
+        "effet": "Si votre armée inclut Thrór, vous pouvez améliorer tous les Mornes-Martels de sa troupe en Gardiens du Roi pour un surcoût de +1pt par unité. Les Gardiens du Roi bénéficient d'un bonus de +1 en Force.",
+        "etat": "amélioration"
+    },
+    {
+        "nom": "Le Roi du Nord",
+        "effet": "La règle « Tenez Bon ! » d'Arvedui a une portée de 12\" au lieu de 6\". \nHaine (Angmar): Une telle figurine ajoute 1 à ses jets pour Blesser au combat contre les figurines dotées du mot-clef Angmar.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Haine (Angmar)",
+        "effet": "Une telle figurine ajoute 1 à ses jets pour Blesser au combat contre les figurines dotées du mot-clef Angmar.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Don de voyance",
+        "effet": "A chaque fois qu'une figurine d'Arnor alliée à 6\" de Malbeth subit une blessure, jetez 1D6. Sur un 5+, cette blessure est ignorée exactement comme si un point de Destin avait été utilisé. Si ce jet est raté, les Héros peuvent tout de même utiliser des points de Destin de la manière habituelle.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Andùril, Flamme de l'Ouest",
+        "effet": "Andùril est une lame de facture elfique qui compte comme une épée bâtarde. De plus, quand il porte ses Coups, Aragorn blesse toujours son adversaire au pire sur 4+, quelque soit la valeur de Défense de celui-ci. Si Aragorn utilise Andùril à deux mains, il blesse alors son adversaire sur 3+.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Repas Officiels",
+        "effet": "Les Hobbits traitent Bill le Poney comme une Bannière.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Deuxième Petit-Déjeuner",
+        "effet": "A la fin de chaque phase de Mouvement, un seul membre de la Communauté qui a terminé son mouvement au contact de Bill le Poney peut essayer de regagner un Point de Puissance, de Volonté ou de Destin perdu précédemment. Jetez 1D6 ; sur un 5+, le Point est restauré.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Ce n'est qu'un Poney",
+        "effet": "Bill le Poney ne peut jamais charger un ennemi pour aucune raison. De plus, aucune figurine ne peut bénéficier de sa règle « Tenez bon ! ». Il peut, néanmoins, bénéficier de la règle « Tenez bon ! » d'un Hobbit allié.",
+        "etat": "passif"
+    },
+    {
+        "nom": "La Charette de Gandalf",
+        "effet": "Au début de chaque phase de Tir du Bien, sélectionnez une figurine ennemie à moins de 6\" de la Charette et jetez 1D6. Sur un 4+, la cible subit une touche de Force 2.",
+        "etat": "actif"
+    }
 ]

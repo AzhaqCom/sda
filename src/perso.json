@@ -1,5 +1,1146 @@
 [
     {
+        "faction": "Alliance de Radagast",
+        "allegence": "Bien",
+        "personnage": "Beorn",
+        "points": 200,
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 5,
+            "D": 5,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque"
+        ],
+        "options": [],
+        "servants": [
+            {
+                "personnage": "Beorn (Ours)",
+                "caracteristiques": {
+                    "M": 8,
+                    "C": "8/3+",
+                    "F": 8,
+                    "D": 8,
+                    "A": 3,
+                    "B": 6
+                },
+                "capacites": {}
+            }
+        ],
+        "regles": [
+            "Costaud",
+            "Créature des Bois",
+            "Résistant à la Magie",
+            "Sans Peur",
+            "Changeur de peau",
+            "Terreur (Ours)",
+            "Force Écrasante (Ours)",
+            "Berserker (Ours)"
+        ]
+    },
+    {
+        "faction": "Alliance de Radagast",
+        "allegence": "Bien",
+        "personnage": "Gwaihir",
+        "points": 150,
+        "caracteristiques": {
+            "M": 3,
+            "C": "8/4+",
+            "F": 6,
+            "D": 8,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Charge Monstrueuse",
+            "Terreur",
+            "Vol",
+            "Seigneur des Aigles"
+        ]
+    },
+    {
+        "faction": "Alliance de Radagast",
+        "allegence": "Bien",
+        "personnage": "Radagast le Brun",
+        "points": 150,
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 6,
+            "Destin": 3,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Echange Bâton pour grand Aigle",
+                "valeur": 50,
+                "action": "addaigle"
+            },
+            {
+                "nom": "Traineau",
+                "valeur": 45,
+                "action": "addtraineau"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Sébastien",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Maître des oiseaux",
+            "Un avec la Nature",
+            "Bâton de Pouvoir"
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Panique",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Aura de Terreur",
+                "valeur": "2+",
+                "portee": "°"
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Guérison",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Colère de la Nature",
+                "valeur": "4+",
+                "portee": "°"
+            },
+            {
+                "nom": "Aura de Confusion",
+                "valeur": "5+",
+                "portee": "°"
+            }
+        ]
+    },
+    {
+        "faction": "Armée de Dunharrow",
+        "allegence": "Bien",
+        "personnage": "Le Roi des Morts",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 6,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Les Lames des Morts",
+            "Terreur",
+            "Drain d'Âme",
+            "Les morts et les Vivants",
+            "Marche Spectrale"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Dunharrow",
+        "allegence": "Bien",
+        "personnage": "Héraut des Morts",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 3,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [],
+        "regles": [
+            "Les Lames des Morts",
+            "Terreur",
+            "Marche Spectrale",
+            "Conseil du Roi",
+            "Oriflamme des Morts"
+        ],
+        "options": [
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Alfrid le Conseiller",
+        "points": "20",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Désarmé",
+            "Conseil Douteux"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Bain, Fils de Bard",
+        "points": "40",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Lien Familial"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Bard l'Archer",
+        "points": "140",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 4,
+            "D": 4,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Précision Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Tir Rapide (Bard)",
+            "La Flèche Noire",
+            "Sauveur de Lacville"
+        ],
+        "options": [
+            {
+                "nom": "Arquelance",
+                "valeur": 75,
+                "action": "addarquelance"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Braga, Capitaine de la Garde",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Le Pantin du Maître",
+            "Orgueil Flagrant"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Capitaine de la Garde de Lacville",
+        "points": "40",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [],
+        "options": []
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Le Maître de Lacville",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Plein aux As",
+            "Le Mal du Dragon",
+            "Désarmé",
+            "Qui aura suffisamment de courage pour remettre en question mon autorité ?"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Sigrid",
+        "points": "16",
+        "caracteristiques": {
+            "M": 6,
+            "C": "2/4+",
+            "F": 2,
+            "D": 2,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 1,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Désarmé",
+            "Papa ! Ici !",
+            "Une Raison de se Battre",
+            "Sigrid & Tilda"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Tilda",
+        "points": "14",
+        "caracteristiques": {
+            "M": 6,
+            "C": "1/4+",
+            "F": 2,
+            "D": 2,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 1,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Désarmé",
+            "Papa ! Ici !",
+            "Une Raison de se Battre",
+            "Sigrid & Tilda"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Balin le Jeune Nain",
+        "points": "55",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Épée-masse",
+            "Le Jeune Sage"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Capitaine d'Erebor",
+        "points": "60",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Capitaine Morne-Martel",
+        "points": "70",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Marteau-Piolet",
+            "Haches de jet"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Dwalin le Jeune Nain",
+        "points": "85",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/4+",
+            "F": 5,
+            "D": 6,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Sans Peur",
+            "Furie Naine",
+            "Maître d'Armes"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Jeune Thorin Écu-De-Chêne",
+        "points": "100",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 7,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Aux armes !"
+        ],
+        "options": [
+            {
+                "nom": "Écu-de-chêne",
+                "valeur": 5,
+                "action": "addecu"
+            }
+        ]
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Thrain",
+        "points": "120",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "L'Héritier de Durin",
+            "Lien de Sang",
+            "Anneau de Durin",
+            "Marteau de Maître à deux mains"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Thror",
+        "points": "120",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 9,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Anneau de Durin",
+            "Arkenstone",
+            "Thrór, Roi sous la Montagne"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Arnor",
+        "allegence": "Bien",
+        "personnage": "Arvedui, le dernier Roi d'Arnor",
+        "points": "80",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 6,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Le Roi du Nord",
+            "Haine (Angmar)"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Arnor",
+        "allegence": "Bien",
+        "personnage": "Capitaine d'Arnor",
+        "points": "55",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Haine (Angmar)"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Arnor",
+        "allegence": "Bien",
+        "personnage": "Malbeth le Devin",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 2,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Résistance Héroïque"
+        ],
+        "regles": [
+            "Don de voyance"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Aragorn - Grand-Pas",
+        "points": "160",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Marche Héroïque",
+            "Précision Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Héros Mythique",
+            "Seigneur des Chevaux"
+        ],
+        "options": [
+            {
+                "nom": "Andùril, Flamme de l'Ouest",
+                "valeur": 40,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Armure",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Arwen Undomiel",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Résistance Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Créature des Bois",
+            "Arwen, Communauté"
+        ],
+        "options": [
+            {
+                "nom": "Asfaloth",
+                "valeur": 10,
+                "action": "addasfaloth"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Colère de bruinen",
+                "valeur": "4+",
+                "portee": "3\""
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Bill le Poney",
+        "points": "25",
+        "caracteristiques": {
+            "M": 8,
+            "C": "1/6+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [],
+        "regles": [
+            "Repas Officiels",
+            "Deuxième Petit-Déjeuner"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Boromir du Gondor",
+        "points": "95",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 6,
+            "Volonté": 1,
+            "Destin": 0,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Cor du Gondor"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Frodon Sacquet",
+        "points": "60",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 3,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Anneau unique",
+            "Jet de Pierres (Portée 8\", Force 1)"
+        ],
+        "options": [
+            {
+                "nom": "Cotte de Mithril",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 3
+                }
+            },
+            {
+                "nom": "Dard",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Gandalf le Gris",
+        "points": "170",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 6,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Canalisation Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Glamdring",
+            "Narya",
+            "Bâton de Pouvoir"
+        ],
+        "options": [
+            {
+                "nom": "Charrette",
+                "valeur": 25,
+                "action": "addcharette"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Lumière Aveuglante",
+                "valeur": "2+",
+                "portee": ""
+            },
+            {
+                "nom": "Aura de Terreur",
+                "valeur": "2+",
+                "portee": ""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Protection des Valar",
+                "valeur": "4+",
+                "portee": ""
+            },
+            {
+                "nom": "Volonté de Fer",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Eboulement",
+                "valeur": "5+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Impact Magique",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
         "faction": "Gondor",
         "allegence": "Bien",
         "personnage": "Anborn, Ranger de l'Ithilien",
@@ -5152,7 +6293,6 @@
             }
         ]
     },
-  
     {
         "faction": "LL L'Ost De l'Empereur Dragon",
         "allegence": "LL-Mal",

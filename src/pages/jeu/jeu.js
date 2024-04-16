@@ -34,12 +34,16 @@ function Jeu() {
                 return character.personnage === selectedCharacter && selectedFactions.includes(character.faction);
             });
             if (selectedCharacterObj) {
-                const characterWithUniqueId = {
+                let characterWithUniqueId = {
                     ...selectedCharacterObj,
-                    uniqueId: generateUniqueId(),
-                    options: selectedCharacterObj.options.map(option => ({ ...option, isChecked: false })) 
-
+                    uniqueId: generateUniqueId()
                 };
+                if (selectedCharacterObj.options) {
+                    characterWithUniqueId = {
+                        ...characterWithUniqueId,
+                        options: selectedCharacterObj.options.map(option => ({ ...option, isChecked: false }))
+                    };
+                }
                 setSelectedCharacters(prevSelectedCharacters => {
                     return [...prevSelectedCharacters, characterWithUniqueId];
                 });
@@ -47,6 +51,7 @@ function Jeu() {
             }
         }
     };
+    
 
     const handleRemoveCharacter = (index) => {
         setSelectedCharacters(prevSelectedCharacters => {
