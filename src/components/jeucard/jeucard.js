@@ -9,8 +9,15 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
     const handleChangeCapacite = (capacite, operation) => {
         const updatedCapacites = { ...selectedCharacter.capacites };
 
-        // Met à jour la valeur de la capacité selon l'opération
-        updatedCapacites[capacite] = operation === 'increase' ? selectedCharacter.capacites[capacite] + 1 : selectedCharacter.capacites[capacite] - 1;
+        // Vérifie si l'opération est une augmentation ou une diminution
+        if (operation === 'increase') {
+            updatedCapacites[capacite] = selectedCharacter.capacites[capacite] + 1;
+        } else if (operation === 'decrease') {
+            // Vérifie si la valeur actuelle est supérieure à zéro avant de la diminuer
+            if (selectedCharacter.capacites[capacite] > 0) {
+                updatedCapacites[capacite] = selectedCharacter.capacites[capacite] - 1;
+            }
+        }
 
         // Crée une nouvelle copie du personnage avec les capacités mises à jour
         const updatedCharacter = {
@@ -19,6 +26,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
         };
         updateCharacter(index, updatedCharacter);
     };
+
     const handleChangeCapaciteServant = (servantIndex, capacite, operation) => {
         // Assurez-vous que l'index du servant est valide
         if (servantIndex >= 0 && servantIndex < selectedCharacter.servants.length) {
@@ -79,6 +87,26 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(index, updatedCharacter);
                 } else if (action.caracteristique === 'D') {
+                    // Logique pour augmenter ou diminuer la défense
+                    let updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] + action.valeur
+                    };
+
+
+
+                    const updatedPoints = parseInt(selectedCharacter.points) + valeur;
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(index, updatedCharacter);
+                } else if (action.caracteristique === 'B') {
                     // Logique pour augmenter ou diminuer la défense
                     let updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,
@@ -785,6 +813,24 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(index, updatedCharacter);
                 } else if (action.caracteristique === 'D') {
+                    // Logique pour réduire la défense
+                    let updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        [action.caracteristique]: selectedCharacter.caracteristiques[action.caracteristique] - action.valeur
+                    };
+
+                    const updatedPoints = parseInt(selectedCharacter.points) - valeur;
+
+                    // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        points: updatedPoints
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(index, updatedCharacter);
+                } else if (action.caracteristique === 'B') {
                     // Logique pour réduire la défense
                     let updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,

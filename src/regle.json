@@ -1223,5 +1223,24 @@
         "nom": "La Charette de Gandalf",
         "effet": "Au début de chaque phase de Tir du Bien, sélectionnez une figurine ennemie à moins de 6\" de la Charette et jetez 1D6. Sur un 4+, la cible subit une touche de Force 2.",
         "etat": "actif"
+    },
+    {
+        "nom": "Bannière",
+        "effet": "Une bannière a une portée de 3\", qui s'étend en aire d'effet depuis le socle de son porteur \n\nSi un Combat est affecté par une bannière, alors un seul allié dans le Combat peut relancer un simple D6 lors de son jet de Duel pour déterminer qui emporte le combat",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Cor de Guerre",
+        "effet": "Si vous avez un ou plusieurs cors de guerre sur le champ de bataille, toutes les figurines de votre armée reçoivent +1 en Bravoure. L'utilisation d'un Cor de Guerre est considérée comme une capacité Active (voir plus loin).",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Lance",
+        "effet": "Cor de guerre Une figurine d'Infanterie qui est armée avec une Lance peut soutenir une figurine alliée, qui a un socle de la même taille ou plus petit, dans un combat de manière spéciale. Si une figurine non engagée au combat avec une Lance est au contact socle à socle avec une figurine alliée, alors elle peut apporter une unique Attaque au combat en utilisant ses valeurs de Combat et de Force.",
+        "etat": "equipement"
+    },  {
+        "nom": "Style de Combat de Caras Galadhon",
+        "effet": "Le style de combat des Gardes de la Cour des Galadhrim est l'un des plus impressionnants de toute la Terre du Milieu. En plus des règles normales des piques, les Gardes de la Cour des Galadhrim peuvent aussi parer les coups à l’aide de leur pique comme s’ils se protégeaient derrière un bouclier. Les restrictions habituelles pour la protection derrière un bouclier s’appliquent tout de même, ainsi un Garde de la Cour des Galadhrim qui se protège ne peut pas être soutenu par une autre figurine, pas même par un autre Garde.",
+        "etat": "actif"
     }
 ]

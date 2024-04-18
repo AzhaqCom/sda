@@ -1,0 +1,292 @@
+[
+    {
+        "faction": "Lothlorien",
+        "allegence": "Bien",
+        "personnage": "Chevalier Galadhrim",
+        "points": "18",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Pied léger",
+            "Cavalier Expert",
+            "Lame de facture Elfique"
+        ],
+        "servants": [
+            {
+                "personnage": "Cheval Caparaçonné",
+                "caracteristiques": {
+                    "M": 10,
+                    "C": "3/6+",
+                    "F": 3,
+                    "D": 5,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "allegence": "Bien",
+        "personnage": "Chevalier de Fondcombe",
+        "points": "21",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Cavalier Expert",
+            "Lance de Cavalerie",
+            "Lame de facture Elfique",
+            "Arc Elfique"
+        ],
+        "servants": [
+            {
+                "personnage": "Cheval",
+                "caracteristiques": {
+                    "M": 10,
+                    "C": "3/6+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "allegence": "Bien",
+        "personnage": "Garde de la cour des Galadhrim",
+        "points": "12",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "note": "Si l'option bannière est prise, c'est en remplacement de la pique !",
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Style de Combat de Caras Galadhon"
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "allegence": "Bien",
+        "personnage": "Guerrier Elfe Sylvestre",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Dagues de jet",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "lance d'Elfe Sylvestre",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Exilés noldorin(Gildor)",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 8
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Cape Elfique",
+            "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Lothlorien",
+        "allegence": "Bien",
+        "personnage": "Guerrier Galadhrim",
+        "points": "9",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Garde Galadhrim (Celeborn, Galadriel)",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "B",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Créature des Bois",
+            "Cape Elfique",
+            "Lame de facture Elfique"
+        ]
+    }
+]
