@@ -8,7 +8,7 @@ function Jeu() {
         return storedCharacters ? JSON.parse(storedCharacters) : [];
     });
     const [selectedCharacter, setSelectedCharacter] = useState('');
-    const [selectedFactions, setSelectedFactions] = useState(['Gondor']);
+    const [selectedFactions, setSelectedFactions] = useState(['Alliance de Radagast']);
     const [selectedAllegiance, setSelectedAllegiance] = useState('Bien');
     const groupedCharacters = PersoData.reduce((acc, character) => {
         acc[character.faction] = acc[character.faction] || [];
@@ -77,8 +77,19 @@ function Jeu() {
     };
 
     const handleAllegianceChange = (event) => {
-        setSelectedAllegiance(event.target.value);
+        const newAllegiance = event.target.value;
+        setSelectedAllegiance(newAllegiance);
+    
+        // Filtrer les factions disponibles pour la nouvelle allégeance
+        const availableFactions = allFactions.filter(faction => {
+            const factionAllegiance = groupedCharacters[faction][0].allegence;
+            return newAllegiance === '' || factionAllegiance === newAllegiance;
+        });
+    
+        // Mettre à jour les factions sélectionnées
+        setSelectedFactions(availableFactions.length > 0 ? [availableFactions[0]] : []);
     };
+    
 
     // Récupérer toutes les factions distinctes
     const allFactions = Object.keys(groupedCharacters);
@@ -112,7 +123,7 @@ function Jeu() {
                 ))}
             </select>
             <select value={selectedCharacter} onChange={(e) => setSelectedCharacter(e.target.value)}>
-                <option value="">Sélectionner un personnage</option>
+                <option value="">Sélectionner un héros</option>
                 {filteredCharacters.map((character, index) => (
                     <option key={index} value={character.personnage}>{character.personnage} ({character.points}pts)</option>
                 ))}
