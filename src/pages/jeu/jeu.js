@@ -29,7 +29,7 @@ function Jeu() {
 
     // Regrouper les données fusionnées par faction
     const groupedData = groupDataByFaction(combinedData);
-    console.log(groupedData);
+
 
     // Fonction utilitaire pour regrouper les données par faction
     function groupDataByFaction(dataList) {
@@ -48,7 +48,7 @@ function Jeu() {
         setSelectedFactions(selectedFactions);
     };
     const handleAddCharacter = () => {
-        console.log(selectedCharacter)
+
         if (selectedCharacter) {
             const selectedCharacterObj = filteredCharacters.find(character => {
                 return character.personnage === selectedCharacter && selectedFactions.includes(character.faction);
@@ -140,7 +140,7 @@ function Jeu() {
                 <option value="LL-Mal">Légion légendaire du Mal</option>
 
             </select>
-            <select multiple value={selectedFactions} onChange={handleSelectChange}>
+            <select multiple size={5} value={selectedFactions} onChange={handleSelectChange}>
                 {filteredFactions.map((faction, index) => (
                     <option key={index} value={faction}>{faction}</option>
                 ))}
@@ -150,17 +150,16 @@ function Jeu() {
                 {selectedFactions.map((faction, index) => (
                     <React.Fragment key={`optgroup_${index}`}>
                         <optgroup label={`Héros ${faction}`}>
-                            {groupedData[faction].filter(item => item.type === 'Héros').map((character, idx) => (
+                            {groupedData[faction].filter(item => item.type === 'Héros').sort((a, b) => a.personnage.localeCompare(b.personnage)).map((character, idx) => (
                                 <option key={`character_${idx}`} value={character.personnage}>{character.personnage} ({character.points}pts)</option>
                             ))}
                         </optgroup>
-                        {/* Vérifie s'il y a des figurines dans la faction avant d'afficher l'optgroup */}
                         {groupedData[faction].some(item => item.type === 'Figurine') && (
-                            <optgroup label={`Figurine ${faction}`}>
-                                {groupedData[faction].filter(item => item.type === 'Figurine').map((figure, idx) => (
-                                    <option key={`figure_${idx}`} value={figure.personnage}>{figure.personnage} ({figure.points}pts)</option>
-                                ))}
-                            </optgroup>
+                        <optgroup label={`Figurine ${faction}`}>
+                            {groupedData[faction].filter(item => item.type === 'Figurine').map((figure, idx) => (
+                                <option key={`figure_${idx}`} value={figure.personnage}>{figure.personnage} ({figure.points}pts)</option>
+                            ))}
+                        </optgroup>
                         )}
                     </React.Fragment>
                 ))}

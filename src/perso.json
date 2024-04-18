@@ -865,6 +865,226 @@
     {
         "faction": "Communauté de l'anneau",
         "allegence": "Bien",
+        "personnage": "Gimli, fils de Glóin",
+        "points": "100",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Les Haches des Nains !",
+            "Je suis assis sur mon 43ème",
+            "Hache à deux mains de maître",
+            "Haches de jet"
+        ],
+        "options": [
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Sméagol",
+        "points": "30",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "regles": [
+            "Cavernicole",
+            "Servir le Maître du Précieux",
+            "Sméagol - Doigts étrangleurs"
+        ]
+    },
+    {
+        "faction": "LL Le retour du Roi",
+        "allegence": "LL-Bien",
+        "personnage": "Legolas Vertefeuille",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/3+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 2,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Tir Mortel",
+            "Décompte final, 42",
+            "Arc Elfique"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armure",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Meriadoc Brandebouc",
+        "points": "10",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 3,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "regles": [
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)",
+            "Pour la Comté !"
+        ],
+        "options": [
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Peregrin Touque",
+        "points": "10",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 3,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "regles": [
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)",
+            "Pour la Comté !"
+        ],
+        "options": [
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
+        "personnage": "Samsagace Gamegie",
+        "points": "40",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 3,
+            "A": 1,
+            "B": 6
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "regles": [
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)",
+            "Laissez-le ou je m'occupe de vous, Longues-Jambes !"
+        ],
+        "options": [
+            {
+                "nom": "Cape Elfique",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Communauté de l'anneau",
+        "allegence": "Bien",
         "personnage": "Arwen Undomiel",
         "points": "60",
         "caracteristiques": {
@@ -1588,7 +1808,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -2534,6 +2754,55 @@
         ]
     },
     {
+        "faction": "Domaine de Thranduil",
+        "allegence": "Bien",
+        "personnage": "Sentinelle Elfe Sylvestre",
+        "points": "25",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 3,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 0,
+            "Destin": 0,
+            "Points de vie": 1,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "options": [],
+        "regles": [
+            "Créature des Bois",
+            "Lai Enchanté",
+            "Cape Elfique",
+            "Arc Elfique",
+            "Lame de facture Elfique"
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "L'Hymne d'Elbereth",
+                "valeur": "",
+                "portee": "12\""
+            },
+            {
+                "nom": "Eldamar Madrigal",
+                "valeur": "",
+                "portee": "12\""
+            },
+            {
+                "nom": "Le Lai de Gondolin",
+                "valeur": "",
+                "portee": "°"
+            }
+        ]
+    },
+    {
         "faction": "Rohan",
         "allegence": "Bien",
         "personnage": "Aldor, Archer du Rohan",
@@ -2815,7 +3084,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -3254,7 +3523,8 @@
             {
                 "nom": "Poney",
                 "valeur": 5,
-                "action": "addponey"
+                "action": "addponey",
+                "mouv":4
             },
             {
                 "nom": "Cape elfique",
@@ -3306,7 +3576,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -3394,7 +3664,7 @@
         ]
     },
     {
-        "faction": "Mirkwood",
+        "faction": "Domaine de Thranduil",
         "allegence": "Bien",
         "personnage": "Thranduil, Roi du Royaume Sylvestre",
         "points": "100",
@@ -3468,7 +3738,7 @@
         ]
     },
     {
-        "faction": "Mirkwood",
+        "faction": "Domaine de Thranduil",
         "allegence": "Bien",
         "personnage": "Legolas vertefeuille, Prince de la Forêt Noire",
         "points": "95",
@@ -3519,7 +3789,7 @@
         ]
     },
     {
-        "faction": "Mirkwood",
+        "faction": "Domaine de Thranduil",
         "allegence": "Bien",
         "personnage": "Tauriel",
         "points": "85",
@@ -3558,7 +3828,7 @@
         ]
     },
     {
-        "faction": "Mirkwood",
+        "faction": "Domaine de Thranduil",
         "allegence": "Bien",
         "personnage": "Capitaine des Gardes du Palais",
         "points": "75",
@@ -3597,7 +3867,7 @@
         ]
     },
     {
-        "faction": "Mirkwood",
+        "faction": "Domaine de Thranduil",
         "allegence": "Bien",
         "personnage": "Capitaine Ranger de la Forêt Noire",
         "points": "75",
@@ -3626,7 +3896,7 @@
         ]
     },
     {
-        "faction": "Mirkwood",
+        "faction": "Domaine de Thranduil",
         "allegence": "Bien",
         "personnage": "Capitaine de la Forêt Noire",
         "points": "75",
@@ -4021,7 +4291,7 @@
         "options": []
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Balin, Champion d'Erebor",
         "points": "75",
@@ -4049,9 +4319,44 @@
             "Longue Barbe",
             "Protecteur Attitré (Thorin)"
         ]
+    },  {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Balin",
+        "points": "40",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 2,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv":5
+            }
+        ],
+        "regles": [
+            "Longue Barbe"
+        ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Bifur, Champion d'Erebor",
         "points": "65",
@@ -4081,7 +4386,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Bofur, Champion d'Erebor",
         "points": "65",
@@ -4111,7 +4416,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Bombur, Champion d'Erebor",
         "points": "65",
@@ -4142,7 +4447,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Capitaine des Monts de Fer",
         "points": "80",
@@ -4177,7 +4482,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Dáin Pied-d'Acier, Seigneur des Monts de Fer",
         "points": "140",
@@ -4220,7 +4525,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Dori, Champion d'Erebor",
         "points": "75",
@@ -4249,7 +4554,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Dwalin, Champion d'Erebor",
         "points": "115",
@@ -4287,7 +4592,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Fíli, Champion d'Erebor",
         "points": "75",
@@ -4330,7 +4635,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Glóin, Champion d'Ereborr",
         "points": "90",
@@ -4360,7 +4665,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Kíli, Champion d'Erebor",
         "points": "75",
@@ -4403,7 +4708,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Nori, Champion d'Erebor",
         "points": "80",
@@ -4433,7 +4738,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Óin, Champion d'Erebor",
         "points": "65",
@@ -4462,7 +4767,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Ori, Champion d'Erebor",
         "points": "55",
@@ -4490,7 +4795,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Dáin Pied-d'Acier, Roi sous la Montagne",
         "points": "130",
@@ -4523,7 +4828,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Thorin III Heaume-de-Pierre",
         "points": "110",
@@ -4552,7 +4857,7 @@
         ]
     },
     {
-        "faction": "Erebor Reconquis",
+        "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Thorin Ecu-de-Chêne, Roi sous la Montagne",
         "points": "115",
@@ -5499,7 +5804,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -5587,7 +5892,7 @@
         "note": "Si le capitaine choisi de prendre l'option Cheaval aparaçonné, il remplace alors sa hallebarde par une épé",
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 10,
                 "action": {
                     "caracteristique": "M",
@@ -5645,7 +5950,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -5759,7 +6064,7 @@
                 "action": "addombrecapa"
             },
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -5835,7 +6140,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -6164,7 +6469,7 @@
         "note": "Si le capitaine choisi de prendre l'option Cheaval aparaçonné, il remplace alors sa hallebarde par une épé",
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 10,
                 "action": {
                     "caracteristique": "M",
@@ -6222,7 +6527,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",
@@ -6321,7 +6626,7 @@
         ],
         "options": [
             {
-                "nom": "Cheval caparaçonné",
+                "nom": "Cheval Caparaçonné",
                 "valeur": 15,
                 "action": {
                     "caracteristique": "M",

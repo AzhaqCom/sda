@@ -230,6 +230,16 @@
         "etat": "equipement"
     },
     {
+        "nom": "Arc Long",
+        "effet": "Portée 24\" Force 3",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Arbalète",
+        "effet": "Portée 24\" Force 4",
+        "etat": "equipement"
+    },
+    {
         "nom": "Tir Léthal",
         "effet": "Chaque tour, quand il tire avec son Arc, Anborn peut dépenser un point de Puissance sans réduire sa réserve (même s'il n'en a plus aucun) pour modifier le résultat soit d'un jet pour Toucher, soit d'un jet de Trajectoire, soit d'un jet pour Blesser.",
         "etat": "actif"
@@ -247,6 +257,11 @@
     {
         "nom": "Lance de cavalerie",
         "effet": "Une figurine de cavalerie qui a une Lance de Cavalerie reçoit un bonus de +1 pour Blesser lorsqu'elle a chargé pendant le tour. Veuillez noter que dans le cas où deux jets sont requis pour blesser, le bonus s'applique au deux jets. Une figurine de Cavalerie avec une Lance de Cavalerie obtient ce bonus même si elle a chargé une figurine de Cavalerie, sauf si elle a chargé àtravers un terrain difficile.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Lance de guerre",
+        "effet": "Une Lance de Guerre suit les règles de la Lance lorsqu'elle est maniée pour une figurine d'Infanterie et suit les règles de la Lance de Cavalerie lorsqu'elle est maniée par une figurine de Cavalerie.",
         "etat": "equipement"
     },
     {
@@ -1238,9 +1253,74 @@
         "nom": "Lance",
         "effet": "Cor de guerre Une figurine d'Infanterie qui est armée avec une Lance peut soutenir une figurine alliée, qui a un socle de la même taille ou plus petit, dans un combat de manière spéciale. Si une figurine non engagée au combat avec une Lance est au contact socle à socle avec une figurine alliée, alors elle peut apporter une unique Attaque au combat en utilisant ses valeurs de Combat et de Force.",
         "etat": "equipement"
-    },  {
+    },
+    {
         "nom": "Style de Combat de Caras Galadhon",
-        "effet": "Le style de combat des Gardes de la Cour des Galadhrim est l'un des plus impressionnants de toute la Terre du Milieu. En plus des règles normales des piques, les Gardes de la Cour des Galadhrim peuvent aussi parer les coups à l’aide de leur pique comme s’ils se protégeaient derrière un bouclier. Les restrictions habituelles pour la protection derrière un bouclier s’appliquent tout de même, ainsi un Garde de la Cour des Galadhrim qui se protège ne peut pas être soutenu par une autre figurine, pas même par un autre Garde.",
+        "effet": "Le style de combat des Gardes de la Cour des Galadhrim est l'un des plus impressionnants de toute la Terre du Milieu. En plus des règles normales des piques, les Gardes de la Cour des Galadhrim peuvent aussi parer les coups à l'aide de leur pique comme s'ils se protégeaient derrière un bouclier. Les restrictions habituelles pour la protection derrière un bouclier s'appliquent tout de même, ainsi un Garde de la Cour des Galadhrim qui se protège ne peut pas être soutenu par une autre figurine, pas même par un autre Garde.",
         "etat": "actif"
+    },
+    {
+        "nom": "Chevaliers du Roi",
+        "effet": "C'est lorsqu'ils chevauchent aux côtés de leur roi que les cavaliers de la Forêt Noire sont le plus mortels. Tant qu'ils sont montés, les cavaliers de la Forêt Noire comptent comme étant dans l'aire d'effet d'une Bannière s'ils sont à moins de 6\" de Thranduil, Roi du Royaume Sylvestre.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Garde du Roi",
+        "effet": "Quand ils sont à moins de 3\"de Thranduil, les Gardes du Palais reçoivent un bonus de +1 à leur valeur de Combat.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Guerriers aux couteaux",
+        "effet": "Combattre sous les taillis de la Forêt Noire a appris aux Rangers à manier leurs couteaux avec une efficacité sans rival. Les Rangers de la Forêt Noire bénéficient d'un bonus d'une Attaque supplémentaire pour chaque figurine ennemie contre laquelle ils sont engagés après la première (Dans une limite de 3 Attaques maximum). Ce bonus est déterminé au début de chaque Combat et dure jusqu'à ce que tous les coups du combat aient été portés.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Sméagol - Doigts étrangleurs",
+        "effet": "Sméagol a de puissants doigts étrangleurs, et n'est jamais considéré comme désarmé.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Cavernicole",
+        "effet": "Une figurine Cavernicole ajoute 1 à tous ses jets de Franchissement, Saut et Escalade. Et elle ne subit aucune pénalité en cas de combat dans l'obscurité.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Servir le Maître du Précieux",
+        "effet": "Sméagol ne peut intégrer votre armée que si Frodon en fait également partie.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Pour la Comté !",
+        "etat": "actif",
+        "effet": "Tant qu'ils sont à moins de 3\" de Boromir, Merry et Pippin peuvent utiliser les points de Puissance de Boromir comme si c'était les leurs."
+    },
+    {
+        "nom": "Laissez-le ou je m'occupe de vous, Longues-Jambes !",
+        "etat": "actif",
+        "effet": "Si Frodon est Engagé au Combat à moins de 6\" de Sam, alors Sam peut déclarer un Combat Héroïque sans utiliser de point de Puissance. Si le Combat Héroïque est réussi, Sam devra alors rejoindre le combat de Frodon - si cela n'est pas possible, il doit s'en rapprocher au maximum."
+    },
+    {
+        "nom": "Grande Pioche",
+        "effet": "C'est une arme à deux mains qui peut utiliser les coups spéciaux Balayage et Taille",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Loyaux à leurs capitaines",
+        "effet": "Tant qu'un vétéran est à moins de 6\" de Boromir ou de Faramir, il reçoit un bonus de +1 à sa valeur de Combat. Ce bonus est cumulatif avec d'autres.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Bouclier Rouge de l'Ouestfold (Erkenbrand)",
+        "effet": "Si votre armée inclut Erkenbrand, Capitaine du Rohan, vous pouvez améliorer tous les Cavaliers du Rohan de sa troupe en Boucliers Rouges de l'Ouestfold pour un surcoût de +1pt par unité. Les Boucliers Rouges de l'Ouestfold considèrent Erkenbrand comme une Bannière lorsqu'ils sont à moins de 3\" de lui.",
+        "etat": "amélioration"
+    },
+    {
+        "nom": "Avant-Garde",
+        "effet": "Les Éclaireurs du Rohan peuvent utiliser la règle « Tenez Bon ! » d'un Héros allié indépendamment de la distance qui les en sépare.",
+        "etat": "actif"
+    },{
+        "nom": "Cavaliers d'Eorl",
+        "effet":"Tant qu'ils sont à moins de 6\" d'Éorl le Jeune, les Fils d'Éorl gagnent une Attaque supplémentaire pour un total de 2.",
+        "etat":"actif"
     }
 ]

@@ -1,5 +1,949 @@
 [
     {
+        "faction": "Alliance de Radagast",
+        "allegence": "Bien",
+        "personnage": "Grand Aigle",
+        "points": "100",
+        "caracteristiques": {
+            "M": 3,
+            "C": "7/3+",
+            "F": 6,
+            "D": 8,
+            "A": 2,
+            "B": 6
+        },
+        "capacites": {
+            "Points de vie": 3
+        },
+        "options": [],
+        "regles": [
+            "Vol",
+            "Charge Monstrueuse",
+            "Terreur"
+        ]
+    },
+    {
+        "faction": "Armée de Dunharrow",
+        "allegence": "Bien",
+        "personnage": "Cavalier des morts",
+        "points": "24",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [],
+        "regles": [
+            "Les Lames des Morts",
+            "Terreur",
+            "Marche Spectrale"
+        ],
+        "servants": [
+            {
+                "personnage": "Monture Spectrale",
+                "caracteristiques": {
+                    "M": 10,
+                    "C": "3/6+",
+                    "F": 3,
+                    "D": 6,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Armée de Dunharrow",
+        "allegence": "Bien",
+        "personnage": "Guerrier des morts",
+        "points": "14",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 7,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Les Lames des Morts",
+            "Terreur",
+            "Marche Spectrale"
+        ]
+    },
+    {
+        "faction": "Armée de Lacville",
+        "allegence": "Bien",
+        "personnage": "Garde de Lacville",
+        "points": "5",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Guerrier d'Erebor",
+        "points": "8",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Arnor",
+        "allegence": "Bien",
+        "personnage": "Archer Hobbit",
+        "points": "5",
+        "caracteristiques": {
+            "M": 4,
+            "C": "2/3+",
+            "F": 2,
+            "D": 3,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Chasseur Touque (Peregrin ; Paladin)",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "C",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)"
+        ]
+    },
+    {
+        "faction": "Arnor",
+        "allegence": "Bien",
+        "personnage": "Guerrier d'Arnor",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "note": "Lorsque l'option bannière est choisie, le guerrier remplace sa lance ainsi que son bouclier pour celle ci",
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Haine (Angmar)"
+        ]
+    },
+    {
+        "faction": "Arnor",
+        "allegence": "Bien",
+        "personnage": "Ranger d'Arnor",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Haine (Angmar)"
+        ]
+    },
+    {
+        "faction": "Erebor Restauré",
+        "allegence": "Bien",
+        "personnage": "Chevaucher de Bouquetin des Monts de Fer",
+        "points": "20",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 6,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "note": "Si L'option grande pioche est choisie, elle remplace la Lance de Guerre",
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Grande Pioche",
+                "valeur": 0,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Montagnard",
+            "Charge Dévastatrice",
+            "lance de guerre"
+        ],
+        "servants": [
+            {
+                "personnage": "Bouquetin de Guerre",
+                "caracteristiques": {
+                    "M": 8,
+                    "C": "2/6+",
+                    "F": 4,
+                    "D": 5,
+                    "A": 0,
+                    "B": 3
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Erebor Restauré",
+        "allegence": "Bien",
+        "personnage": "Nain des Monts de Fer",
+        "points": "11",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 7,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "note": "Si L'option grande pioche ou Arbalète sont choisie, le nain perd son bouclier",
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arbalète",
+                "valeur": 1,
+                "action": {
+                    "effet": "minus"
+                }
+            },
+            {
+                "nom": "Grande Pioche",
+                "valeur": 0,
+                "action": {
+                    "effet": "minus"
+                }
+            }
+        ],
+        "regles": [
+            "Mur de Boucliers"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "allegence": "Bien",
+        "personnage": "Chevalier de Minas Tirith",
+        "points": "13",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Mur de Boucliers",
+            "Lance de Cavalerie"
+        ],
+        "servants": [
+            {
+                "personnage": "Cheval",
+                "caracteristiques": {
+                    "M": 1,
+                    "C": "3/6+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "allegence": "Bien",
+        "personnage": "Garde de la Citadelle",
+        "points": "9",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 7,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc Long",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Garde du Corps",
+            "Lance"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "allegence": "Bien",
+        "personnage": "Garde de la Cour de la Fontaine",
+        "points": "10",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "note": "Si l'option bannière est prise, c'est en remplacement de la lance !",
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Garde du Corps",
+            "Lance"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "allegence": "Bien",
+        "personnage": "Guerrier de Minas Tirith",
+        "points": "7",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Mur de Boucliers"
+        ]
+    },
+    {
+        "faction": "Gondor",
+        "allegence": "Bien",
+        "personnage": "Ranger du Gondor",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Gondor",
+        "allegence": "Bien",
+        "personnage": "Vétéran d'Osgilitah",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Loyaux à leurs Capitaines"
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "allegence": "Bien",
+        "personnage": "Cavalier du Rohan",
+        "points": "14",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Javelots",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier Rouge de l'Ouestfold (Erkenbrand)",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Debout, Cavaliers de Théoden !",
+            "Arc"
+        ],
+        "servants": [
+            {
+                "personnage": "Cheval",
+                "caracteristiques": {
+                    "M": 10,
+                    "C": "3/6+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "allegence": "Bien",
+        "personnage": "Eclaireur du Rohan",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Avant-Garde",
+            "Arc"
+        ]
+    },  {
+        "faction": "Rohan",
+        "allegence": "Bien",
+        "personnage": "Fils d'Eorl",
+        "points": "20",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 6,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+           
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Cavaliers d'Eorl"
+        ],
+        "servants": [
+            {
+                "personnage": "Cheval Caparaçonné",
+                "caracteristiques": {
+                    "M": 10,
+                    "C": "3/6+",
+                    "F": 3,
+                    "D": 5,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "allegence": "Bien",
+        "personnage": "Garde Royal du Rohan",
+        "points": "10",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Javelots",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Cavalier Expert",
+            "Garde du Corps",
+            "Debout, Cavaliers de Théoden !"
+        ]
+    },
+    {
+        "faction": "Rohan",
+        "allegence": "Bien",
+        "personnage": "Guerrier du Rohan",
+        "points": "6",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Javelots",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Helmingas (Grimbold)",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "F",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Survivants de Lacville",
+        "allegence": "Bien",
+        "personnage": "Milicien de Lacville",
+        "points": "5",
+        "caracteristiques": {
+            "M": 6,
+            "C": "2/4+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique":"D",
+                    "valeur":1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
         "faction": "Lothlorien",
         "allegence": "Bien",
         "personnage": "Chevalier Galadhrim",
@@ -125,6 +1069,318 @@
                     "Points de vie": 1
                 }
             }
+        ]
+    },
+    {
+        "faction": "Fondcombe",
+        "allegence": "Bien",
+        "personnage": "Guerrier Haut Elfe",
+        "points": "9",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Gare Du Roi (Gil Galad)",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "C",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Númenor",
+        "allegence": "Bien",
+        "personnage": "Guerrier de Númenor",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 4,
+            "A": 1,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Sang de Númenor"
+        ]
+    },
+    {
+        "faction": "Domaine de Thranduil",
+        "allegence": "Bien",
+        "personnage": "Cavalier de La Forêt Noire",
+        "points": "18",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Cavalier Expert",
+            "Chevaliers du Roi",
+            "Lame de facture Elfique"
+        ],
+        "servants": [
+            {
+                "personnage": "Cheval",
+                "caracteristiques": {
+                    "M": 10,
+                    "C": "3/6+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Domaine de Thranduil",
+        "allegence": "Bien",
+        "personnage": "Elfe de La Forêt noire",
+        "points": "9",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc Elfique",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Vouge Elfique",
+                "valeur": 2,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Domaine de Thranduil",
+        "allegence": "Bien",
+        "personnage": "Garde Du Palais",
+        "points": "12",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Garde du Corps",
+            "Créature des Bois",
+            "Garde du Roi",
+            "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Domaine de Thranduil",
+        "allegence": "Bien",
+        "personnage": "Ranger de La Forêt Noire",
+        "points": "14",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/3+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Créature des Bois",
+            "Guerriers aux Couteaux",
+            "Arc Elfique",
+            "Cape Elfique"
         ]
     },
     {
