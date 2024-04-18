@@ -2283,6 +2283,7 @@
             }
         ],
         "regles": [
+            "Désarmé",
             "Résistant à la Magie",
             "Créature des Bois",
             "Terreur",
@@ -2486,20 +2487,20 @@
         "faction": "Lothlorien",
         "allegence": "Bien",
         "personnage": "Sentinelle Elfe Sylvestre",
-        "points": "60",
+        "points": "25",
         "caracteristiques": {
             "M": 6,
             "C": "5/3+",
             "F": 3,
-            "D": 4,
-            "A": 1,
+            "D": 3,
+            "A": 2,
             "B": 5
         },
         "capacites": {
-            "Puissance": 1,
-            "Volonté": 3,
-            "Destin": 1,
-            "Points de vie": 2,
+            "Puissance": 0,
+            "Volonté": 0,
+            "Destin": 0,
+            "Points de vie": 1,
             "Kill": 0
         },
         "actions": [
