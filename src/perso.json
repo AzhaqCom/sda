@@ -3524,7 +3524,7 @@
                 "nom": "Poney",
                 "valeur": 5,
                 "action": "addponey",
-                "mouv":4
+                "mouv": 4
             },
             {
                 "nom": "Cape elfique",
@@ -4319,10 +4319,11 @@
             "Longue Barbe",
             "Protecteur Attitré (Thorin)"
         ]
-    },  {
+    },
+    {
         "faction": "Compagnie de Thorin",
         "allegence": "Bien",
-        "personnage": "Balin",
+        "personnage": "Balin le Nain",
         "points": "40",
         "caracteristiques": {
             "M": 5,
@@ -4348,7 +4349,7 @@
                 "nom": "Poney",
                 "valeur": 5,
                 "action": "addponey",
-                "mouv":5
+                "mouv": 5
             }
         ],
         "regles": [
@@ -4386,6 +4387,94 @@
         ]
     },
     {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Bifur le Nain",
+        "points": "45",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 5
+            }
+        ],
+        "regles": [
+            "Jet de Pierres (Portée 8\", Force 1)",
+            "Fer de Hache Incrusté"
+        ]
+    },
+    {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Bilbon Sacquet",
+        "points": "60",
+        "caracteristiques": {
+            "M": 4,
+            "C": "3/3+",
+            "F": 2,
+            "D": 3,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Résistant à la Magie",
+            "Jet de Pierres (Portée 8\", Force 1)",
+            "Il ne s'est pas encore réveillé"
+        ],
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 4
+            },
+            {
+                "nom": "Dard",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Anneau Unique",
+                "valeur": 0,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
         "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Bofur, Champion d'Erebor",
@@ -4413,6 +4502,41 @@
         "regles": [
             "Résistant",
             "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Bofur le Nain",
+        "points": "45",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Résistance Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 4
+            }
+        ],
+        "regles": [
+            "Résistant"
         ]
     },
     {
@@ -4444,6 +4568,43 @@
             "Maladroit",
             "Regain de Moral",
             "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Bombur le Nain",
+        "points": "45",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 4
+            }
+        ],
+        "regles": [
+            "Robuste",
+            "Maladroit",
+            "Regain de Moral"
         ]
     },
     {
@@ -4554,6 +4715,40 @@
         ]
     },
     {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Dori le Nain",
+        "points": "55",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Un Bon Camarade"
+        ],
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 4
+            }
+        ]
+    },
+    {
         "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Dwalin, Champion d'Erebor",
@@ -4592,17 +4787,136 @@
         ]
     },
     {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Dwalin le Nain",
+        "points": "95",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 5,
+            "D": 6,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 2,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 5
+            }
+        ],
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Costaud",
+            "Sans Peur",
+            "Maître d'Armes"
+        ]
+    },
+    {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Gandalf le Gris",
+        "points": "170",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 7
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 6,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Canalisation Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Glamdring",
+            "Narya",
+            "Bâton de Pouvoir"
+        ],
+        "options": [
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Lumière Aveuglante",
+                "valeur": "2+",
+                "portee": ""
+            },
+            {
+                "nom": "Aura de Terreur",
+                "valeur": "2+",
+                "portee": ""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Protection des Valar",
+                "valeur": "4+",
+                "portee": ""
+            },
+            {
+                "nom": "Volonté de Fer",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Eboulement",
+                "valeur": "5+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Impact Magique",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
         "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Fíli, Champion d'Erebor",
         "points": "75",
         "caracteristiques": {
-            "M": "5",
+            "M": 5,
             "C": "5/3+",
-            "F": "4",
-            "D": "8",
-            "A": "2",
-            "B": "5"
+            "F": 4,
+            "D": 8,
+            "A": 2,
+            "B": 5
         },
         "capacites": {
             "Puissance": 3,
@@ -4635,9 +4949,44 @@
         ]
     },
     {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Fíli le Nain",
+        "points": "50",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "Poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 5
+            }
+        ],
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Synergie de Combat"
+        ]
+    },
+    {
         "faction": "Erebor Restauré",
         "allegence": "Bien",
-        "personnage": "Glóin, Champion d'Ereborr",
+        "personnage": "Glóin, Champion d'Erebor",
         "points": "90",
         "caracteristiques": {
             "M": 5,
@@ -4662,6 +5011,41 @@
             "Maître d'Armes",
             "Un Guerrier-Né",
             "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Glóin le Nain",
+        "points": "85",
+        "caracteristiques": {
+            "M": 5,
+            "C": "6/4+",
+            "F": 4,
+            "D": 7,
+            "A": 3,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "poney",
+                "valeur": 5,
+                "action": "addponey",
+                "mouv": 5
+            }
+        ],
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Un Guerrier-Né"
         ]
     },
     {
@@ -4708,6 +5092,41 @@
         ]
     },
     {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Kíli le Nain",
+        "points": "50",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/3+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "poney",
+                "valeur": 10,
+                "action": "addponey",
+                "mouv": 5
+            }
+        ],
+        "actions": [
+            "Précision Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Synergie de Combat"
+        ]
+    },
+    {
         "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Nori, Champion d'Erebor",
@@ -4735,6 +5154,40 @@
             "Maître d'Armes",
             "Synergie Martiale",
             "Protecteur Attitré (Thorin)"
+        ]
+    },
+    {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Nori le Nain",
+        "points": "55",
+        "caracteristiques": {
+            "M": 5,
+            "C": "5/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "poney",
+                "valeur": 10,
+                "action": "addponey",
+                "mouv": 5
+            }
+        ],
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Maître d'Armes"
         ]
     },
     {
@@ -4767,6 +5220,41 @@
         ]
     },
     {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Óin le nain",
+        "points": "45",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 4,
+            "D": 4,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [
+            {
+                "nom": "poney",
+                "valeur": 10,
+                "action": "addponey",
+                "mouv": 5
+            }
+        ],
+        "actions": [
+            "Résistance Héroïque"
+        ],
+        "regles": [
+            "Herbes Médicinales",
+            "Pronostic"
+        ]
+    },
+    {
         "faction": "Erebor Restauré",
         "allegence": "Bien",
         "personnage": "Ori, Champion d'Erebor",
@@ -4792,6 +5280,33 @@
         "regles": [
             "Chroniqueur",
             "Protecteur Attitré (Thorin)"
+        ]
+    },  {
+        "faction": "Compagnie de Thorin",
+        "allegence": "Bien",
+        "personnage": "Ori le Nain",
+        "points": "40",
+        "caracteristiques": {
+            "M": 5,
+            "C": "3/3+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "options": [],
+        "actions": [
+            "Précision Héroïque"
+        ],
+        "regles": [
+            "Chroniqueur",
+            "Oeil Mortel"
         ]
     },
     {
