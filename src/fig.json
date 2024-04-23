@@ -752,7 +752,8 @@
             "Avant-Garde",
             "Arc"
         ]
-    },  {
+    },
+    {
         "faction": "Rohan",
         "allegence": "Bien",
         "personnage": "Fils d'Eorl",
@@ -768,9 +769,7 @@
         "capacites": {
             "Points de vie": 1
         },
-        "options": [
-           
-        ],
+        "options": [],
         "regles": [
             "Cavalier Expert",
             "Cavaliers d'Eorl"
@@ -929,8 +928,8 @@
                 "nom": "Bouclier",
                 "valeur": 1,
                 "action": {
-                    "caracteristique":"D",
-                    "valeur":1
+                    "caracteristique": "D",
+                    "valeur": 1
                 }
             },
             {
@@ -1543,6 +1542,79 @@
             "Créature des Bois",
             "Cape Elfique",
             "Lame de facture Elfique"
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Bien",
+        "personnage": "Adepte du Culte du Dragon",
+        "points": "11",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 3,
+            "D": 4,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [],
+        "regles": [
+            "Agilité Surnaturelle",
+            "L'agilité du Dragon"
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Bien",
+        "personnage": "Guerrier Oriental",
+        "points": "7",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Pique",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Phalange"
         ]
     }
 ]

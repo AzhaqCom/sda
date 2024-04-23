@@ -1318,9 +1318,20 @@
         "nom": "Avant-Garde",
         "effet": "Les Éclaireurs du Rohan peuvent utiliser la règle « Tenez Bon ! » d'un Héros allié indépendamment de la distance qui les en sépare.",
         "etat": "actif"
-    },{
+    },
+    {
         "nom": "Cavaliers d'Eorl",
-        "effet":"Tant qu'ils sont à moins de 6\" d'Éorl le Jeune, les Fils d'Éorl gagnent une Attaque supplémentaire pour un total de 2.",
-        "etat":"actif"
+        "effet": "Tant qu'ils sont à moins de 6\" d'Éorl le Jeune, les Fils d'Éorl gagnent une Attaque supplémentaire pour un total de 2.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Narsil",
+        "effet": "Narsil est à la fois une Épée bâtarde et une Arme de Maître. De plus, Elendil peut à chaque tour effectuer un Combat Héroïque gratuit.",
+        "etat": "actif"
+    },
+    {
+        "nom": "L'Agilité du Dragon",
+        "effet": "Une figurine avec cette règle spéciale bénéficie d'un bonus de +2 pour tous ses tests de Franchissement, de Saut et d'Escalade. De plus, elle n'a pas à lancer de tests de Trajectoire lorsqu'elle porte des coups à une figurine qui défend une barrière ou une porte.",
+        "etat": "actif"
     }
 ]

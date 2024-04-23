@@ -9,8 +9,15 @@ function Jeu() {
         return storedCharacters ? JSON.parse(storedCharacters) : [];
     });
     const [selectedCharacter, setSelectedCharacter] = useState('');
-    const [selectedFactions, setSelectedFactions] = useState(['Alliance de Radagast']);
-    const [selectedAllegiance, setSelectedAllegiance] = useState('Bien');
+
+    const [selectedFactions, setSelectedFactions] = useState(() => {
+        const storedFactions = localStorage.getItem('selectedFactions');
+        return storedFactions ? JSON.parse(storedFactions) : [];
+    });
+    const [selectedAllegiance, setSelectedAllegiance] = useState(() => {
+        const storedAllegiance = localStorage.getItem('selectedAllegiance');
+        return storedAllegiance ? storedAllegiance : '';
+    });
     const groupedCharacters = PersoData.reduce((acc, character) => {
         acc[character.faction] = acc[character.faction] || [];
         acc[character.faction].push(character);
@@ -22,7 +29,13 @@ function Jeu() {
     useEffect(() => {
         localStorage.setItem('selectedCharacters', JSON.stringify(selectedCharacters));
     }, [selectedCharacters]);
+    useEffect(() => {
+        localStorage.setItem('selectedFactions', JSON.stringify(selectedFactions));
+    }, [selectedFactions]);
 
+    useEffect(() => {
+        localStorage.setItem('selectedAllegiance', selectedAllegiance);
+    }, [selectedAllegiance]);
     // Fusionner les données de PersoData et FigData et ajout d'un type
     const combinedData = [...PersoData.map(character => ({ ...character, type: 'Héros' })), ...FigData.map(figure => ({ ...figure, type: 'Figurine' }))];
 
@@ -99,15 +112,6 @@ function Jeu() {
     const handleAllegianceChange = (event) => {
         const newAllegiance = event.target.value;
         setSelectedAllegiance(newAllegiance);
-
-        // Filtrer les factions disponibles pour la nouvelle allégeance
-        const availableFactions = allFactions.filter(faction => {
-            const factionAllegiance = groupedCharacters[faction][0].allegence;
-            return newAllegiance === '' || factionAllegiance === newAllegiance;
-        });
-
-        // Mettre à jour les factions sélectionnées
-        setSelectedFactions(availableFactions.length > 0 ? [availableFactions[0]] : []);
     };
 
 
@@ -155,25 +159,27 @@ function Jeu() {
                             ))}
                         </optgroup>
                         {groupedData[faction].some(item => item.type === 'Figurine') && (
-                        <optgroup label={`Figurine ${faction}`}>
-                            {groupedData[faction].filter(item => item.type === 'Figurine').map((figure, idx) => (
-                                <option key={`figure_${idx}`} value={figure.personnage}>{figure.personnage} ({figure.points}pts)</option>
-                            ))}
-                        </optgroup>
+                            <optgroup label={`Figurine ${faction}`}>
+                                {groupedData[faction].filter(item => item.type === 'Figurine').map((figure, idx) => (
+                                    <option key={`figure_${idx}`} value={figure.personnage}>{figure.personnage} ({figure.points}pts)</option>
+                                ))}
+                            </optgroup>
                         )}
                     </React.Fragment>
                 ))}
             </select>
 
             <button className='btn-add' onClick={handleAddCharacter}>Ajouter</button>
-            {
-                selectedCharacters.map((character, index) => (
-                    <div key={index} className='card'>
-                        <JeuCard selectedCharacter={character} updateCharacter={updateCharacter} index={index} />
-                        <button className='btnsuppr' onClick={() => handleRemoveCharacter(index)}>Supprimer</button>
-                    </div>
-                ))
-            }
+            <div className='container-card'>
+                {
+                    selectedCharacters.map((character, index) => (
+                        <div key={index} className='card'>
+                            <JeuCard selectedCharacter={character} updateCharacter={updateCharacter} index={index} />
+                            <button className='btnsuppr' onClick={() => handleRemoveCharacter(index)}>Supprimer</button>
+                        </div>
+                    ))
+                }
+            </div>
         </div >
     );
 }
