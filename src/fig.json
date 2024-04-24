@@ -1546,7 +1546,7 @@
     },
     {
         "faction": "Orientaux",
-        "allegence": "Bien",
+        "allegence": "Mal",
         "personnage": "Adepte du Culte du Dragon",
         "points": "11",
         "caracteristiques": {
@@ -1568,7 +1568,154 @@
     },
     {
         "faction": "Orientaux",
-        "allegence": "Bien",
+        "allegence": "Mal",
+        "personnage": "Basilic de Guerre de Rhun",
+        "points": "20",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/6+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 2
+        },
+        "options": [],
+        "regles": [
+            "Terreur",
+            "Venin",
+            "Empoisonnment Lent"
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Cataphractaire Dragon Noir",
+        "points": "16",
+        "caracteristiques": {
+            "M": 10,
+            "C": "4/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Tambour de Guerre (oriental)",
+                "valeur": 15,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Phalange",
+            "La Horde Etincelante"
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Cataphractaire Oriental",
+        "points": "16",
+        "caracteristiques": {
+            "M": 10,
+            "C": "3/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Tambour de Guerre (oriental)",
+                "valeur": 15,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Phalange",
+            "La Horde Etincelante"
+        ]
+    },    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
+        "personnage": "Guerrier Dragon Noir",
+        "points": "9",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 3,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Pique",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Arc",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Phalange"
+        ]
+    },
+    {
+        "faction": "Orientaux",
+        "allegence": "Mal",
         "personnage": "Guerrier Oriental",
         "points": "7",
         "caracteristiques": {

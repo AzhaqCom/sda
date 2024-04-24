@@ -8,8 +8,10 @@ function Jeu() {
         const storedCharacters = localStorage.getItem('selectedCharacters');
         return storedCharacters ? JSON.parse(storedCharacters) : [];
     });
-    const [selectedCharacter, setSelectedCharacter] = useState('');
-
+    const [selectedCharacter, setSelectedCharacter] = useState(() => {
+        const storedCharacter = localStorage.getItem('selectedCharacter');
+        return storedCharacter ? JSON.parse(storedCharacter) : [];
+    });
     const [selectedFactions, setSelectedFactions] = useState(() => {
         const storedFactions = localStorage.getItem('selectedFactions');
         return storedFactions ? JSON.parse(storedFactions) : [];
@@ -36,6 +38,9 @@ function Jeu() {
     useEffect(() => {
         localStorage.setItem('selectedAllegiance', selectedAllegiance);
     }, [selectedAllegiance]);
+    useEffect(() => {
+        localStorage.setItem('selectedCharacter', JSON.stringify(selectedCharacter));
+    }, [selectedCharacter]);
     // Fusionner les données de PersoData et FigData et ajout d'un type
     const combinedData = [...PersoData.map(character => ({ ...character, type: 'Héros' })), ...FigData.map(figure => ({ ...figure, type: 'Figurine' }))];
 
@@ -80,7 +85,7 @@ function Jeu() {
                 setSelectedCharacters(prevSelectedCharacters => {
                     return [...prevSelectedCharacters, characterWithUniqueId];
                 });
-                setSelectedCharacter('');
+               
             }
         }
     };

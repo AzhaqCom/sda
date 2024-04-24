@@ -122,11 +122,9 @@ button {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
     }
-    .container-card{
-        flex-wrap: nowrap;
-    }
+    
     .card{
-        width: 50%;
+        width: 49%;
         
     }
 }
