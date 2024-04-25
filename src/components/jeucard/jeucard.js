@@ -3,8 +3,8 @@ import './jeucard.css';
 import Modal from '../modal/modal';
 import Option from '../option/option';
 import Modalpower from '../modalpower/modalpower';
-
-function JeuCard({ selectedCharacter, updateCharacter, index }) {
+import { RiDeleteBin5Line } from "react-icons/ri";
+function JeuCard({ selectedCharacter, updateCharacter, index, handleRemoveCharacter }) {
 
     const handleChangeCapacite = (capacite, operation) => {
         const updatedCapacites = { ...selectedCharacter.capacites };
@@ -89,7 +89,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                             }
 
                         };
-                    }else if (option.nom ==='Cheval Caparaçonné'){
+                    } else if (option.nom === 'Cheval Caparaçonné') {
                         newServant = {
 
                             personnage: "Cheval Caparaçonné",
@@ -99,6 +99,24 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                                 F: 3,
                                 D: 5,
                                 A: 0,
+                                B: 2
+                            },
+                            capacites: {
+                                "Points de vie": 1
+                            }
+
+                        };
+                    }
+                    else if (option.nom === 'Warg') {
+                        newServant = {
+
+                            personnage: "Warg",
+                            caracteristiques: {
+                                M: 10,
+                                C: "3/6+",
+                                F: 4,
+                                D: 4,
+                                A: 1,
                                 B: 2
                             },
                             capacites: {
@@ -208,7 +226,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                     let updatedPoints = parseInt(selectedCharacter.points) + valeur;
                     let updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,
-                        ['D']: selectedCharacter.caracteristiques['D'] - 1
+                        D: selectedCharacter.caracteristiques.D - 1
                     };
 
 
@@ -262,18 +280,18 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                                 caracteristiques: {
                                     ...servant.caracteristiques,
                                     M: 6,
-                                    C: "4/4+",
-                                    F: 4,
-                                    D: 6,
-                                    A: 2,
-                                    B: 4
+                                    C: action.caracteristique.C,
+                                    F: action.caracteristique.F,
+                                    D: action.caracteristique.D,
+                                    A: action.caracteristique.A,
+                                    B: action.caracteristique.B
                                 },
                                 capacites: {
                                     ...servant.capacites,
-                                    Puissance: 2,
-                                    "Points de vie": 2
+                                    Puissance: action.capacites.Puissance,
+                                    "Points de vie": action.capacites.Points_de_vie
                                 },
-                                personnage: 'Capitaine de Minas Tirith'
+                                personnage: option.nom
                             };
                         } else {
                             // Ne rien changer pour les autres servants
@@ -462,7 +480,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                         M: 8
                     };
                     const updatedPoints = parseInt(selectedCharacter.points) + valeur;
-             
+
                     let updatedRegles = [...selectedCharacter.regles, 'Montagnard', 'Charge Dévastatrice']
                     const newServant = {
                         personnage: 'Bouquetin de Guerre',
@@ -477,7 +495,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                         capacites: {
                             "Points de vie": 1
                         }
-                        
+
                     };
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
@@ -486,7 +504,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                         caracteristiques: updatedCaracteristiques,
                         points: updatedPoints,
                         regles: updatedRegles
-                    
+
                     };
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
@@ -498,7 +516,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                         M: 8
                     };
                     const updatedPoints = parseInt(selectedCharacter.points) + valeur;
-                   
+
 
                     const newServant = {
                         personnage: 'Sanglier de Guerre',
@@ -673,7 +691,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                         capacites: {
                             "Points de vie": 1
                         }
-                        
+
                     };
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
@@ -896,6 +914,36 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(index, updatedCharacter);
+                } else if (option.action === 'addcouronne') {
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        A: 3
+                    };
+                    const updatedRegles = [...selectedCharacter.regles, 'Couronne de Morgul'];
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) + valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(index, updatedCharacter);
+                }else if (option.action === 'addboucliershagrat') {
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        D: selectedCharacter.caracteristiques.D + 1 
+                    };
+                    const updatedRegles = [...selectedCharacter.regles, 'Bouclier de Cirith Ungol'];
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) + valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(index, updatedCharacter);
                 }
             }
         } else {
@@ -912,14 +960,14 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                         [action.caracteristique]: 6
                     };
                     const updatedPoints = parseInt(selectedCharacter.points) - valeur;
-                    
+
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
                         ...selectedCharacter,
                         caracteristiques: updatedCaracteristiques,
                         points: updatedPoints,
-                        servants:[]
-                        
+                        servants: []
+
                     };
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
@@ -1032,7 +1080,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                     let updatedPoints = parseInt(selectedCharacter.points) - valeur;
                     let updatedCaracteristiques = {
                         ...selectedCharacter.caracteristiques,
-                        ['D']: selectedCharacter.caracteristiques['D'] + 1
+                        D: selectedCharacter.caracteristiques.D + 1
                     };
 
                     // Crée une nouvelle copie du personnage avec les règles spéciales, les caractéristiques et les points mis à jour
@@ -1055,19 +1103,18 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                                 ...servant,
                                 caracteristiques: {
                                     ...servant.caracteristiques,
-                                    M: 6,
-                                    C: "3/4+",
-                                    F: 3,
-                                    D: 5,
-                                    A: 1,
-                                    B: 3
+                                    C: option.initial.caracteristique.C,
+                                    F: option.initial.caracteristique.F,
+                                    D: option.initial.caracteristique.D,
+                                    A: option.initial.caracteristique.A,
+                                    B: option.initial.caracteristique.B
                                 },
                                 capacites: {
                                     ...servant.capacites,
-                                    Puissance: 1,
-                                    "Points de vie": 1
+                                    Puissance: option.initial.capacites.Puissance,
+                                    "Points de vie": option.initial.capacites.Points_de_vie
                                 },
-                                personnage: 'Vétéran - Guerrier de Minas Tirith'
+                                personnage: option.initial.nom
                             };
                         } else {
                             // Ne rien changer pour les autres servants
@@ -1202,7 +1249,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                         ...selectedCharacter.caracteristiques,
                         M: 5
                     };
-                   
+
                     const updatedPoints = parseInt(selectedCharacter.points) - valeur;
 
                     let updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Montagnard' && regle !== 'Charge Dévastatrice');
@@ -1229,7 +1276,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                     const updatedPoints = parseInt(selectedCharacter.points) - valeur;
 
 
- 
+
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
                         ...selectedCharacter,
@@ -1249,7 +1296,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                     const updatedPoints = parseInt(selectedCharacter.points) + valeur;
                     let updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Pied Léger');
 
-               
+
 
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
@@ -1360,7 +1407,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
                     const updatedPoints = parseInt(selectedCharacter.points) - valeur;
                     let updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Poney : Timide')
 
-        
+
                     // Crée une nouvelle copie du personnage avec les caractéristiques et les points mis à jour
                     const updatedCharacter = {
                         ...selectedCharacter,
@@ -1507,6 +1554,36 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
 
                     // Appelle la fonction de mise à jour du personnage fournie par le parent
                     updateCharacter(index, updatedCharacter);
+                }else if (option.action === 'addcouronne') {
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        A: 1
+                    };
+                    let  updatedRegles = selectedCharacter.regles.filter(regle => regle !== 'Couronne de Morgul') ;
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) - valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(index, updatedCharacter);
+                }else if (option.action === 'addboucliershagrat') {
+                    const updatedCaracteristiques = {
+                        ...selectedCharacter.caracteristiques,
+                        D: selectedCharacter.caracteristiques.D - 1 
+                    };
+                    let updatedRegles = selectedCharacter.regles.filter(r => r !== 'Bouclier de Cirith Ungol')
+                    const updatedCharacter = {
+                        ...selectedCharacter,
+                        caracteristiques: updatedCaracteristiques,
+                        regles: updatedRegles,
+                        points: parseInt(selectedCharacter.points) - valeur
+                    };
+
+                    // Appelle la fonction de mise à jour du personnage fournie par le parent
+                    updateCharacter(index, updatedCharacter);
                 }
             }
         }
@@ -1515,7 +1592,7 @@ function JeuCard({ selectedCharacter, updateCharacter, index }) {
 
     return (
         <div className='card-content' >
-            <h2 className='name-perso'>{selectedCharacter.personnage} <span className='point-perso'>{selectedCharacter.points}pts</span></h2>
+            <h2 className='name-perso'>{selectedCharacter.personnage} <div className='right'><span className='point-perso'>{selectedCharacter.points}pts</span><div className='icon'><RiDeleteBin5Line size={'1.5em'} onClick={() => handleRemoveCharacter(index)} /></div></div></h2>
             <Modal ruleName={selectedCharacter.faction} />
             <table>
                 <tbody>

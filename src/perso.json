@@ -1469,7 +1469,33 @@
                 "nom": "Capitaine Ingénieur de Minas Tirith",
                 "valeur": 50,
                 "action": {
-                    "effet": "servant"
+                    "effet": "servant",
+                    "personnage": "Capitaine de Minas Tirith",
+                    "caracteristique": {
+                        "C": "4/4+",
+                        "F": 4,
+                        "D": 6,
+                        "A": 2,
+                        "B": 4
+                    },
+                    "capacites": {
+                        "Puissance": 2,
+                        "Points_de_vie": 2
+                    }
+                },
+                "initial": {
+                    "nom": "Vétéran - Guerrier de Minas Tirith",
+                    "caracteristique": {
+                        "C": "3/4+",
+                        "F": 3,
+                        "D": 5,
+                        "A": 1,
+                        "B": 3
+                    },
+                    "capacites": {
+                        "Puissance": 1,
+                        "Points_de_vie": 1
+                    }
                 }
             }
         ],
@@ -1488,8 +1514,7 @@
                     "Puissance": 1,
                     "Volonté": 1,
                     "Destin": 1,
-                    "Points de vie": 1,
-                    "Kill": 0
+                    "Points de vie": 1
                 }
             },
             {
@@ -1503,8 +1528,7 @@
                     "B": 3
                 },
                 "capacites": {
-                    "Points de vie": 1,
-                    "Kill": 0
+                    "Points de vie": 1
                 }
             }
         ]
@@ -2264,8 +2288,7 @@
                     "Puissance": 1,
                     "Volonté": 1,
                     "Destin": 1,
-                    "Points de vie": 1,
-                    "Kill": 0
+                    "Points de vie": 1
                 }
             },
             {
@@ -2279,8 +2302,7 @@
                     "B": 3
                 },
                 "capacites": {
-                    "Points de vie": 1,
-                    "Kill": 0
+                    "Points de vie": 1
                 }
             }
         ]
@@ -3164,8 +3186,7 @@
                     "Puissance": 0,
                     "Volonté": 0,
                     "Destin": 0,
-                    "Points de vie": 1,
-                    "Kill": 0
+                    "Points de vie": 1
                 }
             }
         ]
@@ -5281,7 +5302,8 @@
             "Chroniqueur",
             "Protecteur Attitré (Thorin)"
         ]
-    },  {
+    },
+    {
         "faction": "Compagnie de Thorin",
         "allegence": "Bien",
         "personnage": "Ori le Nain",
@@ -6541,7 +6563,7 @@
     {
         "faction": "Orientaux",
         "allegence": "Mal",
-        "personnage": "Kamul L'Oriental",
+        "personnage": "Khamul L'Oriental",
         "points": "120",
         "caracteristiques": {
             "M": 6,
@@ -7191,6 +7213,2031 @@
             "Agilité Surnaturelle",
             "Phalange",
             "Aucune Pitié"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Arachne",
+        "points": "90",
+        "caracteristiques": {
+            "M": 10,
+            "C": "/6+",
+            "F": 7,
+            "D": 7,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Volonté": 6,
+            "Points de vie": 6
+        },
+        "actions": [],
+        "regles": [
+            "Charge Monstrueuse",
+            "Instinct de Survie",
+            "Mouvement Arachnéen",
+            "Terreur",
+            "Venin",
+            "Piégé dans la Toile",
+            "Chasseresse Solitaire"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Baliste de Siège du Mordor",
+        "points": "50",
+        "caracteristiques": {
+            "M": "",
+            "C": "",
+            "F": 9,
+            "D": 10,
+            "A": "",
+            "B": ""
+        },
+        "capacites": {
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [],
+        "regles": [
+            "Projectile Perforant",
+            "Précis"
+        ],
+        "options": [
+            {
+                "nom": "Munitions Enflammées",
+                "valeur": 15,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Capitaine Ingénieur Orque",
+                "valeur": 40,
+                "action": {
+                    "effet": "servant",
+                    "personnage": "Capitaine Orque",
+                    "caracteristique": {
+                        "C": "4/5+",
+                        "F": 4,
+                        "D": 5,
+                        "A": 2,
+                        "B": 3
+                    },
+                    "capacites": {
+                        "Puissance": 2,
+                        "Points_de_vie": 2
+                    }
+                },
+                "initial": {
+                    "nom": "Vétéran - Guerrier Orque",
+                    "caracteristique": {
+                        "C": "3/5+",
+                        "F": 3,
+                        "D": 4,
+                        "A": 1,
+                        "B": 2
+                    },
+                    "capacites": {
+                        "Puissance": 1,
+                        "Points_de_vie": 1
+                    }
+                }
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Vétéran - Guerrier Orque",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/5+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 1,
+                    "B": 2
+                },
+                "capacites": {
+                    "Puissance": 1,
+                    "Volonté": 1,
+                    "Destin": 1,
+                    "Points de vie": 1
+                }
+            },
+            {
+                "personnage": "Servant - Guerrier Orque",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/5+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 1,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Capitaine de la Garde Noire",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 5,
+            "D": 7,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Pour le Seigneur Noir !"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Bouche de Sauron",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Terreur",
+            "Epée Bâtarde"
+        ],
+        "options": [
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Capitaine Orque",
+        "points": "40",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Warg",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc orque",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Capitaine Orque du Morannon",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 5,
+            "D": 6,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Armes à Deux mains",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Capitaine Uruk-hai du Mordor",
+        "points": "55",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 5,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Armes à Deux mains",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Arc orque",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Catapulte de Guerre du Mordor",
+        "points": "160",
+        "caracteristiques": {
+            "M": "",
+            "C": "",
+            "F": 1,
+            "D": 10,
+            "A": "",
+            "B": ""
+        },
+        "capacites": {
+            "Points de vie": 4,
+            "Kill": 0
+        },
+        "actions": [],
+        "regles": [
+            "Briseur de Mur",
+            "Feu Indirect",
+            "Effet de zone"
+        ],
+        "options": [
+            {
+                "nom": "Munitions Enflammées",
+                "valeur": 15,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Têtes coupées",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Capitaine Ingénieur Orque",
+                "valeur": 40,
+                "action": {
+                    "effet": "servant",
+                    "personnage": "Capitaine Orque",
+                    "caracteristique": {
+                        "C": "4/4+",
+                        "F": 4,
+                        "D": 5,
+                        "A": 2,
+                        "B": 3
+                    },
+                    "capacites": {
+                        "Puissance": 2,
+                        "Points_de_vie": 2
+                    }
+                },
+                "initial": {
+                    "nom": "Vétéran - Guerrier Orque",
+                    "caracteristique": {
+                        "C": "3/4+",
+                        "F": 3,
+                        "D": 4,
+                        "A": 1,
+                        "B": 2
+                    },
+                    "capacites": {
+                        "Puissance": 1,
+                        "Points_de_vie": 1
+                    }
+                }
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Vétéran - Guerrier Orque",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/4+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 1,
+                    "B": 2
+                },
+                "capacites": {
+                    "Puissance": 1,
+                    "Volonté": 1,
+                    "Destin": 1,
+                    "Points de vie": 1
+                }
+            },
+            {
+                "personnage": "Servant - Troll du Mordor",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "7/4+",
+                    "F": 7,
+                    "D": 7,
+                    "A": 3,
+                    "B": 3
+                },
+                "capacites": {
+                    "Points de vie": 3
+                }
+            },
+            {
+                "personnage": "Servant - Guerrier Orque",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/5+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 1,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Chaman Orque",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Warg",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Frénésie (Orque du Mordor)",
+                "valeur": "3+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Chef troll du Mordor",
+        "points": "140",
+        "caracteristiques": {
+            "M": 6,
+            "C": "7/5+",
+            "F": 7,
+            "D": 8,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Terreur",
+            "Jet de Pierres (Portée 12\", Force 8)"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Gorbag Capitaine Orque",
+        "points": "55",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Bagarreur orque"
+        ],
+        "options": [
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Goroth Capitaine du Morannon",
+        "points": "80",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/5+",
+            "F": 5,
+            "D": 6,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Costaud",
+            "Venez vous battre, couards !"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Gothmog Lieutenant de Sauron",
+        "points": "130",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/5+",
+            "F": 4,
+            "D": 6,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Frappe Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Maître Stratège",
+            "L'Âge des Hommes est Terminé",
+            "Le Temps des Orques est Arrivé"
+        ],
+        "options": [
+            {
+                "nom": "Warg",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Grande Bête de Gorgoroth",
+        "points": "150",
+        "caracteristiques": {
+            "M": 8,
+            "C": "4/4+",
+            "F": 6,
+            "D": 7,
+            "A": 3,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 5,
+            "Kill": 0
+        },
+        "actions": [],
+        "regles": [
+            "Terreur",
+            "Piétinement Gorgoroth",
+            "Plateforme de Bataille"
+        ],
+        "options": [],
+        "servants": [
+            {
+                "personnage": "Howdah Gorgoroth",
+                "caracteristiques": {
+                    "M": "",
+                    "C": "",
+                    "F": "",
+                    "D": 8,
+                    "A": "",
+                    "B": ""
+                },
+                "capacites": {
+                    "Points de vie": 4
+                }
+            },
+            {
+                "personnage": "Commandant Orque Gorgoroth",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "4/5+",
+                    "F": 4,
+                    "D": 5,
+                    "A": 2,
+                    "B": 4
+                },
+                "capacites": {
+                    "Puissance": 2,
+                    "Volonté": 1,
+                    "Destin": 1,
+                    "Points de vie": 1
+                }
+            },
+            {
+                "personnage": "9 Guerriers Orques (avec Arc)",
+                "caracteristiques": {
+                    "M": 6,
+                    "C": "3/5+",
+                    "F": 3,
+                    "D": 4,
+                    "A": 1,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Grishnakh Capitaine Orque",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Assassin"
+        ],
+        "options": [
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Guritz le Maître des Réserves",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 5,
+            "D": 6,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Maître des Réserves"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Kardûsh le Pyromancien",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Cœur des Ténèbres",
+            "Pion de l'Ombre"
+        ],
+        "options": [],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Boule de feu",
+                "valeur": "3+",
+                "portee": "6\""
+            },
+            {
+                "nom": "Frénésie (Orque du Mordor)",
+                "valeur": "3+",
+                "portee": "6\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Khamul L'Oriental",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 12,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Défi Héroïque",
+            "Frappe Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Drain de Vitalité"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "6+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "L'Exécuteur de Gothmog",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 6,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Bras Droit de Gothmog"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "L'Immortel",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 18,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Drain de Magie",
+            "Volonté éternelle (l'immortel)"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "6\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "L'Innommable",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 14,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Présence Maladive",
+            "Pourriture Suintante"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Le Chevalier d'Umbar",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 12,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Imitation du Combat"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "6+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Le Dwimmerlaik",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Volonté": 16,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Courage Sapé"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Le Roi-Sorcier d'Angmar",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 10,
+            "Destin": 0,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Résistance Héroïque",
+            "Canalisation Héroïque",
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Courage Sapé"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Couronne de Morgul",
+                "valeur": 25,
+                "action": "addcouronne"
+            },
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Lame de Morgul",
+                "valeur": 10,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Fléau à Deux Mains",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "4+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Votre Bâton est Rompu !",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Le Seigneur des Ombres",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 14,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Voile d'Obscurité"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "6\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Le Sénéchal Noir",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 14,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Gouverner par la peur"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "4+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Le Traitre",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 14,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Fléau des Rois"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "6+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Maître de Discipline Orque",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Fouet du Maître"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Maréchal des Númenóréens Noirs",
+        "points": "65",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 7,
+            "A": 2,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [
+            "Terreur"
+        ],
+        "options": [
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Armes à Deux mains",
+                "valeur": 5,
+                "action": {
+                    "effet": "minus"
+                }
+            },
+            {
+                "nom": "Lance de cavalerie",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Muzgúr, Chaman Orque",
+        "points": "70",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 4,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Canalisation Héroïque",
+            "Défense Héroïque"
+        ],
+        "regles": [
+            "Exalté par la Mort"
+        ],
+        "options": [],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Affaiblissement",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "4+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Nazgûl",
+        "points": "55",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Puissance": 0,
+            "Volonté": 7,
+            "Destin": 0,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Un parmi les Neuf"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Razgûsh, Chef de Guerre du Nord",
+        "points": "110",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 7,
+            "A": 3,
+            "B": 5
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Fléau (Elfes)",
+            "Haine (Elfes)",
+            "Les Bêtes de la Forêt Noire",
+            "Chef de Guerre du Nord",
+            "Le Briseur d'Os"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Shagrat, Capitaine de Cirith Ungol",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 5,
+            "D": 5,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 3,
+            "Destin": 3,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Sang & Gloire"
+        ],
+        "options": [
+            {
+                "nom": "Bouclier de Cirith Ungol",
+                "valeur": 10,
+                "action": "addboucliershagrat"
+            },
+            {
+                "nom": "Armure Lourde",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Tambour de la Garde Noire",
+        "points": "35",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 5,
+            "D": 5,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Tambour de Guerre (Uruk-hai du Mordor)"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Tambour Orque",
+        "points": "30",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Destin": 1,
+            "Points de vie": 1
+        },
+        "actions": [],
+        "regles": [
+            "Tambour de Guerre (Orque du Mordor)"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Zagdûsh, Capitaine Orque",
+        "points": "60",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 4,
+            "D": 5,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Combattant Téméraire"
         ],
         "options": []
     }

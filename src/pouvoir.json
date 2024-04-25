@@ -165,32 +165,47 @@
     "niveau": "3+",
     "effet": "Ce pouvoir cible une figurine ennemie à portée. La cible réduit immédiatement sa valeur de Bravoure de 1 point pour le restant de la partie (jusqu'à un minimum 1). Ce pouvoir peut être lancé plusieurs fois sur la même figurine, en réduisant à chaque fois la valeur de Bravoure de la figurine. Si la cible est une figurine de Cavalerie, alors l'attaquant doit choisir qui entre le cavalier et la monture réduit sa valeur de Bravoure.",
     "effetCanalise": "La Bravoure de la cible est réduite de 1D3."
-  },{
+  },
+  {
     "nom": "Instiller la Peur",
     "portee": "3''",
     "niveau": "5+",
     "effet": "Ce pouvoir affecte toutes les figurines ennemies à portée. Chaque figurine affectée doit passer un test de Bravoure, dans un ordre défini par le lanceur. Si le test est raté, alors la figurine doit se déplacer de la totalité de son Mouvement à l'opposé du lanceur. Si la figurine arrive au contact d'une autre figurine ou d'un terrain infranchissable, alors elle s'arrête sans entrer au contact socle à socle avec. Si une figurine arrive au contact du bord de table, elle s'arrête immédiatement (cela ne force donc pas une figurine à quitter le champ de bataille, si le scénario l'autorise). Les figurines qui ratent un test de Bravoure dû à ce Pouvoir Magique ne peuvent plus se déplacer lors de ce tour, quelle qu'en soit la raison.",
     "effetCanalise": "Les tests de Bravoure causés par ce sort sont tentés en lançant 3D6 en retirant le plus haut résultat."
-  },{
+  },
+  {
     "nom": "Trait de Ténèbres",
     "portee": "12''",
     "niveau": "6+",
     "effet": "Ce pouvoir cible une figurine ennemie à portée. La cible subit immédiatement une touche de Force 9. Ce n'est pas un tir - ne jetez pas de dé pour Toucher ou pour les tests sur la Trajectoire. Si la cible est une figurine de Cavalerie, alors l'attaquant doit choisir qui entre le cavalier et la monture est touché. Ce pouvoir peut être utilisé même si la cible est engagée au Combat.",
     "effetCanalise": "La cible perd un 1D3 PV au lieu de 1."
-  },{
+  },
+  {
     "nom": "Volonté Sapée",
     "portee": "12''",
     "niveau": "5+",
     "effet": "Ce pouvoir affecte une figurine ennemie à portée. La cible perd immédiatement 1D3 points de Volonté. Si la cible est une figurine de Cavalerie, alors l'attaquant doit choisir qui entre le cavalier et la monture perd sa Volonté.",
     "effetCanalise": "La cible perd 1D6 points de Volonté."
-  },{
+  },
+  {
     "nom": "Panique",
-
     "effet": "Ce pouvoir affecte une figurine ennemie à portée. Ce pouvoir peut cibler seulement des figurines de Cavalerie. Le cavalier est immédiatement démonté et la monture fuit. Retirez la monture du jeu et jetez un dé sur le tableau de chute de Cavalier pour déterminer les effets sur le cavalier.",
     "effetCanalise": "Le pouvoir affecte toutes les figurines ennemies à moins de 3’’ de la cible initiale."
+  },
+  {
+    "nom": "Frénésie (Orque du Mordor)",
+    "portee": "6''",
+    "effet": "Toutes les figurines avec ce Pouvoir Magique auront entre parenthèses après Frénésie les figurines qui sont affectées par le sort - par exemple, Frénésie (Gobelin). Ce pouvoir affecte toutes les figurines alliées à moins de 6\" du lanceur qui possèdent les mots-clefs entre parenthèses. Veuillez noter que s'il y a plusieurs mots-clefs entre parenthèses, alors les figurines doivent posséder tous les mots-clefs pour être affectées. Tant que ce pouvoir est en jeu, toutes les cibles réussiront tous les tests de Bravoure qu'elles seront amenées à passer. Dans le cas de la Cavalerie, avoir du bon sens est requis pour appliquer les effets. Par exemple, si un Chaman Orque du Mordor lance Frénésie (Orque du Mordor) et qu'un Chevaucheur de Warg est à portée du Pouvoir Magique, seul le cavalier pourra en bénéficier car seul le cavalier est un Orque du Mordor.",
+    "effetCanalise": "De plus, à chaque fois qu'une figurine à moins de 6\" qui bénéficie des effets de la Frénésie subit une blessure, jetez un dé. Sur un 6, la cible ignore la blessure exactement comme si un point de Destin avait été dépensé. Ce jet doit se faire immédiatement après que la blessure a été infligée, et il peut être lancé avant que le Destin ne soit utilisé. Un Héros peut utiliser sa Puissance peut influencer le résultat."
+  },
+  {
+    "nom": "Boule de Feu",
+    "effet": "Le pouvoir cible une figurine ennemie à portée. La cible subit immédiatement une touche de Force 6.",
+    "effetCanalise": "La cible souffre à la place des effets de la Règle Spéciale Incendie."
+  },
+  {
+    "nom": "Affaiblissement",
+    "effet": "Ce pouvoir affecte une figurine ennemie à portée. La Force de la cible est réduite de 1 (jusqu’à un minimum de 1) pour le restant de la partie. Si la cible est une figurine de Cavalerie, alors le lanceur doit choisir qui entre le cavalier et la monture voit sa Force réduite.",
+    "effetCanalise": "La Force de la cible est réduite de 1D3 au lieu de 1."
   }
-  
-  
-  
-  
 ]

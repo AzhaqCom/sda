@@ -63,5 +63,35 @@
         "faction": "Communauté de l'anneau",
         "bonus": "Tant que Frodon est en vie et sur la table (ou s'échappe du plateau dans des Scénarios où cela s'applique), toutes les figurines de la liste d'armée de la Communauté gagnent la règle spéciale Sans Peur. \n\nDe plus, une force qui contient uniquement des figurines de la liste d'armée de la Communauté n'est jamais considérée comme Démoralisée si Frodon est en vie et sur la table (ou s'échappe du plateau dans des Scénarios où cela s'applique).",
         "regles": ""
+    },
+    {
+        "faction": "Armée de Thror",
+        "bonus": "Les figurines amies Nain d'Erebor comptent comme étant à portée d'une Bannière si Thrór est à moins de 6\".",
+        "regles": ""
+    },
+    {
+        "faction": "Alliance de Radagast",
+        "bonus": "Les figurines avec le mot-clef Aigle de cette liste d'armée gagnent un bonus de +1 en Force lorsqu'elles chargent.",
+        "regles": ""
+    },
+    {
+        "faction": "Armée de Dunharrow",
+        "bonus": "Le Roi des Morts gagne la Règle Spéciale Émissaire du Mal. De plus, une troupe issue de cette liste d'armée comprenant de 8 à 12 Guerriers n'a pas besoin de Héros pour la diriger. A la place, l'un des Guerriers de la troupe prend le rôle du capitaine pour le déploiement.",
+        "regles": ""
+    },
+    {
+        "faction": "Armée de Lacville",
+        "bonus": " La règle spéciale Plein aux As du Maître de Lacville a une portée de 12\" au lieu de 6\".",
+        "regles": ""
+    },
+    {
+        "faction": "Arnor",
+        "bonus": "Les figurines d'Arnor alliées réussissent automatiquement leurs tests de Bravoure tant qu'elles sont à 6\" d'Arvedui, dernier Roi d'Arnor.",
+        "regles": ""
+    },
+    {
+        "faction": "Mordor",
+        "bonus": "Lorsque vous avez plus de figurines sur la table que votre adversaire, les figurines amies portant les motsclefs Guerrier et Mordor gagnent +1 en Bravoure et peuvent relancer les 1 lors des jets pour Blesser lors d'un Combat.",
+        "regles": ""
     }
-]
+]   

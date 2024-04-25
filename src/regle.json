@@ -186,7 +186,7 @@
     },
     {
         "nom": "Air d'Effet",
-        "effet": ": Si un Trébuchet touche une cible sur un champ de bataille, toutes les figurines à 2\" de la cible subissent une touche de Force 5 et sont jetées à terre (ces touches additionnelles ne tuent pas sur le coup).",
+        "effet": "Si un Trébuchet touche une cible sur un champ de bataille, toutes les figurines à 2\" de la cible subissent une touche de Force 5 et sont jetées à terre (ces touches additionnelles ne tuent pas sur le coup).",
         "etat": "engin"
     },
     {
@@ -222,6 +222,16 @@
     {
         "nom": "Arc",
         "effet": "Portée 24\" Force 2",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Arc orque",
+        "effet": "Portée 18\" Force 2",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Arc Uruk-hai",
+        "effet": "Portée 18\" Force 3",
         "etat": "equipement"
     },
     {
@@ -1341,12 +1351,267 @@
     },
     {
         "nom": "Empoisonnment Lent",
-        "effet": "Si une figurine est blessée (mais pas tuée) par un Basilic de Guerre de Rhûn, elle réduit ses valeurs de Combat et d’Attaques de 1 (jusqu’à un minimum de 1) pour le reste de la partie. Ce malus n’est pas cumulatif.",
+        "effet": "Si une figurine est blessée (mais pas tuée) par un Basilic de Guerre de Rhûn, elle réduit ses valeurs de Combat et d'Attaques de 1 (jusqu'à un minimum de 1) pour le reste de la partie. Ce malus n'est pas cumulatif.",
         "etat": "passif"
     },
     {
         "nom": "Tambour de Guerre (oriental)",
-        "effet": "Au début de la phase de Mouvement, une figurine avec un Tambour de guerre peut déclarer qu’elle donne la cadence. Lorsqu’elle le fait, toutes les figurines avec les mêmes mots-clefs que ceux entre parenthèses à moins de 12’’ du batteur peuvent ajouter 3’’ à leur Mouvement si elles sont de l’Infanterie ou 5’’ si elles sont de la Cavalerie (ou possèdent la règle Vol) pour le reste du tour. Cependant les figurines affectées par le Tambour de guerre ne peuvent pas charger lors de ce tour.",
+        "effet": "Au début de la phase de Mouvement, une figurine avec un Tambour de guerre peut déclarer qu'elle donne la cadence. Lorsqu'elle le fait, toutes les figurines avec les mêmes mots-clefs que ceux entre parenthèses à moins de 12\" du batteur peuvent ajouter 3\" à leur Mouvement si elles sont de l'Infanterie ou 5\" si elles sont de la Cavalerie (ou possèdent la règle Vol) pour le reste du tour. Cependant les figurines affectées par le Tambour de guerre ne peuvent pas charger lors de ce tour.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Instinct de Survie",
+        "effet": "À chaque fois que cette figurine perd 1 PV, elle doit réussir un test de Bravoure, sous peine de quitter immédiatement le champ de bataille, comptant alors comme perte. Ceci constitue une exception aux règles habituelles concernant les tests de Bravoure multiples.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Mouvement Arachnéen",
+        "effet": "Une figurine dotée de cette Règle Spéciale peut escalader toute surface, qu'importe son inclinaison. Elle peut ainsi se déplacer à pleine vitesse dans les terrains difficiles et ignore les obstacles, mis à part les étendues d'eau et les fossés ou gouffres, pour lesquels elle doit faire un test de Saut comme tout le monde. Elle doit cependant terminer son mouvement à un endroit où son socle tient bien en équilibre, pas d'Araignée finissant la tête à l'envers par exemple !",
+        "etat": "actif"
+    },
+    {
+        "nom": "Piégé dans la Toile",
+        "effet": "Au lieu de frapper normalement, Arachne peut plutôt choisir d'infliger une frappe contre une unique figurine engagée au combat. Cette figurine ne peut pas être un Monstre. La figurine choisie subit une touche de Force 7. Si la figurine est blessée mais survit, et que la Blessure n'est pas sauvegardée par un Point de Destin, la figurine est traitée comme étant sous l'effet du pouvoir magique Engourdissement.",
+        "etat": "ATTAQUE BRUTALE"
+    },
+    {
+        "nom": "Chasseresse Solitaire",
+        "effet": "Arachne ne peut jamais faire partie de la Troupe d'un autre Héros.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Projectile Perforant",
+        "effet": "Si un tir d'une Baliste de Siège du Mordor frappe une cible du champ de bataille, alors elle subit une touche de Force 9. De plus, si la cible possède une Force de 5 ou moins, elle sera jetée à terre et poussée à 1D6\" directement à l'opposé de la Baliste. Toute figurine sur la trajectoire de la cible repoussée sera elle aussi jetée à terre et subira une touche de Force 6. Si la cible arrive au contact d'un décor infranchissable, ou d'une figurine de Force 6 ou plus, alors elle s'arrête immédiatement et est jetée à terre. La cible et le décor ou figurine (s'il a une valeur de Défense) subissent chacun une touche de Force 6.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Précis",
+        "effet": "Les tirs d'une Baliste de Siège du Mordor ne se disperseront que sur une distance de 3\" au lieu de 6\".",
+        "etat": "engin"
+    },
+    {
+        "nom": "Pour le Seigneur Noir !",
+        "effet": "S'il y a au moins une figurine de Nazgûl sur le champ de bataille, la valeur de Bravoure des Capitaines de la Garde Noire passe à 6.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Epée Bâtarde",
+        "effet": "Elle peut être utilisée comme une épée simple ou comme une épée à deux mains.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Armes à Deux mains",
+        "effet": "Une figurine utilisant une arme à deux mains au combat ne peutpas utiliser un Bouclier en même temps.Si une figurine n'a qu'une arme à deux mains, alors elle doit l'utiliser lorsqu'elle se bat.\nUne figurine utilisant une arme à deux mains au corps à corps souffre d'un malus de -1 au jet de Duel mais lorsqu'elle porte ses coups pour Blesser avec une arme à deux mains, elle ajoute +1 à ses jets.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Têtes coupées",
+        "effet": "L'Engin de Siège peut choisir entre tirer normalement ou tirer un ensemble de têtes coupées. Si les têtes coupées sont tirées sur des cibles de champ de bataille, ignorez la Force de l'Engin de Siège et à la place, la cible initiale et toutes les figurines à moins de 2\" d'elle subissent une touche de Force 3. Ce tir ne met pas à terre les figurines et n'inflige au maximum qu'une blessure. Toutes les figurines ennemies touchées doivent passer immédiatement un test de Bravoure. Si elles le ratent, elles sont retirées comme pertes.",
+        "etat": "engin"
+    },
+    {
+        "nom": "Feu Indirect",
+        "effet": "Une catapulte tire toujours en utilisant les règles de Tir de Volée, avec une portée de 12\" à 96\".",
+        "etat": "engin"
+    },
+    {
+        "nom": "Effet de zone",
+        "effet": "Si une catapulte inflige une touche contre une cible située sur le champ de bataille, toutes les figurines situées à 2\" ou moins de la cible subit une touche de Force 5 (ce coup supplémentaire ne peut pas tuer la cible).",
+        "etat": "engin"
+    },
+    {
+        "nom": "Jet de Pierres (Portée 12\", Force 8)",
+        "effet": "Si cette figurine n'a pas du tout bougé durant la phase de Mouvement, alors elle peut effectuer un tir (pendant la phase de Tir) avec la Force et la Portée précisées dans son profil.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Bagarreur orque",
+        "effet": "Si Gorbag est en infériorité numérique durant un Combat, alors il gagne un bonus de +1 à sa valeur de Combat et d'Attaque. Les figurines qui sont en soutien ne comptent pas comme étant dans le Combat pour le calcul de l'infériorité numérique.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Venez vous battre, couards !",
+        "effet": "Chaque fois que Goroth subit une blessure qui pourrait le tuer (après avoir dépensé ses points de Destin) il peut lancer un D6. Sur 2+, Goroth peut choisir un Orque du Mordor allié à 1\" ou moins et lui faire prendre la Blessure à sa place. La figurine ainsi choisie ne peut pas bénéficier du Pouvoir Magique Frénésie pour éviter la blessure, mais peut utiliser ses propres points de Destin.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Maître Stratège",
+        "effet": "À chaque fois qu'un Héros ennemi tente une Action Héroïque dans un rayon de 6\" autour d'un Maître Stratège, ce dernier a la possibilité de déclarer la même Action Héroïque gratuitement (sans dépenser de points de Puissance), et ce même s'il n'a habituellement pas accès à cette Action en particulier. Il arrive que certaines figurines aient la Règle Spéciale Maître Stratège, mais avec un nombre entre crochets à côté, de type Maître Stratège [5+]. Dans ce cas, la capacité s'active sur un jet de 1D6, à effectuer à chaque tentative d'Action Héroïque adverse à 6\" que la figurine veut copier gratuitement.",
+        "etat": "actif"
+    },
+    {
+        "nom": "L'Âge des Hommes est Terminé",
+        "effet": "Gothmog et chaque Orque du Mordor allié qui est à moins de 3\" de lui gagnent la règle spéciale Haine (Homme).",
+        "etat": "passif"
+    },
+    {
+        "nom": "Le Temps des Orques est Arrivé",
+        "effet": "Une fois par partie, au début de n'importe quelle phase de Combat, Gothmog peut déclarer qu'il utilise cette capacité. Pour le reste du tour, chaque Orque du Mordor allié à 12\" ou moins de lui peut relancer les jets de Blessure manqués lorsqu'il frappe.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Piétinement Gorgoroth",
+        "effet": "Lorsqu'une Grande Bête de Gorgoroth piétine, elle inflige 2 touches de Force 6.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Plateforme de Bataille",
+        "effet": "Les figurines incluses avec la Grande Bête de Gorgoroth ne comptent pas dans le calcul de la Limite d'Archers de l'armée.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Assassin",
+        "effet": "Cette figurine obtient +1 sur ses jets pour Blesser au combat quand elle frappe une figurine Bloquée. Ce bonus se cumule avec d'autres similaires, tels que l'utilisation d'une arme à deux mains.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Maître des Réserves",
+        "effet": "Dans les scénarios pour lesquels vous devez jeter des dés pour faire arriver des forces additionnelles (comme ceux qui font appel à des Renforts), vous pouvez modifier les jets de Renfort pour la troupe de Guritz de +1 ou -1. Si Guritz est déjà sur la table, alors toutes les troupes de votre armée peuvent modifier leurs jets. Dans les scénarios pour lesquels vous devez jeter des dés pour déterminer sur quel bord de table vous vous déployez, vous pouvez également modifier le résultat de +1 ou -1.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Cœur des Ténèbres",
+        "effet": "Au début de n'importe quelle phase d'Initiative, avant que les dés n'aient été lancés, Kardûsh peut absorber la force vitale d'un Orque allié qui est à moins de 6\", causant son élimination comme s'il avait subi une Blessure. Kardûsh regagne alors immédiatement 1D3 points de Volonté. Cette capacité ne lui permet pas d'avoir plus de points de Volonté qu'il n'en avait au départ.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Pion de l'Ombre",
+        "effet": "Au début de n'importe quelle phase d'Initiative, avant que les dés n'aient été lancés, le joueur contrôlant Kardûsh peut le retirer du terrain comme s'il avait subi une blessure pour permettre à un Nazgûl ami situé à moins de 6\" de regagner immédiatement 1D6 points de Volonté. Cette capacité ne permet pas au Nazgûl d'avoir plus de points de Volonté qu'il n'en avait au départ.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Bras Droit de Gothmog",
+        "effet": "Si l'Exécuteur est à moins de 3\" de Gothmog au début d'un tour, Gothmog peut choisir de dépenser l'un des points de Volonté de l'Exécuteur pour déclarer un Élan Héroïque sans dépenser de point de Puissance.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Volonté éternelle (l'immortel)",
+        "effet": "L'Immortel peut dépenser un point de Volonté de la même manière qu'un point de Destin.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Drain de magie",
+        "effet": "Au début de la phase de Mouvement, avant que les Actions Héroïques ne soient déclarées, l'Immortel peut dépenser un point de Volonté pour activer cette capacité. Avant la phase de Fin de ce tour, l'Immortel regagne un point de Volonté pour chaque Pouvoir Magique qui a été jeté et réussi par une autre figurine dans un rayon de 6\".",
+        "etat": "passif"
+    },
+    {
+        "nom": "Présence Maladive",
+        "effet": "Au début de la phase de Mouvement, avant que les Actions Héroïques ne soient déclarées, l'Innommable peut décider de dépenser un point de Volonté. S'il le fait, jusqu'à la fin du tour, aucun Guerrier à moins de 6\" de l'Innommable ne bénéficie plus de la règle « Tenez Bon ! », et ne peut plus participer à des Actions Héroïques.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Pourriture Suintante",
+        "effet": "Au début de la phase de Combat, lancez 1D6 pour chaque figurine qui n'est pas un Esprit (amis comme ennemis) et qui est socle à socle avec l'Innommable (si la figurine est une figurine de Cavalerie, lancez le dé pour la monture et un dé pour le cavalier). Sur un 6, la cible subit une Blessure.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Imitation du Combat",
+        "effet": "Au début de n'importe quelle phase de Combat, avant que les Actions Héroïques ne soient déclarées, le Chevalier d'Umbar peut dépenser un point de Volonté pour activer cette capacité. Le Chevalier d'Umbar peut choisir d'utiliser la valeur de Combat, de Force et/ou d'Attaque de son adversaire à la place de la sienne. Il n'a pas besoin d'adopter toutes les caractéristiques ; il peut, par exemple, ne retenir que la valeur de Combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Courage Sapé",
+        "effet": "À chaque fois qu'un Héros qui est à moins de 6\" du Dwimmerlaik dépense un point de Puissance, de Volonté ou de Destin, ce dernier peut choisir de dépenser un point de Volonté. S'il le fait, lancez un D6. Sur un 4+, le Héros ennemi doit dépenser un point du même type supplémentaire, sinon l'action est annulée et tous les points de Puissance, Volonté ou Destin déjà engagés sont perdus. \nNotez qu'un Héros qui souhaite dépenser plusieurs points de Puissance, Volonté ou Destin, peut attendre de voir le résultat du jet du Dwimmerlaik avant de décider d'en dépenser d'autres. Le Dwimmerlaik devra dépenser un point de Volonté pour chaque point qu'il souhaite affecter, bien qu'il puisse attendre de voir comment son premier point de Volonté a affecté son adversaire avant de décider d'en dépenser d'autres.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Couronne de Morgul",
+        "effet": "Si le Roi Sorcier d'Angmar porte la Couronne de Morgul, sa valeur d'Attaque passe à 3. De plus, le Roi Sorcier d'Angmar peut choisir de relancer un simple dé quand il fait un test pour Lancer ou pour Résister à un pouvoir magique.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Lame de Morgul",
+        "effet": "Une fois par partie, le joueur contrôlant cette figurine peut déclarer qu'il utilise la Lame de Morgul pendant la phase de Combat avant le jet de Blessure. Si la figurine utilise la Lame de Morgul, elle doit diriger toutes ses frappes sur une seule cible. Un ennemi qui subit une Blessure de la Lame de Morgul est automatiquement tuée, qu'elle que soit le nombre de points de vie dont elle dispose. Les Héros peuvent utiliser leurs points de Destin pour éviter la mort, mais si une seule Blessure n'est pas sauvegardée, le Héros meurt. Si la figurine qui utilise la Lame de Morgul est montée, elle doit utiliser la valeur d'Attaque et de Force du cavalier lorsqu'elle l'utilise.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Fléau à Deux Mains",
+        "effet": "Une figurine avec un Fléau ou un Fouet peut choisir de faire un Moulinet. Une figurine qui exécute un Moulinet a une valeur de Combat de 1 pour la durée du combat. Si elle gagne, elle inflige un seul coup à chaque figurine ennemie engagée dans le combat au lieu de porter ses coups normalement.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Voile d'Obscurité",
+        "effet": "Au début de la phase de Mouvement, avant que les Actions Héroïques ne soient déclarées, le Seigneur des Ombres peut dépenser un point de Volonté pour activer cette règle. Jusqu'à la phase de Fin de ce tour, les tirs contre le Seigneur des Ombres, ou contre toute figurine à 6\" de lui, ne touchent que sur un 6.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Gouverner par la peur",
+        "effet": "Au début de la phase de Combat, avant que les Actions Héroïques ne soient déclarées, le Sénéchal Noir peut décider de dépenser un point de Volonté. S'il le fait, chaque Guerrier allié à moins de 6\" du Sénéchal Noir est considéré comme étant à portée d'une Bannière jusqu'à la fin de cette phase de Combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Fléau des Rois",
+        "effet": "Cette figurine doit relancer tous ses jets pour Blesser ratés au combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Fouet du Maître",
+        "effet": "Chaque fois qu'un Héros allié à moins de 6\" d'un Maître de Discipline et de la même liste d'armée (incluant le Maître de Discipline lui-même) tente un Élan Héroïque, une Marche Héroïque ou un Tir Héroïque, lancez un D6. Sur un 4+, l'Action Héroïque est déclarée sans dépense de point de Puissance.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Exalté par la Mort",
+        "effet": "Quand Muzgúr tue un ennemi au combat, il regagne immédiatement 1 simple point de Volonté dépensé précédemment dans la partie.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Un parmi les Neuf",
+        "effet": "Il ne peut y avoir au maximum que neuf figurines portant le mot-clé Nazgûl dans votre liste d'armée, en incluant les Nazgûl nommés.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Fléau (Elfes)",
+        "effet": "Les armes disposant de cette règle infligent 1D3 Blessures au lieu d'une seule, par coup touchant au but (non sauvé par du Destin), contre une figurine ayant le mot-clef Elfe(s).",
+        "etat": "actif"
+    },
+    {
+        "nom": "Haine (Elfes)",
+        "effet": "Une telle figurine ajoute 1 à ses jets pour Blesser au combat contre les figurines dotées du mot-clef Elfe(s).",
+        "etat": "actif"
+    },
+    {
+        "nom": "Les Bêtes de la Forêt Noire",
+        "effet": "Les Capitaines Orques dans la même armée que Razgûsh peuvent inclure des Nuées de Chauve-Souris, des Araignées de la Forêt Noire, des Araignées Géantes et des Wargs des Ombres dans leur troupe comme s'ils venaient de la liste d'armée du Mordor.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Chef de Guerre du Nord",
+        "effet": "Razgûsh peut seulement inclure des Guerriers Orques, des Chevaucheurs de Warg, des Nuées de Chauve-Souris, des Araignées Géantes, des Araignées de la Forêt Noire, et des Wargs des Ombres dans sa troupe. De plus, les Capitaines Orques, Guerriers Orques et Chevaucheurs de Warg dans la même armée que Razgûsh gagnent la règle Spéciale Haine (Elfes).",
+        "etat": "passif"
+    },
+    {
+        "nom": "Le Briseur d'Os",
+        "effet": "C'est une masse. De plus, les ennemis ne reçoivent aucun bonus pour l'origine elfique de leurs armes quand ils se battent contre Razgûsh.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Bouclier de Cirith Ungol",
+        "effet": "C'est un Bouclier. De plus, dans le tour où Shagrat effectue une charge, il gagne la capacité de Jeter au Sol, comme s'il était une figurine de Cavalerie.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Tambour de Guerre (Uruk-hai du Mordor)",
+        "effet": "Au début de la phase de Mouvement, une figurine avec un Tambour de guerre peut déclarer qu'elle donne la cadence. Lorsqu'elle le fait, toutes les figurines avec les mêmes mots-clefs que ceux entre parenthèses à moins de 12\" du batteur peuvent ajouter 3\" à leur Mouvement si elles sont de l'Infanterie ou 5\" si elles sont de la Cavalerie (ou possèdent la règle Vol) pour le reste du tour. Cependant les figurines affectées par le Tambour de guerre ne peuvent pas charger lors de ce tour.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Tambour de Guerre (Orque du Mordor)",
+        "effet": "Au début de la phase de Mouvement, une figurine avec un Tambour de guerre peut déclarer qu'elle donne la cadence. Lorsqu'elle le fait, toutes les figurines avec les mêmes mots-clefs que ceux entre parenthèses à moins de 12\" du batteur peuvent ajouter 3\" à leur Mouvement si elles sont de l'Infanterie ou 5\" si elles sont de la Cavalerie (ou possèdent la règle Vol) pour le reste du tour. Cependant les figurines affectées par le Tambour de guerre ne peuvent pas charger lors de ce tour.",
+        "etat": "equipement"
+    },
+    {
+        "nom": "Combattant Téméraire",
+        "effet": "Au début d'un Combat impliquant Zagdûsh, avant qu'aucun dé ne soit jeté, Zagdûsh peut choisir de réduire sa Défense de 1 et d'augmenter sa Force de 1. Cet effet dure jusqu'à la fin du Combat.",
+        "etat": "actif"
+    },
+    {
+        "nom": "Discrétion",
+        "effet": "Une figurine discrète partiellement cachée par un décor n'est pas du tout visible par l'ennemi, sauf si celui-ci est à moins de 6\". La figurine paraît en effet se fondre dans le paysage. Ainsi la Discrétion évite d'être pris pour cible par une charge, un tir, un Pouvoir Magique ou toute autre Règle Spéciale, tant que la ligne de vue n'est pas complètement dégagée ou que l'adversaire ne s'est pas rapproché suffisamment. Sur une figurine de Cavalerie, la Discrétion n'a pas d'effet.",
+        "etat": "passif"
+    },
+    {
+        "nom": "Tambour de Guerre (Mordor)",
+        "effet": "Au début de la phase de Mouvement, une figurine avec un Tambour de guerre peut déclarer qu'elle donne la cadence. Lorsqu'elle le fait, toutes les figurines avec les mêmes mots-clefs que ceux entre parenthèses à moins de 12\" du batteur peuvent ajouter 3\" à leur Mouvement si elles sont de l'Infanterie ou 5\" si elles sont de la Cavalerie (ou possèdent la règle Vol) pour le reste du tour. Cependant les figurines affectées par le Tambour de guerre ne peuvent pas charger lors de ce tour.",
         "etat": "equipement"
     }
 ]

@@ -191,6 +191,48 @@
         "regles": []
     },
     {
+        "faction": "Armée de Thror",
+        "allegence": "Bien",
+        "personnage": "Morne Martel",
+        "points": "11",
+        "caracteristiques": {
+            "M": 5,
+            "C": "4/4+",
+            "F": 3,
+            "D": 7,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Gardien du Roi (Thror)",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "F",
+                    "valeur": 1
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
         "faction": "Arnor",
         "allegence": "Bien",
         "personnage": "Archer Hobbit",
@@ -1662,7 +1704,8 @@
             "Phalange",
             "La Horde Etincelante"
         ]
-    },    {
+    },
+    {
         "faction": "Orientaux",
         "allegence": "Mal",
         "personnage": "Guerrier Dragon Noir",
@@ -1762,6 +1805,416 @@
         ],
         "regles": [
             "Phalange"
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Chevalier de Morgul",
+        "points": "18",
+        "caracteristiques": {
+            "M": 10,
+            "C": "4/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Cheval Caparaçonné",
+                "caracteristiques": {
+                    "M": 1,
+                    "C": "3",
+                    "F": 3,
+                    "D": 5,
+                    "A": 0,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ],
+        "regles": [
+            "Terreur",
+            "Lance de Cavalerie"
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Chevaucheur de Warg",
+        "points": "11",
+        "caracteristiques": {
+            "M": 10,
+            "C": "3/5+",
+            "F": 4,
+            "D": 4,
+            "A": 1,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc orque",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Javelots",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "servants": [
+            {
+                "personnage": "Warg",
+                "caracteristiques": {
+                    "M": 1,
+                    "C": "3",
+                    "F": 3,
+                    "D": 4,
+                    "A": 1,
+                    "B": 2
+                },
+                "capacites": {
+                    "Points de vie": 1
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Garde Noir de Barad-Dur",
+        "points": "12",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 5,
+            "D": 6,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Guerrier Orque",
+        "points": "5",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 3,
+            "D": 4,
+            "A": 1,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc orque",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Armes à Deux mains",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Numenoréen Noir",
+        "points": "9",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/4+",
+            "F": 3,
+            "D": 6,
+            "A": 1,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Cor de Guerre",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Terreur"
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Orque du Morannon",
+        "points": "7",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Lance",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Pisteur orque",
+        "points": "5",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/4+",
+            "F": 3,
+            "D": 3,
+            "A": 1,
+            "B": 2
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Warg",
+                "valeur": 7,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "regles": []
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Rôdeur de Morgul",
+        "points": "10",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [],
+        "regles": [
+            "Discrétion"
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Troll du Mordor",
+        "points": "100",
+        "caracteristiques": {
+            "M": 6,
+            "C": "7/5+",
+            "F": 7,
+            "D": 7,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Points de vie": 3
+        },
+        "actions": [],
+        "regles": [
+            "Terreur",
+            "Jet de Pierres (Portée 12\", Force 8)"
+        ],
+        "options": [
+            {
+                "nom": "Tambour de Guerre (Mordor)",
+                "valeur": 30,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Mordor",
+        "allegence": "Mal",
+        "personnage": "Uruk-hai du Mordor",
+        "points": "8",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 4,
+            "D": 4,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Points de vie": 1
+        },
+        "options": [
+            {
+                "nom": "Bannière",
+                "valeur": 25,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Arc orque",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 1,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            },
+            {
+                "nom": "Armes à Deux mains",
+                "valeur": 1,
+                "action": {
+                    "effet": "regles"
+                }
+            }
+        ],
+        "regles": [
+            "Discrétion"
         ]
     }
 ]
