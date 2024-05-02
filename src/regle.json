@@ -1613,5 +1613,15 @@
         "nom": "Tambour de Guerre (Mordor)",
         "effet": "Au début de la phase de Mouvement, une figurine avec un Tambour de guerre peut déclarer qu'elle donne la cadence. Lorsqu'elle le fait, toutes les figurines avec les mêmes mots-clefs que ceux entre parenthèses à moins de 12\" du batteur peuvent ajouter 3\" à leur Mouvement si elles sont de l'Infanterie ou 5\" si elles sont de la Cavalerie (ou possèdent la règle Vol) pour le reste du tour. Cependant les figurines affectées par le Tambour de guerre ne peuvent pas charger lors de ce tour.",
         "etat": "equipement"
+    },
+    {
+        "nom": "Menés par l'Exemple",
+        "effet": "Lors d’un tour pendant lequel Burhdûr tue un Héros ou un Monstre ennemi, toutes les figurines d’Orques d’Angmar et de Trolls alliés à moins de 6’’ de lui comptent comme étant à portée d’une Bannière.",
+        "etat": "actif"
+    },
+    {
+        "nom": "La Meute",
+        "effet": "Seuls les Wargs alliés peuvent bénéficier de la règle « Tenez Bon ! » d’un Chef de Meute Warg ou bénéficier de ses Actions Héroïques.",
+        "etat": "actif"
     }
 ]

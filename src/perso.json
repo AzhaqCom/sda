@@ -9240,5 +9240,250 @@
             "Combattant Téméraire"
         ],
         "options": []
+    },
+    {
+        "faction": "Angmar",
+        "allegence": "Mal",
+        "personnage": "Buhrdûr, Chef Troll",
+        "points": "110",
+        "caracteristiques": {
+            "M": 6,
+            "C": "6/4+",
+            "F": 6,
+            "D": 6,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 3,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 3
+        },
+        "actions": [
+            "Frappe Héroïque",
+            "Force Héroïque",
+            "Défi Héroïque"
+        ],
+        "regles": [
+            "Terreur",
+            "Jet de Pierres (Portée 12\", Force 8)",
+            "Menés par l'Exemple"
+        ],
+        "options": []
+    },
+    {
+        "faction": "Angmar",
+        "allegence": "Mal",
+        "personnage": "Capitaine Orque d'Angmar",
+        "points": "40",
+        "caracteristiques": {
+            "M": 6,
+            "C": "4/5+",
+            "F": 4,
+            "D": 5,
+            "A": 2,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 1,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Warg",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Arc orque",
+                "valeur": 5,
+                "action": {
+                    "effet": "regles"
+                }
+            },
+            {
+                "nom": "Bouclier",
+                "valeur": 5,
+                "action": {
+                    "caracteristique": "D",
+                    "valeur": 1
+                }
+            }
+        ]
+    },
+    {
+        "faction": "Angmar",
+        "allegence": "Mal",
+        "personnage": "Chaman Orque d'Angmar",
+        "points": "50",
+        "caracteristiques": {
+            "M": 6,
+            "C": "3/5+",
+            "F": 4,
+            "D": 5,
+            "A": 1,
+            "B": 3
+        },
+        "capacites": {
+            "Puissance": 1,
+            "Volonté": 3,
+            "Destin": 1,
+            "Points de vie": 2,
+            "Kill": 0
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [],
+        "options": [
+            {
+                "nom": "Warg",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Affaiblissement",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            }
+        ]
+    },
+    {
+        "faction": "Angmar",
+        "allegence": "Mal",
+        "personnage": "Chef de Meute Warg",
+        "points": "80",
+        "caracteristiques": {
+            "M": 10,
+            "C": "5/5+",
+            "F": 5,
+            "D": 5,
+            "A": 3,
+            "B": 4
+        },
+        "capacites": {
+            "Puissance": 2,
+            "Volonté": 2,
+            "Destin": 1,
+            "Points de vie": 3,
+            "Kill": 0
+        },
+        "actions": [
+            "Marche Héroïque",
+            "Force Héroïque"
+        ],
+        "regles": [
+            "Terreur",
+            "La Meute"
+        ],
+        "options": []
+    },{
+        "faction": "Angmar",
+        "allegence": "Mal",
+        "personnage": "Le Dwimmerlaik",
+        "points": "120",
+        "caracteristiques": {
+            "M": 6,
+            "C": "5/4+",
+            "F": 4,
+            "D": 8,
+            "A": 1,
+            "B": 6
+        },
+        "capacites": {
+            "Volonté": 16,
+            "Destin": 2,
+            "Points de vie": 1
+        },
+        "actions": [
+            "Canalisation Héroïque"
+        ],
+        "regles": [
+            "Émissaire du Mal",
+            "Terreur",
+            "La Volonté du Mal",
+            "Courage Sapé"
+        ],
+        "options": [
+            {
+                "nom": "Ombre Ailée",
+                "valeur": 50,
+                "action": "addombre"
+            },
+            {
+                "nom": "Ombre Ailée caparaçonné",
+                "valeur": 70,
+                "action": "addombrecapa"
+            },
+            {
+                "nom": "Cheval Caparaçonné",
+                "valeur": 15,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            },
+            {
+                "nom": "Cheval",
+                "valeur": 10,
+                "action": {
+                    "caracteristique": "M",
+                    "valeur": 10
+                }
+            }
+        ],
+        "pouvoirsMagiques": [
+            {
+                "nom": "Drain de Bravoure",
+                "valeur": "2+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Immobilisation",
+                "valeur": "3+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Injonction",
+                "valeur": "4+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Instiller la Peur",
+                "valeur": "5+",
+                "portee": "3\""
+            },
+            {
+                "nom": "Volonté Sapée",
+                "valeur": "5+",
+                "portee": "12\""
+            },
+            {
+                "nom": "Trait de Ténèbres",
+                "valeur": "5+",
+                "portee": "12\""
+            }
+        ]
     }
 ]
